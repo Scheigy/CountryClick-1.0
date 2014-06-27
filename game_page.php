@@ -11,7 +11,7 @@
 						<img src="img/dollar2.png" alt="dollar" />
 					</div><br />
 					<div class="infos" id="dollar_prod">0 $ par seconde</div><br />
-					<div class="infos" id="dollar_total">TOTAL : 0 $</div>
+					<div class="infos" id="dollar_total">TOTAL : 0 $</div><br />
 				</div>
 			</section>
 
@@ -21,51 +21,51 @@
 					<div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="one">1 k</div>
-							<div class="col-lg-offset-1 square col-lg-4" id="two">10 k</div>
-							<div class="col-lg-offset-1 square col-lg-3" id="three">100 k</div>
+							<div class="square col-lg-3" id="one">1 K</div>
+							<div class="col-lg-offset-1 square col-lg-4" id="two">10 K</div>
+							<div class="col-lg-offset-1 square col-lg-3" id="three">100 K</div>
 						</div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="four">10 k</div>
-							<div class="col-lg-offset-1 square col-lg-4" id="five">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-3" id="six">Lock</div>
+							<div class="square col-lg-3" id="four">10 K</div>
+							<div class="col-lg-offset-1 square col-lg-4" id="five">100 K</div>
+							<div class="col-lg-offset-1 square col-lg-3" id="six">1 000 K</div>
 						</div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="seven">100 k</div>
-							<div class="col-lg-offset-1 square col-lg-4" id="eight">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-3" id="nine">Lock</div>
+							<div class="square col-lg-3" id="seven">100 K</div>
+							<div class="col-lg-offset-1 square col-lg-4" id="eight">1 000 K</div>
+							<div class="col-lg-offset-1 square col-lg-3" id="nine">10 000 K</div>
 						</div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="ten">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-4" id="eleven">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-3" id="twelve">Lock</div>
+							<div class="square col-lg-3" id="ten">1 000 K</div>
+							<div class="col-lg-offset-1 square col-lg-4" id="eleven">10 000 K</div>
+							<div class="col-lg-offset-1 square col-lg-3" id="twelve">100 000 K</div>
 						</div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="thirteen">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-4" id="fourteen">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-3" id="fifteen">Lock</div>
+							<div class="square col-lg-3" id="thirteen">10 000 K</div>
+							<div class="col-lg-offset-1 square col-lg-4" id="fourteen">100 000 K</div>
+							<div class="col-lg-offset-1 square col-lg-3" id="fifteen">1 M</div>
 						</div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="sixteen">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-4" id="seventeen">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-3" id="eighteen">Lock</div>
+							<div class="square col-lg-3" id="sixteen">100 000 K</div>
+							<div class="col-lg-offset-1 square col-lg-4" id="seventeen">1 M</div>
+							<div class="col-lg-offset-1 square col-lg-3" id="eighteen">10 M</div>
 						</div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="nineteen">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-4" id="twenty">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-3" id="twenty-one">Lock</div>
+							<div class="square col-lg-3" id="nineteen">1 M</div>
+							<div class="col-lg-offset-1 square col-lg-4" id="twenty">10 M</div>
+							<div class="col-lg-offset-1 square col-lg-3" id="twenty-one">100 M</div>
 						</div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="twenty-two">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-4" id="twenty-three">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-3" id="twenty-four">Lock</div>
+							<div class="square col-lg-3" id="twenty-two">10 M</div>
+							<div class="col-lg-offset-1 square col-lg-4" id="twenty-three">100 M</div>
+							<div class="col-lg-offset-1 square col-lg-3" id="twenty-four">1 000 M</div>
 						</div>
 
 						<div class="row" id="central_menu">
@@ -85,6 +85,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_worker" class="nb_worker">0 worker(s)</div>
 						<div id="worker_cost" class="worker_cost">Prix : 0$</div>
+						<div id="worker_benefit" class="worker_benefit">Benefice : 1 $/sec</div>
 					</div>
 				</div>
 
@@ -93,6 +94,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_businessman" class="nb_worker">1 cadre(s)</div>
 						<div id="businessman_cost" class="worker_cost">Prix : 0$</div>
+							<div id="worker_benefit" class="worker_benefit">Benefice : 5 $/sec</div>
 					</div>
 				</div>
 
@@ -101,6 +103,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_supermarket" class="nb_worker">1 supermarché(s)</div>
 						<div id="supermarket_cost" class="worker_cost">Prix : 0$</div>
+							<div id="worker_benefit" class="worker_benefit">Benefice : 15 $/sec</div>
 					</div>
 				</div>
 
@@ -109,6 +112,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_factory" class="nb_worker">1 usine(s)</div>
 						<div id="factory_cost" class="worker_cost">Prix : 0$</div>
+							<div id="worker_benefit" class="worker_benefit">Benefice : 40 $/sec</div>
 					</div>
 				</div>
 
@@ -117,6 +121,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_bank" class="nb_worker">1 banque(s)</div>
 						<div id="bank_cost" class="worker_cost">Prix : 0$</div>
+							<div id="worker_benefit" class="worker_benefit">Benefice : 300 $/sec</div>
 					</div>
 				</div>
 
@@ -125,6 +130,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_mine" class="nb_worker">1 mine(s)</div>
 						<div id="mine_cost" class="worker_cost">Prix : 0$</div>
+							<div id="worker_benefit" class="worker_benefit">Benefice : 1 000 $/sec</div>
 					</div>
 				</div>
 
@@ -133,6 +139,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_president" class="nb_worker">1 président(s)</div>
 						<div id="president_cost" class="worker_cost">Prix : 0$</div>
+							<div id="worker_benefit" class="worker_benefit">Benefice : 5 000 $/sec</div>
 					</div>
 				</div>
 
@@ -141,6 +148,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_antimatter" class="nb_worker">1 nuage(s) d'antimatière</div>
 						<div id="antimatter_cost" class="worker_cost">Prix : 0$</div>
+							<div id="worker_benefit" class="worker_benefit">Benefice : 50 000 $/sec</div>
 					</div>
 				</div>
 			</section>
