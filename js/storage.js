@@ -273,56 +273,56 @@ function	my_aff_buildings()
 	myWorkerPrice = document.getElementById('worker_cost');
 	myWorkerPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.worker, 100)) + ' $';
 	myWorkerBenefit = document.getElementById('worker_benefit');
-	myWorkerBenefit.innerHTML = 'Bénéfice : ' + changeNumber(mult.worker) + ' $/sec'
+	myWorkerBenefit.innerHTML = 'Bénéfice : ' + changeNumber(mult.worker) + ' $/sec';
 	
 	myBusinessman = document.getElementById('nb_businessman');
 	myBusinessman.innerHTML = game.businessman + ' cadre(s)';
 	myBusinessmanPrice = document.getElementById('businessman_cost');
 	myBusinessmanPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.businessman, 500)) + ' $';
 	myBusinessmanBenefit = document.getElementById('businessman_benefit');
-	myBusinessmanBenefit.innerHTML = 'Bénéfice : ' + (5 * changeNumber(mult.businessman)) + ' $/sec'
+	myBusinessmanBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5 * mult.businessman) + ' $/sec';
 
 	mySupermarket = document.getElementById('nb_supermarket');
 	mySupermarket.innerHTML = game.supermarket + ' supermarché(s)';
 	mySupermarketPrice = document.getElementById('supermarket_cost');
 	mySupermarketPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.supermarket, 3000)) + ' $';
 	mySupermarketBenefit = document.getElementById('supermarket_benefit');
-	mySupermarketBenefit.innerHTML = 'Bénéfice : ' + (15 * changeNumber(mult.supermarket)) + ' $/sec'
+	mySupermarketBenefit.innerHTML = 'Bénéfice : ' + changeNumber(15 * mult.supermarket) + ' $/sec';
 
 	myFactory = document.getElementById('nb_factory');
 	myFactory.innerHTML = game.factory + ' usine(s)';
 	myFactoryPrice = document.getElementById('factory_cost');
 	myFactoryPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.factory, 10000)) + ' $';
 	myFactoryBenefit = document.getElementById('factory_benefit');
-	myFactoryBenefit.innerHTML = 'Bénéfice : ' + (40 * changeNumber(mult.factory)) + ' $/sec'
+	myFactoryBenefit.innerHTML = 'Bénéfice : ' + changeNumber(40 * mult.factory) + ' $/sec';
 
 	myBank = document.getElementById('nb_bank');
 	myBank.innerHTML = game.bank + ' banque(s)';
 	myBankPrice = document.getElementById('bank_cost');
 	myBankPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.bank, 100000)) + ' $';
 	myBankBenefit = document.getElementById('bank_benefit');
-	myBankBenefit.innerHTML = 'Bénéfice : ' + (300 * changeNumber(mult.bank)) + ' $/sec'
+	myBankBenefit.innerHTML = 'Bénéfice : ' + changeNumber(300 * mult.bank) + ' $/sec';
 
 	myMine = document.getElementById('nb_mine');
 	myMine.innerHTML = game.mine + ' mine(s)';
 	myMinePrice = document.getElementById('mine_cost');
 	myMinePrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.mine, 1000000)) + ' $';
 	myMineBenefit = document.getElementById('mine_benefit');
-	myMineBenefit.innerHTML = 'Bénéfice : ' + (1000 * changeNumber(mult.mine)) + ' $/sec'
+	myMineBenefit.innerHTML = 'Bénéfice : ' + changeNumber(1000 * mult.mine) + ' $/sec';
 
 	myPresident = document.getElementById('nb_president');
 	myPresident.innerHTML = game.president + ' président(s)';
 	myPresidentPrice = document.getElementById('president_cost');
 	myPresidentPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.president, 20000000)) + ' $';
-	myPresidentBenefit = document.getElementById('bank_benefit');
-	myPresidentBenefit.innerHTML = 'Bénéfice : ' + (5000 * changeNumber(mult.president)) + ' $/sec'
+	myPresidentBenefit = document.getElementById('president_benefit');
+	myPresidentBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5000 * mult.president) + ' $/sec';
 
 	myAntimatter = document.getElementById('nb_antimatter');
 	myAntimatter.innerHTML = game.antimatter + ' nuage(s) d\'antimatière';
 	myAntimatterPrice = document.getElementById('antimatter_cost');
 	myAntimatterPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.antimatter, 1128256512)) + ' $';
 	myAntimatterBenefit = document.getElementById('antimatter_benefit');
-	myAntimatterBenefit.innerHTML = 'Bénéfice : ' + (50000 * changeNumber(mult.antimatter)) + ' $/sec'
+	myAntimatterBenefit.innerHTML = 'Bénéfice : ' + changeNumber(50000 * mult.antimatter) + ' $/sec';
 }
 
 function setCharAt(str,index,chr) 
@@ -360,6 +360,7 @@ function	addUpgrade_worker()
 		upWorker.innerHTML = 'x 8';
 		calc_prod();
 	}
+	myWorkerBenefit.innerHTML = 'Bénéfice : ' + changeNumber(mult.worker) + ' $/sec';
 }
 
 function	addUpgrade_businessman()
@@ -389,6 +390,7 @@ function	addUpgrade_businessman()
 		upBusinessman.innerHTML = 'x 8';
 	}
 	calc_prod();
+	myBusinessmanBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5 * mult.businessman) + ' $/sec';
 }
 
 function	addUpgrade_supermarket()
@@ -418,6 +420,7 @@ function	addUpgrade_supermarket()
 		upSupermarket.innerHTML = 'x 8';
 	}
 	calc_prod();
+	mySupermarketBenefit.innerHTML = 'Bénéfice : ' + changeNumber(15 * mult.supermarket) + ' $/sec';
 }
 
 function	addUpgrade_factory()
@@ -447,6 +450,7 @@ function	addUpgrade_factory()
 		upFactory.innerHTML = 'x 8';
 	}
 	calc_prod();
+	myFactoryBenefit.innerHTML = 'Bénéfice : ' + changeNumber(40 * mult.factory) + ' $/sec';
 }
 
 function	addUpgrade_bank()
@@ -476,6 +480,7 @@ function	addUpgrade_bank()
 		upBank.innerHTML = 'x 8';
 	}
 	calc_prod();
+	myBankBenefit.innerHTML = 'Bénéfice : ' + changeNumber(300 * mult.bank) + ' $/sec';
 }
 
 function	addUpgrade_mine()
@@ -505,6 +510,7 @@ function	addUpgrade_mine()
 		upMine.innerHTML = 'x 8';
 	}
 	calc_prod();
+	myMineBenefit.innerHTML = 'Bénéfice : ' + changeNumber(1000 * mult.mine) + ' $/sec';
 }
 
 function	addUpgrade_president()
@@ -534,6 +540,7 @@ function	addUpgrade_president()
 		upPresident.innerHTML = 'x 8';
 	}
 	calc_prod();
+	myPresidentBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5000 * mult.president) + ' $/sec';
 }
 
 function	addUpgrade_antimatter()
@@ -562,6 +569,7 @@ function	addUpgrade_antimatter()
 		upAntimatter = document.getElementById('twenty-four');
 		upAntimatter.innerHTML = 'x 8';
 	}
+	myAntimatterBenefit.innerHTML = 'Bénéfice : ' + changeNumber(50000 * mult.antimatter) + ' $/sec';
 	calc_prod();
 }
 
@@ -760,7 +768,7 @@ function	my_aff_upgrades()
 	if (mult.antimatter == 64)
 		upAntimatter3.innerHTML = 'x 8';
 	else
-		upAntimatter3.innerHTML = '1 B'
+		upAntimatter3.innerHTML = '1 B';
 }
 
 // Evenemets Fixes
