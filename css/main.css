@@ -244,6 +244,20 @@ figure
 	background-color: green;
 }
 
+@keyframes workerHover
+{
+	0% {opacity: 1;}
+	50% {opacity: 0.7;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes workerHover /* Safari and Chrome */
+{
+	0% {opacity: 1;}
+	50% {opacity: 0.7;}
+	100% {opacity: 1;}
+}
+
 .worker_div
 {
 	margin-bottom: 5px;
@@ -254,11 +268,13 @@ figure
 
 .worker_div:hover
 {
-	background-color: #428bff;
+	-webkit-animation: workerHover 0.8s ease-in infinite; /* Chrome, Safari, Opera */
+	animation: workerHover 0.8s ease-in infinite;
 }
 
 .worker_div:active
 {
+
 	background-color: #42abff;
 }
 
