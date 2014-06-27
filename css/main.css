@@ -48,6 +48,20 @@ header
 	text-align: center;
 }
 
+#social_bar
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+.social_element
+{
+	margin-left: 5px;
+}
+
 header a
 {
 	color: white;
