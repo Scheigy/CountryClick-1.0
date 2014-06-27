@@ -1,0 +1,270 @@
+@font-face {
+	font-family: 'quicksandregular';
+	src: url('../fonts/quicksand-regular-webfont.eot');
+	src: url('../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/quicksand-regular-webfont.woff') format('woff'),
+	url('../fonts/quicksand-regular-webfont.ttf') format('truetype'),
+	url('../fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: 'quicksandregular', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-image: url("../img/triangular.png");
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+a:active
+{
+	opacity: 0.7;
+}
+
+header {
+	background-color: #428bca;
+	border-radius: 8px;
+	line-height: 30px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+section {
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px white;
+	line-height: 30px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+header
+{
+	text-align: center;
+}
+
+header a
+{
+	color: white;
+}
+
+header a:hover
+{
+	opacity: 0.8;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+#titre a
+{
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+@keyframes menuHover
+{
+	0% {color: white;}
+	50% {color: #2aadbc;}
+	100% {color: white;}
+}
+
+@-webkit-keyframes menuHover /* Safari and Chrome */
+{
+	0% {color: white;}
+	50% {color: #2aadbc;}
+	100% {color: white;}
+}
+
+#menu
+{
+	margin: 0; padding: 0;
+	font-size: 2em;
+	margin-bottom: 8px;
+}
+
+#menu li
+{
+	display: inline-block;
+	padding-bottom: 10px;
+	background-color: #357ebd;
+	height: 30px;
+}
+
+#menu a
+{
+	display: inline-block;
+	margin: 0 30px;
+}
+
+#menu a:hover
+{
+	opacity: 1;
+	-webkit-animation: menuHover 1.5s ease-out infinite; /* Chrome, Safari, Opera */
+	animation: menuHover 1.5s ease-out infinite;
+}
+
+#desc
+{
+	text-align: center;
+}
+
+section
+{
+	font-size: 1.4em;
+	text-shadow: 0px 2px 2px white;
+}
+
+section h1
+{
+	text-align: center;
+}
+
+#unique
+{
+	text-align: center;
+}
+
+figure
+{
+	display: inline-block;
+	padding: 10px;
+}
+
+/* GAME_PAGE */
+
+#left
+{
+	text-align: center;
+	height: 750px;
+}
+
+#left img:hover
+{
+	opacity: 0.8;
+}
+
+#left img:active
+{
+	opacity: 0.6;
+}
+
+#central
+{
+	height: 750px;
+	text-align: center;
+}
+
+#bloc
+{
+	padding: 10px;
+}
+
+.square
+{
+	border-radius: 6px;
+	margin-bottom: 10px;
+	line-height: 60px;
+	background-color: #428bca;
+}
+
+.square:hover
+{
+	background-color: #428bff;
+}
+
+.square:active
+{
+	background-color: #42abff;
+}
+
+#central_menu
+{
+	margin-top: 10px;
+}
+
+#central_menu .item
+{
+	background-color: #42abff;
+}
+
+#right
+{
+	height: 750px;
+	overflow: auto;
+}
+
+#right img
+{
+	display: inline;
+}
+
+#save_button
+{
+	background-color: #FF8000;
+	border-radius: 6px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#save_button img
+{
+	width: 20%;
+	padding: 10px;
+}
+
+#save_button:hover
+{
+	opacity: 0.8;
+}
+
+#save_button:active
+{
+	background-color: green;
+}
+
+.worker_div
+{
+	margin-bottom: 5px;
+	background-color: #428bca;
+	border-color: #357ebd;
+	border-radius: 6px;
+}
+
+.worker_div:hover
+{
+	background-color: #428bff;
+}
+
+.worker_div:active
+{
+	background-color: #42abff;
+}
+
+.text
+{
+	color: white;
+	text-shadow: none;
+}
+
+.infos
+{
+	font-size: 1.2em;
+	color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
+	border-radius: 6px;
+	width: 90%;
+	padding: 20px;
+	margin: 0;
+	display: inline-block;
+	margin-bottom: 30px;
+	vertical-align: middle;
+}
