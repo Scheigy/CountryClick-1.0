@@ -85,7 +85,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_worker" class="nb_worker">0 worker(s)</div>
 						<div id="worker_cost" class="worker_cost">Prix : 0$</div>
-						<div id="worker_benefit" class="worker_benefit">Benefice : 1 $/sec</div>
+						<div id="worker_benefit" class="worker_benefit">Bénéfice : 1 $/sec</div>
 					</div>
 				</div>
 
@@ -94,7 +94,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_businessman" class="nb_worker">1 cadre(s)</div>
 						<div id="businessman_cost" class="worker_cost">Prix : 0$</div>
-							<div id="worker_benefit" class="worker_benefit">Benefice : 5 $/sec</div>
+							<div id="businessman_benefit" class="worker_benefit">Bénéfice : 5 $/sec</div>
 					</div>
 				</div>
 
@@ -103,7 +103,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_supermarket" class="nb_worker">1 supermarché(s)</div>
 						<div id="supermarket_cost" class="worker_cost">Prix : 0$</div>
-							<div id="worker_benefit" class="worker_benefit">Benefice : 15 $/sec</div>
+							<div id="supermarket_benefit" class="worker_benefit">Bénéfice : 15 $/sec</div>
 					</div>
 				</div>
 
@@ -112,7 +112,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_factory" class="nb_worker">1 usine(s)</div>
 						<div id="factory_cost" class="worker_cost">Prix : 0$</div>
-							<div id="worker_benefit" class="worker_benefit">Benefice : 40 $/sec</div>
+							<div id="factory_benefit" class="worker_benefit">Bénéfice : 40 $/sec</div>
 					</div>
 				</div>
 
@@ -121,7 +121,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_bank" class="nb_worker">1 banque(s)</div>
 						<div id="bank_cost" class="worker_cost">Prix : 0$</div>
-							<div id="worker_benefit" class="worker_benefit">Benefice : 300 $/sec</div>
+							<div id="bank_benefit" class="worker_benefit">Bénéfice : 300 $/sec</div>
 					</div>
 				</div>
 
@@ -130,7 +130,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_mine" class="nb_worker">1 mine(s)</div>
 						<div id="mine_cost" class="worker_cost">Prix : 0$</div>
-							<div id="worker_benefit" class="worker_benefit">Benefice : 1 000 $/sec</div>
+							<div id="mine_benefit" class="worker_benefit">BénéficeBénéfice : 1 000 $/sec</div>
 					</div>
 				</div>
 
@@ -139,7 +139,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_president" class="nb_worker">1 président(s)</div>
 						<div id="president_cost" class="worker_cost">Prix : 0$</div>
-							<div id="worker_benefit" class="worker_benefit">Benefice : 5 000 $/sec</div>
+							<div id="president_benefit" class="worker_benefit">Bénéfice : 5 000 $/sec</div>
 					</div>
 				</div>
 
@@ -148,7 +148,7 @@
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_antimatter" class="nb_worker">1 nuage(s) d'antimatière</div>
 						<div id="antimatter_cost" class="worker_cost">Prix : 0$</div>
-							<div id="worker_benefit" class="worker_benefit">Benefice : 50 000 $/sec</div>
+							<div id="antimatter_benefit" class="worker_benefit">Bénéfice : 50 000 $/sec</div>
 					</div>
 				</div>
 			</section>

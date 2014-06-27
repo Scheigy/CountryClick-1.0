@@ -3,19 +3,19 @@
     <h1>Inscription</h1><br />
     <div class="form-group">
       <label for="inputPseudo" class="col-sm-3 control-label">Pseudo</label>
-      <div class="col-sm-9">
+      <div class="col-sm-8">
         <input type="text" name="pseudo" class="form-control" id="inputEmail3" placeholder="Pseudo" required>
       </div>
     </div>
     <div class="form-group">
       <label for="inputEmail" class="col-sm-3 control-label">Email</label>
-      <div class="col-sm-9">
+      <div class="col-sm-8">
         <input type="email" name="mail" class="form-control" id="inputEmail3" placeholder="Email" required>
       </div>
     </div>
     <div class="form-group">
       <label for="inputPassword3" class="col-sm-3 control-label">Mot de passe</label>
-      <div class="col-sm-9">
+      <div class="col-sm-8">
         <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Mot de passe" required>
       </div>
     </div>
@@ -29,13 +29,13 @@
     <h1>Connexion</h1><br />
     <div class="form-group">
       <label for="inputPseudo" class="col-sm-3 control-label">Pseudo</label>
-      <div class="col-sm-9">
+      <div class="col-sm-8">
         <input type="text" name="pseudo" class="form-control" id="inputEmail3" placeholder="Pseudo" required>
       </div>
     </div>
     <div class="form-group">
       <label for="inputPassword3" class="col-sm-3 control-label">Mot de passe</label>
-      <div class="col-sm-9">
+      <div class="col-sm-8">
         <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Mot de passe" required>
       </div>
     </div>

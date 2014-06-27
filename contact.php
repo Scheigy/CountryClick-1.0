@@ -1,6 +1,7 @@
 <?php include("header.php"); ?>
 <section class="container" id="unique">
 	<h1>Contact</h1><br />
+	Fonction désactivée pour l'instant.
 	<form class="form-horizontal" role="form" action="sendmsg.php" method="post">
 		<div class="form-group">
 			<label for="selectSubject" class="col-sm-offset-2 col-sm-3 control-label">Raison de votre message</label>

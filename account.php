@@ -3,6 +3,8 @@
 	<div class="row">
 		<section class="col-lg-12" id="unique">
 			<h1>Mon compte</h1>
+			<h2>Modifier mon mot de passe</h2>
+			Fonction désactivée pour l'instant.
 			<form class="form-horizontal" role="form" action="changepwd.php" method="post">
 
 				<div class="form-group">
