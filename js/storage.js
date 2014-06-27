@@ -129,7 +129,7 @@ function	dollarCounter()
 	myDollarProd = document.getElementById('dollar_prod');
 	myDollarProd.innerHTML = changeNumber(game.prod_money) + ' $ par seconde';
 	myDollarTotal = document.getElementById('dollar_total');
-	myDollarTotal.innerHTML = 'TOTAL :<br/>' + changeNumber(game.total_money) + ' $';
+	myDollarTotal.innerHTML = 'TOTAL : ' + changeNumber(game.total_money) + ' $';
 }
 
 function	lcStorage()
@@ -150,7 +150,7 @@ function	addDollar()
 	game.money = game.money + 1;
 	game.total_money = game.total_money + 1;
 	myDollar.innerHTML = changeNumber(game.money) + ' $';
-	myDollarTotal.innerHTML = 'TOTAL :<br/>' + changeNumber(game.total_money) + ' $';
+	myDollarTotal.innerHTML = 'TOTAL : ' + changeNumber(game.total_money) + ' $';
 }
 
 function	calc_prod()

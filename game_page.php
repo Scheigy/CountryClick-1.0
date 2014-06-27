@@ -21,19 +21,19 @@
 					<div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="one">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-4" id="two">Lock</div>
-							<div class="col-lg-offset-1 square col-lg-3" id="three">Lock</div>
+							<div class="square col-lg-3" id="one">1 k</div>
+							<div class="col-lg-offset-1 square col-lg-4" id="two">10 k</div>
+							<div class="col-lg-offset-1 square col-lg-3" id="three">100 k</div>
 						</div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="four">Lock</div>
+							<div class="square col-lg-3" id="four">10 k</div>
 							<div class="col-lg-offset-1 square col-lg-4" id="five">Lock</div>
 							<div class="col-lg-offset-1 square col-lg-3" id="six">Lock</div>
 						</div>
 
 						<div class="row">
-							<div class="square col-lg-3" id="seven">Lock</div>
+							<div class="square col-lg-3" id="seven">100 k</div>
 							<div class="col-lg-offset-1 square col-lg-4" id="eight">Lock</div>
 							<div class="col-lg-offset-1 square col-lg-3" id="nine">Lock</div>
 						</div>
@@ -152,6 +152,6 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="storage.js"> </script>
+	<script type="text/javascript" src="js/storage.js"> </script>
 </body>
 </html>
