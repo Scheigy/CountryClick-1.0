@@ -622,129 +622,129 @@ function	my_aff_upgrades()
 	if (mult.worker == 2 || mult.worker == 8 || mult.worker == 64)
 		upWorker1.innerHTML = 'x 2';
 	else
-		upWorker1.innerHTML = 'Lock'	
+		upWorker1.innerHTML = '1 K'	
 	upWorker2 = document.getElementById('two');
 	if (mult.worker == 8 || mult.worker == 64)
 		upWorker2.innerHTML = 'x 4';
 	else
-		upWorker2.innerHTML = 'Lock'
+		upWorker2.innerHTML = '10 K'
 	upWorker3 = document.getElementById('three');
 	if (mult.worker == 64)
 		upWorker3.innerHTML = 'x 8';
 	else
-		upWorker3.innerHTML = 'Lock'
+		upWorker3.innerHTML = '100 K'
 	
 	upBusinessman1 = document.getElementById('four');
 	if (mult.businessman == 2 || mult.businessman == 8 || mult.businessman == 64)
 		upBusinessman1.innerHTML = 'x 2';
 	else
-		upBusinessman1.innerHTML = 'Lock'	
+		upBusinessman1.innerHTML = '10 K'	
 	upBusinessman2 = document.getElementById('five');
 	if (mult.businessman == 8 || mult.businessman == 64)
 		upBusinessman2.innerHTML = 'x 4';
 	else
-		upBusinessman2.innerHTML = 'Lock'
+		upBusinessman2.innerHTML = '100 K'
 	upBusinessman3 = document.getElementById('six');
 	if (mult.businessman == 64)
 		upBusinessman3.innerHTML = 'x 8';
 	else
-		upBusinessman3.innerHTML = 'Lock'
+		upBusinessman3.innerHTML = '1 M'
 	
 	upSupermarket1 = document.getElementById('seven');
 	if (mult.supermarket == 2 || mult.supermarket == 8 || mult.supermarket == 64)
 		upSupermarket1.innerHTML = 'x 2';
 	else
-		upSupermarket1.innerHTML = 'Lock'	
+		upSupermarket1.innerHTML = '100 K'	
 	upSupermarket2 = document.getElementById('eight');
 	if (mult.supermarket == 8 || mult.supermarket == 64)
 		upSupermarket2.innerHTML = 'x 4';
 	else
-		upSupermarket2.innerHTML = 'Lock'
+		upSupermarket2.innerHTML = '1 M'
 	upSupermarket3 = document.getElementById('nine');
 	if (mult.supermarket == 64)
 		upSupermarket3.innerHTML = 'x 8';
 	else
-		upSupermarket3.innerHTML = 'Lock'
+		upSupermarket3.innerHTML = '10 M'
 	
 	upFactory1 = document.getElementById('ten');
 	if (mult.factory == 2 || mult.factory == 8 || mult.factory == 64)
 		upFactory1.innerHTML = 'x 2';
 	else
-		upFactory1.innerHTML = 'Lock'	
+		upFactory1.innerHTML = '1 M'	
 	upFactory2 = document.getElementById('eleven');
 	if (mult.factory == 8 || mult.factory == 64)
 		upFactory2.innerHTML = 'x 4';
 	else
-		upFactory2.innerHTML = 'Lock'
+		upFactory2.innerHTML = '10 M'
 	upFactory3 = document.getElementById('twelve');
 	if (mult.factory == 64)
 		upFactory3.innerHTML = 'x 8';
 	else
-		upFactory3.innerHTML = 'Lock'
+		upFactory3.innerHTML = '100 M'
 	
 	upBank1 = document.getElementById('thirteen');
 	if (mult.bank == 2 || mult.bank == 8 || mult.bank == 64)
 		upBank1.innerHTML = 'x 2';
 	else
-		upBank1.innerHTML = 'Lock'	
+		upBank1.innerHTML = '10 M'	
 	upBank2 = document.getElementById('fourteen');
 	if (mult.bank == 8 || mult.bank == 64)
 		upBank2.innerHTML = 'x 4';
 	else
-		upBank2.innerHTML = 'Lock'
+		upBank2.innerHTML = '100 M'
 	upBank3 = document.getElementById('fifteen');
 	if (mult.bank == 64)
 		upBank3.innerHTML = 'x 8';
 	else
-		upBank3.innerHTML = 'Lock'
+		upBank3.innerHTML = '1 Mrd'
 	
 	upMine1 = document.getElementById('sixteen');
 	if (mult.mine == 2 || mult.mine == 8 || mult.mine == 64)
 		upMine1.innerHTML = 'x 2';
 	else
-		upMine1.innerHTML = 'Lock'	
+		upMine1.innerHTML = '100 M'	
 	upMine2 = document.getElementById('seventeen');
 	if (mult.mine == 8 || mult.mine == 64)
 		upMine2.innerHTML = 'x 4';
 	else
-		upMine2.innerHTML = 'Lock'
+		upMine2.innerHTML = '1 Mrd'
 	upMine3 = document.getElementById('eighteen');
 	if (mult.mine == 64)
 		upMine3.innerHTML = 'x 8';
 	else
-		upMine3.innerHTML = 'Lock'
+		upMine3.innerHTML = '10 Mrd'
 	
 	upPresident1 = document.getElementById('nineteen');
 	if (mult.president == 2 || mult.president == 8 || mult.president == 64)
 		upPresident1.innerHTML = 'x 2';
 	else
-		upPresident1.innerHTML = 'Lock'	
+		upPresident1.innerHTML = '1 Mrd'	
 	upPresident2 = document.getElementById('twenty');
 	if (mult.president == 8 || mult.president == 64)
 		upPresident2.innerHTML = 'x 4';
 	else
-		upPresident2.innerHTML = 'Lock'
+		upPresident2.innerHTML = '10 Mrd'
 	upPresident3 = document.getElementById('twenty-one');
 	if (mult.president == 64)
 		upPresident3.innerHTML = 'x 8';
 	else
-		upPresident3.innerHTML = 'Lock'
+		upPresident3.innerHTML = '100 Mrd'
 	
 	upAntimatter1 = document.getElementById('twenty-two');
 	if (mult.antimatter == 2 || mult.antimatter == 8 || mult.antimatter == 64)
 		upAntimatter1.innerHTML = 'x 2';
 	else
-		upAntimatter1.innerHTML = 'Lock'	
+		upAntimatter1.innerHTML = '10 Mrd'	
 	upAntimatter2 = document.getElementById('twenty-three');
 	if (mult.antimatter == 8 || mult.antimatter == 64)
 		upAntimatter2.innerHTML = 'x 4';
 	else
-		upAntimatter2.innerHTML = 'Lock'
+		upAntimatter2.innerHTML = '100 Mrd'
 	upAntimatter3 = document.getElementById('twenty-four');
 	if (mult.antimatter == 64)
 		upAntimatter3.innerHTML = 'x 8';
 	else
-		upAntimatter3.innerHTML = 'Lock'
+		upAntimatter3.innerHTML = '1 B'
 }
 
 // Evenemets Fixes
