@@ -340,6 +340,7 @@ function setCharAt(str,index,chr)
 
 function	addUpgrade_worker()
 {
+	alert(valor);
 	if (((game.money - 1000) >= 0) && game.upgrade[0] == '1')
 	{
 		game.money = game.money - 1000;
@@ -823,7 +824,7 @@ window.onload = function() {
     window.onblur = function() {time = 1;}
 };
 
-function	random_events()
+/*function	random_events()
 {
 	var nb = Math.floor((Math.random() * 720) + 1);
 	nb = 1;
@@ -841,7 +842,7 @@ function	decrease_prod()
 	mult.random_boost = 1;
 	mult.dollar_valor = mult.dollar_valor / 20;
 	calc_prod();
-}
+}*/
 
 //window.localStorage.clear();
 lcStorage();
@@ -850,7 +851,7 @@ my_aff_upgrades();
 calc_prod();
 //bonusBuilding();
 setInterval(function(){dollarCounter(); unlock_upgrades();}, 100);
-setInterval(function(){createStorage(); random_events();}, 5000);
+setInterval(function(){createStorage(); /*random_events();*/}, 5000);
 elemDollar = document.getElementById("dollar");
 elemDollar.onclick = addDollar;
 elemSave = document.getElementById("save_button");
