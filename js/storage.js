@@ -17,6 +17,21 @@ function	createObject()
 	game.upgrade = "000000000000000000000000";
 }
 
+function	createMultiplicator()
+{
+	mult = new Object();
+	mult.worker = 1;
+	mult.businessman = 1;
+	mult.supermarket = 1;
+	mult.factory = 1;
+	mult.bank = 1;
+	mult.mine = 1;
+	mult.president = 1;
+	mult.antimatter = 1;
+	mult.random_boost = 1;
+	mult.dollar_valor = 1;
+}
+
 function	setObject()
 {	
 	game = new Object();
@@ -42,19 +57,7 @@ function	setObject()
 	mult.mine = parseInt(window.localStorage.getItem('upmine'));
 	mult.president = parseInt(window.localStorage.getItem('uppresident'));
 	mult.antimatter = parseInt(window.localStorage.getItem('upantimatter'));
-}
-
-function	createMultiplicator()
-{
-	mult = new Object();
-	mult.worker = 1;
-	mult.businessman = 1;
-	mult.supermarket = 1;
-	mult.factory = 1;
-	mult.bank = 1;
-	mult.mine = 1;
-	mult.president = 1;
-	mult.antimatter = 1;
+	mult.dollar_valor = parseInt(window.localStorage.getItem('dollar_boost'));
 }
 
 function	createStorage()
@@ -79,7 +82,8 @@ function	createStorage()
 	window.localStorage.setItem('upbank', mult.bank);
 	window.localStorage.setItem('upmine', mult.mine);
 	window.localStorage.setItem('uppresident', mult.president);
-	window.localStorage.setItem('upantimatter', mult.antimatter);	
+	window.localStorage.setItem('upantimatter', mult.antimatter);
+	window.localStorage.setItem('dollar_boost', mult.dollar_valor);
 }
 
 function	changeNumber(nb)
@@ -147,8 +151,8 @@ function	lcStorage()
 
 function	addDollar()
 {
-	game.money = game.money + 1;
-	game.total_money = game.total_money + 1;
+	game.money = game.money + mult.dollar_valor;
+	game.total_money = game.total_money + mult.dollar_valor;
 	myDollar.innerHTML = changeNumber(game.money) + ' $';
 	myDollarTotal.innerHTML = 'TOTAL : ' + changeNumber(game.total_money) + ' $';
 }
@@ -338,6 +342,7 @@ function	addUpgrade_worker()
 		game.money = game.money - 1000;
 		game.upgrade = setCharAt(game.upgrade, 0, '2');
 		mult.worker = 2;
+		mult.dollar_valor = mult.dollar_valor * 2;
 		upWorker = document.getElementById('one');
 		upWorker.innerHTML = 'x 2';
 		calc_prod();
@@ -347,6 +352,7 @@ function	addUpgrade_worker()
 		game.money = game.money - 10000;
 		game.upgrade = setCharAt(game.upgrade, 1, '2');
 		mult.worker = 8;
+		mult.dollar_valor = mult.dollar_valor * 4;
 		upWorker2 = document.getElementById('two');
 		upWorker2.innerHTML = 'x 4';
 		calc_prod();
@@ -356,6 +362,7 @@ function	addUpgrade_worker()
 		game.money = game.money - 100000;
 		game.upgrade = setCharAt(game.upgrade, 2, '2');
 		mult.worker = 64;
+		mult.dollar_valor = mult.dollar_valor * 6;
 		upWorker = document.getElementById('three');
 		upWorker.innerHTML = 'x 8';
 		calc_prod();
@@ -370,6 +377,7 @@ function	addUpgrade_businessman()
 		game.money = game.money - 10000;
 		game.upgrade = setCharAt(game.upgrade, 3, '2');
 		mult.businessman = 2;
+		mult.dollar_valor = mult.dollar_valor * 2;
 		upBusinessman = document.getElementById('four');
 		upBusinessman.innerHTML = 'x 2';
 	}
@@ -378,6 +386,7 @@ function	addUpgrade_businessman()
 		game.money = game.money - 100000;
 		game.upgrade = setCharAt(game.upgrade, 4, '2');
 		mult.businessman = 8;
+		mult.dollar_valor = mult.dollar_valor * 4;
 		upBusinessman = document.getElementById('five');
 		upBusinessman.innerHTML = 'x 4';
 	}
@@ -386,6 +395,7 @@ function	addUpgrade_businessman()
 		game.money = game.money - 1000000;
 		game.upgrade = setCharAt(game.upgrade, 5, '2');
 		mult.businessman = 64;
+		mult.dollar_valor = mult.dollar_valor * 6;
 		upBusinessman = document.getElementById('six');
 		upBusinessman.innerHTML = 'x 8';
 	}
@@ -400,6 +410,7 @@ function	addUpgrade_supermarket()
 		game.money = game.money - 100000;
 		game.upgrade = setCharAt(game.upgrade, 6, '2');
 		mult.supermarket = 2;
+		mult.dollar_valor = mult.dollar_valor * 2;
 		upSupermarket = document.getElementById('seven');
 		upSupermarket.innerHTML = 'x 2';
 	}
@@ -408,6 +419,7 @@ function	addUpgrade_supermarket()
 		game.money = game.money - 1000000;
 		game.upgrade = setCharAt(game.upgrade, 7, '2');
 		mult.supermarket = 8;
+		mult.dollar_valor = mult.dollar_valor * 4;
 		upSupermarket = document.getElementById('eight');
 		upSupermarket.innerHTML = 'x 4';
 	}
@@ -416,6 +428,7 @@ function	addUpgrade_supermarket()
 		game.money = game.money - 10000000;
 		game.upgrade = setCharAt(game.upgrade, 8, '2');
 		mult.supermarket = 64;
+		mult.dollar_valor = mult.dollar_valor * 6;
 		upSupermarket = document.getElementById('nine');
 		upSupermarket.innerHTML = 'x 8';
 	}
@@ -430,6 +443,7 @@ function	addUpgrade_factory()
 		game.money = game.money - 1000000;
 		game.upgrade = setCharAt(game.upgrade, 9, '2');
 		mult.factory = 2;
+		mult.dollar_valor = mult.dollar_valor * 2;
 		upFactory = document.getElementById('ten');
 		upFactory.innerHTML = 'x 2';
 	}
@@ -438,6 +452,7 @@ function	addUpgrade_factory()
 		game.money = game.money - 10000000;
 		game.upgrade = setCharAt(game.upgrade, 10, '2');
 		mult.factory = 8;
+		mult.dollar_valor = mult.dollar_valor * 4;
 		upFactory = document.getElementById('eleven');
 		upFactory.innerHTML = 'x 4';
 	}
@@ -446,6 +461,7 @@ function	addUpgrade_factory()
 		game.money = game.money - 100000000;
 		game.upgrade = setCharAt(game.upgrade, 11, '2');
 		mult.factory = 64;
+		mult.dollar_valor = mult.dollar_valor * 6;
 		upFactory = document.getElementById('twelve');
 		upFactory.innerHTML = 'x 8';
 	}
@@ -460,6 +476,7 @@ function	addUpgrade_bank()
 		game.money = game.money - 10000000;
 		game.upgrade = setCharAt(game.upgrade, 12, '2');
 		mult.bank = 2;
+		mult.dollar_valor = mult.dollar_valor * 2;
 		upBank = document.getElementById('thirteen');
 		upBank.innerHTML = 'x 2';
 	}
@@ -468,6 +485,7 @@ function	addUpgrade_bank()
 		game.money = game.money - 100000000;
 		game.upgrade = setCharAt(game.upgrade, 13, '2');
 		mult.bank = 8;
+		mult.dollar_valor = mult.dollar_valor * 4;
 		upBank = document.getElementById('fourteen');
 		upBank.innerHTML = 'x 4';
 	}
@@ -476,6 +494,7 @@ function	addUpgrade_bank()
 		game.money = game.money - 1000000000;
 		game.upgrade = setCharAt(game.upgrade, 14, '2');
 		mult.bank = 64;
+		mult.dollar_valor = mult.dollar_valor * 6;
 		upBank = document.getElementById('fifteen');
 		upBank.innerHTML = 'x 8';
 	}
@@ -490,6 +509,7 @@ function	addUpgrade_mine()
 		game.money = game.money - 100000000;
 		game.upgrade = setCharAt(game.upgrade, 15, '2');
 		mult.mine = 2;
+		mult.dollar_valor = mult.dollar_valor * 2;
 		upMine = document.getElementById('sixteen');
 		upMine.innerHTML = 'x 2';
 	}
@@ -498,6 +518,7 @@ function	addUpgrade_mine()
 		game.money = game.money - 1000000000;
 		game.upgrade = setCharAt(game.upgrade, 16, '2');
 		mult.mine = 8;
+		mult.dollar_valor = mult.dollar_valor * 4;
 		upMine = document.getElementById('seventeen');
 		upMine.innerHTML = 'x 4';
 	}
@@ -506,6 +527,7 @@ function	addUpgrade_mine()
 		game.money = game.money - 10000000000;
 		game.upgrade = setCharAt(game.upgrade, 17, '2');
 		mult.mine = 64;
+		mult.dollar_valor = mult.dollar_valor * 6;
 		upMine = document.getElementById('eighteen');
 		upMine.innerHTML = 'x 8';
 	}
@@ -520,6 +542,7 @@ function	addUpgrade_president()
 		game.money = game.money - 1000000000;
 		game.upgrade = setCharAt(game.upgrade, 18, '2');
 		mult.president = 2;
+		mult.dollar_valor = mult.dollar_valor * 2;
 		upPresident = document.getElementById('nineteen');
 		upPresident.innerHTML = 'x 2';
 	}
@@ -528,6 +551,7 @@ function	addUpgrade_president()
 		game.money = game.money - 10000000000;
 		game.upgrade = setCharAt(game.upgrade, 19, '2');
 		mult.president = 8;
+		mult.dollar_valor = mult.dollar_valor * 4;
 		upPresident = document.getElementById('twenty');
 		upPresident.innerHTML = 'x 4';
 	}
@@ -536,6 +560,7 @@ function	addUpgrade_president()
 		game.money = game.money - 100000000000;
 		game.upgrade = setCharAt(game.upgrade, 20, '2');
 		mult.president = 64;
+		mult.dollar_valor = mult.dollar_valor * 6;
 		upPresident = document.getElementById('twenty-one');
 		upPresident.innerHTML = 'x 8';
 	}
@@ -550,6 +575,7 @@ function	addUpgrade_antimatter()
 		game.money = game.money - 10000000000;
 		game.upgrade = setCharAt(game.upgrade, 21, '2');
 		mult.antimatter = 2;
+		mult.dollar_valor = mult.dollar_valor * 2;
 		upAntimatter = document.getElementById('twenty-two');
 		upAntimatter.innerHTML = 'x 2';
 	}
@@ -558,6 +584,7 @@ function	addUpgrade_antimatter()
 		game.money = game.money - 100000000000;
 		game.upgrade = setCharAt(game.upgrade, 22, '2');
 		mult.antimatter = 8;
+		mult.dollar_valor = mult.dollar_valor * 4;
 		upAntimatter = document.getElementById('twenty-three');
 		upAntimatter.innerHTML = 'x 4';
 	}
@@ -566,6 +593,7 @@ function	addUpgrade_antimatter()
 		game.money = game.money - 1000000000000;
 		game.upgrade = setCharAt(game.upgrade, 23, '2');
 		mult.antimatter = 64;
+		mult.dollar_valor = mult.dollar_valor * 6;
 		upAntimatter = document.getElementById('twenty-four');
 		upAntimatter.innerHTML = 'x 8';
 	}
@@ -791,13 +819,33 @@ window.onload = function() {
     window.onfocus = function() { time = 10;};
     window.onblur = function() {time = 1;}
 };
+
+function	random_events()
+{
+	var nb = Math.floor((Math.random() * 720) + 1);
+	if (nb == 1)
+	{
+		mult.random_boost = 20;
+		mult.dollar_valor = mult.dollar_valor * 20;
+		calc_prod();
+		window.setTimeout(decrease_prod, 20000);
+	}
+}
+
+function	decrease_prod()
+{
+	mult.random_boost = 1;
+	mult.dollar_valor = mult.dollar_valor / 20;
+	calc_prod();
+}
+
 lcStorage();
 my_aff_buildings();
 my_aff_upgrades();
 calc_prod();
 //bonusBuilding();
-setInterval(function(){dollarCounter();unlock_upgrades();}, 100);
-setInterval(function(){createStorage();}, 5000);
+setInterval(function(){dollarCounter(); unlock_upgrades();}, 100);
+setInterval(function(){createStorage(); random_events();}, 5000);
 elemDollar = document.getElementById("dollar");
 elemDollar.onclick = addDollar;
 elemSave = document.getElementById("save_button");
