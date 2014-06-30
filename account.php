@@ -31,7 +31,7 @@
 			</form><br />
 			<h2>Effacer la sauvegarde</h2><br/>
 			<input class="submit btn-lg btn-danger" type="submit" name="Valider" onclick="if (confirm('Voulez vous vraiment supprimer votre sauvegarde ?')){
-			window.localStorage.clear();}" value="Réinistialiser"/><br /><br />
+			window.localStorage.clear();}" value="Réinitialiser"/><br /><br />
 		</div>
 	</div>
 </div>

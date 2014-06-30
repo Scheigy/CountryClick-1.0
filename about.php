@@ -18,8 +18,7 @@
 				<img src="img/brunne.png" alt="Brunne">
 				<figcaption>Steeven Brunner</figcaption>
 			</figure><br />
-			<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?autoplay=true&playlist=false&width=700&height=80&cover=true&type=tracks&id=10039357&title=&app_id=undefined" width="700" height="80"></iframe>
-		<br /></section>
-	</div>
-</body>
-</html>
+			<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?autoplay=true&playlist=false&width=700&height=80&cover=true&type=tracks&id=6871476&title=&app_id=undefined" width="700" height="80"></iframe>		<br /></section>
+		</div>
+	</body>
+	</html>

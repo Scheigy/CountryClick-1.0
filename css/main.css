@@ -101,7 +101,7 @@ a:hover
 {
 	margin: 0; padding: 0;
 	font-size: 2em;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
 #menu li
@@ -112,17 +112,21 @@ a:hover
 	height: 30px;
 }
 
+#menu li:hover
+{
+	outline: bottom 3px white solid;
+}
+
 #menu a
 {
 	display: inline-block;
 	margin: 0 30px;
 }
 
-#menu a:hover
+.case:hover
 {
-	opacity: 1;
-	-webkit-animation: menuHover 1.5s ease-out infinite; /* Chrome, Safari, Opera */
-	animation: menuHover 1.5s ease-out infinite;
+	height: 40px;
+	border-bottom: 3px white solid;
 }
 
 #desc
@@ -188,7 +192,6 @@ figure
 
 #central
 {
-
 	text-align: center;
 }
 
