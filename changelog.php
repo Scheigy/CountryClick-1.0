@@ -8,6 +8,13 @@
 					- Événements aléatoires<br />
 					_____________________
 				</p>
+
+				<h2 style="font-size: 200%;">Version 1.2</h2>
+				<p>
+				<h3>PHP</h3>
+				- Système de session (impossible d'accéder à la page de jeu sans être connecté)
+				</p>
+				_____________________
 				<h2 style="font-size: 200%;">Version 1.1</h2>
 				<p>
 					<h3>Gameplay</h3>
