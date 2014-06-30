@@ -338,9 +338,8 @@ function setCharAt(str,index,chr)
     return str.substr(0,index) + chr + str.substr(index+1);
 }
 
-function	addUpgrade_worker()
+function	addUpgrade_worker1()
 {
-	alert(valor);
 	if (((game.money - 1000) >= 0) && game.upgrade[0] == '1')
 	{
 		game.money = game.money - 1000;
@@ -349,8 +348,13 @@ function	addUpgrade_worker()
 		mult.dollar_valor = mult.dollar_valor * 2;
 		upWorker = document.getElementById('one');
 		upWorker.innerHTML = 'x 2';
-		calc_prod();
 	}
+	calc_prod();
+	myWorkerBenefit.innerHTML = 'Bénéfice : ' + changeNumber(mult.worker) + ' $/sec';
+}
+	
+function	addUpgrade_worker2()
+{	
 	if (((game.money - 10000) >=0) && game.upgrade[1] == '1' && game.upgrade[0] == '2')
 	{
 		game.money = game.money - 10000;
@@ -359,8 +363,13 @@ function	addUpgrade_worker()
 		mult.dollar_valor = mult.dollar_valor * 4;
 		upWorker2 = document.getElementById('two');
 		upWorker2.innerHTML = 'x 4';
-		calc_prod();
 	}
+	calc_prod();
+	myWorkerBenefit.innerHTML = 'Bénéfice : ' + changeNumber(mult.worker) + ' $/sec';
+}
+
+function	addUpgrade_worker3()
+{
 	if (((game.money - 100000) >=0) && game.upgrade[2] == '1' && game.upgrade[1] == '2')
 	{
 		game.money = game.money - 100000;
@@ -369,12 +378,12 @@ function	addUpgrade_worker()
 		mult.dollar_valor = mult.dollar_valor * 6;
 		upWorker = document.getElementById('three');
 		upWorker.innerHTML = 'x 8';
-		calc_prod();
 	}
+	calc_prod();
 	myWorkerBenefit.innerHTML = 'Bénéfice : ' + changeNumber(mult.worker) + ' $/sec';
 }
 
-function	addUpgrade_businessman()
+function	addUpgrade_businessman1()
 {
 	if (((game.money - 10000) >= 0) && game.upgrade[3] == '1')
 	{
@@ -385,6 +394,12 @@ function	addUpgrade_businessman()
 		upBusinessman = document.getElementById('four');
 		upBusinessman.innerHTML = 'x 2';
 	}
+	calc_prod();
+	myBusinessmanBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5 * mult.businessman) + ' $/sec';
+}
+	
+function	addUpgrade_businessman2()
+{	
 	if (((game.money - 100000) >=0) && game.upgrade[4] == '1' && game.upgrade[3] == '2')
 	{
 		game.money = game.money - 100000;
@@ -394,6 +409,12 @@ function	addUpgrade_businessman()
 		upBusinessman = document.getElementById('five');
 		upBusinessman.innerHTML = 'x 4';
 	}
+	calc_prod();
+	myBusinessmanBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5 * mult.businessman) + ' $/sec';
+}
+
+function	addUpgrade_businessman3()
+{
 	if (((game.money - 1000000) >=0) && game.upgrade[5] == '1' && game.upgrade[4] == '2')
 	{
 		game.money = game.money - 1000000;
@@ -407,7 +428,7 @@ function	addUpgrade_businessman()
 	myBusinessmanBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5 * mult.businessman) + ' $/sec';
 }
 
-function	addUpgrade_supermarket()
+function	addUpgrade_supermarket1()
 {
 	if (((game.money - 100000) >= 0) && game.upgrade[6] == '1')
 	{
@@ -418,6 +439,12 @@ function	addUpgrade_supermarket()
 		upSupermarket = document.getElementById('seven');
 		upSupermarket.innerHTML = 'x 2';
 	}
+	calc_prod();
+	mySupermarketBenefit.innerHTML = 'Bénéfice : ' + changeNumber(15 * mult.supermarket) + ' $/sec';
+}
+
+function	addUpgrade_supermarket2()
+{	
 	if (((game.money - 1000000) >=0) && game.upgrade[7] == '1' && game.upgrade[6] == '2')
 	{
 		game.money = game.money - 1000000;
@@ -427,6 +454,12 @@ function	addUpgrade_supermarket()
 		upSupermarket = document.getElementById('eight');
 		upSupermarket.innerHTML = 'x 4';
 	}
+	calc_prod();
+	mySupermarketBenefit.innerHTML = 'Bénéfice : ' + changeNumber(15 * mult.supermarket) + ' $/sec';
+}
+
+function	addUpgrade_supermarket3()
+{
 	if (((game.money - 10000000) >=0) && game.upgrade[8] == '1' && game.upgrade[7] == '2')
 	{
 		game.money = game.money - 10000000;
@@ -440,7 +473,7 @@ function	addUpgrade_supermarket()
 	mySupermarketBenefit.innerHTML = 'Bénéfice : ' + changeNumber(15 * mult.supermarket) + ' $/sec';
 }
 
-function	addUpgrade_factory()
+function	addUpgrade_factory1()
 {
 	if (((game.money - 1000000) >= 0) && game.upgrade[9] == '1')
 	{
@@ -451,6 +484,12 @@ function	addUpgrade_factory()
 		upFactory = document.getElementById('ten');
 		upFactory.innerHTML = 'x 2';
 	}
+	calc_prod();
+	myFactoryBenefit.innerHTML = 'Bénéfice : ' + changeNumber(40 * mult.factory) + ' $/sec';
+}
+
+function	addUpgrade_factory2()
+{	
 	if (((game.money - 10000000) >=0) && game.upgrade[10] == '1' && game.upgrade[9] == '2')
 	{
 		game.money = game.money - 10000000;
@@ -460,6 +499,12 @@ function	addUpgrade_factory()
 		upFactory = document.getElementById('eleven');
 		upFactory.innerHTML = 'x 4';
 	}
+	calc_prod();
+	myFactoryBenefit.innerHTML = 'Bénéfice : ' + changeNumber(40 * mult.factory) + ' $/sec';
+}
+
+function	addUpgrade_factory3()
+{
 	if (((game.money - 100000000) >=0) && game.upgrade[11] == '1' && game.upgrade[10] == '2')
 	{
 		game.money = game.money - 100000000;
@@ -473,7 +518,7 @@ function	addUpgrade_factory()
 	myFactoryBenefit.innerHTML = 'Bénéfice : ' + changeNumber(40 * mult.factory) + ' $/sec';
 }
 
-function	addUpgrade_bank()
+function	addUpgrade_bank1()
 {
 	if (((game.money - 10000000) >= 0) && game.upgrade[12] == '1')
 	{
@@ -484,6 +529,12 @@ function	addUpgrade_bank()
 		upBank = document.getElementById('thirteen');
 		upBank.innerHTML = 'x 2';
 	}
+	calc_prod();
+	myBankBenefit.innerHTML = 'Bénéfice : ' + changeNumber(300 * mult.bank) + ' $/sec';
+}
+
+function	addUpgrade_bank2()
+{
 	if (((game.money - 100000000) >=0) && game.upgrade[13] == '1' && game.upgrade[12] == '2')
 	{
 		game.money = game.money - 100000000;
@@ -493,6 +544,12 @@ function	addUpgrade_bank()
 		upBank = document.getElementById('fourteen');
 		upBank.innerHTML = 'x 4';
 	}
+	calc_prod();
+	myBankBenefit.innerHTML = 'Bénéfice : ' + changeNumber(300 * mult.bank) + ' $/sec';
+}
+
+function	addUpgrade_bank3()
+{
 	if (((game.money - 1000000000) >=0) && game.upgrade[14] == '1' && game.upgrade[13] == '2')
 	{
 		game.money = game.money - 1000000000;
@@ -506,7 +563,7 @@ function	addUpgrade_bank()
 	myBankBenefit.innerHTML = 'Bénéfice : ' + changeNumber(300 * mult.bank) + ' $/sec';
 }
 
-function	addUpgrade_mine()
+function	addUpgrade_mine1()
 {
 	if (((game.money - 100000000) >= 0) && game.upgrade[15] == '1')
 	{
@@ -517,6 +574,12 @@ function	addUpgrade_mine()
 		upMine = document.getElementById('sixteen');
 		upMine.innerHTML = 'x 2';
 	}
+	calc_prod();
+	myMineBenefit.innerHTML = 'Bénéfice : ' + changeNumber(1000 * mult.mine) + ' $/sec';
+}
+
+function	addUpgrade_mine2()
+{
 	if (((game.money - 1000000000) >=0) && game.upgrade[16] == '1' && game.upgrade[15] == '2')
 	{
 		game.money = game.money - 1000000000;
@@ -526,6 +589,12 @@ function	addUpgrade_mine()
 		upMine = document.getElementById('seventeen');
 		upMine.innerHTML = 'x 4';
 	}
+	calc_prod();
+	myMineBenefit.innerHTML = 'Bénéfice : ' + changeNumber(1000 * mult.mine) + ' $/sec';
+}
+
+function	addUpgrade_mine3()
+{
 	if (((game.money - 10000000000) >=0) && game.upgrade[17] == '1' && game.upgrade[16] == '2')
 	{
 		game.money = game.money - 10000000000;
@@ -539,7 +608,7 @@ function	addUpgrade_mine()
 	myMineBenefit.innerHTML = 'Bénéfice : ' + changeNumber(1000 * mult.mine) + ' $/sec';
 }
 
-function	addUpgrade_president()
+function	addUpgrade_president1()
 {
 	if (((game.money - 1000000000) >= 0) && game.upgrade[18] == '1')
 	{
@@ -550,6 +619,12 @@ function	addUpgrade_president()
 		upPresident = document.getElementById('nineteen');
 		upPresident.innerHTML = 'x 2';
 	}
+	calc_prod();
+	myPresidentBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5000 * mult.president) + ' $/sec';
+}
+
+function	addUpgrade_president2()
+{
 	if (((game.money - 10000000000) >=0) && game.upgrade[19] == '1' && game.upgrade[18] == '2')
 	{
 		game.money = game.money - 10000000000;
@@ -559,6 +634,12 @@ function	addUpgrade_president()
 		upPresident = document.getElementById('twenty');
 		upPresident.innerHTML = 'x 4';
 	}
+	calc_prod();
+	myPresidentBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5000 * mult.president) + ' $/sec';
+}
+
+function	addUpgrade_president3()
+{
 	if (((game.money - 100000000000) >=0) && game.upgrade[20] == '1' && game.upgrade[19] == '2')
 	{
 		game.money = game.money - 100000000000;
@@ -572,7 +653,7 @@ function	addUpgrade_president()
 	myPresidentBenefit.innerHTML = 'Bénéfice : ' + changeNumber(5000 * mult.president) + ' $/sec';
 }
 
-function	addUpgrade_antimatter()
+function	addUpgrade_antimatter1()
 {
 	if (((game.money - 10000000000) >= 0) && game.upgrade[21] == '1')
 	{
@@ -583,6 +664,12 @@ function	addUpgrade_antimatter()
 		upAntimatter = document.getElementById('twenty-two');
 		upAntimatter.innerHTML = 'x 2';
 	}
+	calc_prod();
+	myAntimatterBenefit.innerHTML = 'Bénéfice : ' + changeNumber(50000 * mult.antimatter) + ' $/sec';
+}
+
+function	addUpgrade_antimatter2()
+{
 	if (((game.money - 100000000000) >=0) && game.upgrade[22] == '1' && game.upgrade[21] == '2')
 	{
 		game.money = game.money - 100000000000;
@@ -592,6 +679,12 @@ function	addUpgrade_antimatter()
 		upAntimatter = document.getElementById('twenty-three');
 		upAntimatter.innerHTML = 'x 4';
 	}
+	calc_prod();
+	myAntimatterBenefit.innerHTML = 'Bénéfice : ' + changeNumber(50000 * mult.antimatter) + ' $/sec';
+}
+
+function	addUpgrade_antimatter3()
+{
 	if (((game.money - 1000000000000) >=0) && game.upgrade[23] == '1' && game.upgrade[22] == '2')
 	{
 		game.money = game.money - 1000000000000;
@@ -601,8 +694,8 @@ function	addUpgrade_antimatter()
 		upAntimatter = document.getElementById('twenty-four');
 		upAntimatter.innerHTML = 'x 8';
 	}
-	myAntimatterBenefit.innerHTML = 'Bénéfice : ' + changeNumber(50000 * mult.antimatter) + ' $/sec';
 	calc_prod();
+	myAntimatterBenefit.innerHTML = 'Bénéfice : ' + changeNumber(50000 * mult.antimatter) + ' $/sec';
 }
 
 function	unlock_upgrades()
@@ -875,64 +968,64 @@ elemAntimatter.onclick = addAntimatter;
 
 //upgrades workers
 elemUpgrade_worker1 = document.getElementById("one");
-elemUpgrade_worker1.onclick = addUpgrade_worker;
+elemUpgrade_worker1.onclick = addUpgrade_worker1;
 elemUpgrade_worker2 = document.getElementById("two");
-elemUpgrade_worker2.onclick = addUpgrade_worker;
+elemUpgrade_worker2.onclick = addUpgrade_worker2;
 elemUpgrade_worker3 = document.getElementById("three");
-elemUpgrade_worker3.onclick = addUpgrade_worker;
+elemUpgrade_worker3.onclick = addUpgrade_worker3;
 
 //upgrades businessman
 elemUpgrade_businessman1 = document.getElementById("four");
-elemUpgrade_businessman1.onclick = addUpgrade_businessman;
+elemUpgrade_businessman1.onclick = addUpgrade_businessman1;
 elemUpgrade_businessman2 = document.getElementById("five");
-elemUpgrade_businessman2.onclick = addUpgrade_businessman;
+elemUpgrade_businessman2.onclick = addUpgrade_businessman2;
 elemUpgrade_businessman3 = document.getElementById("six");
-elemUpgrade_businessman3.onclick = addUpgrade_businessman;
+elemUpgrade_businessman3.onclick = addUpgrade_businessman3;
 
 //upgrades supermarket
 elemUpgrade_supermarket1 = document.getElementById("seven");
-elemUpgrade_supermarket1.onclick = addUpgrade_supermarket;
+elemUpgrade_supermarket1.onclick = addUpgrade_supermarket1;
 elemUpgrade_supermarket2 = document.getElementById("eight");
-elemUpgrade_supermarket2.onclick = addUpgrade_supermarket;
+elemUpgrade_supermarket2.onclick = addUpgrade_supermarket2;
 elemUpgrade_supermarket3 = document.getElementById("nine");
-elemUpgrade_supermarket3.onclick = addUpgrade_supermarket;
+elemUpgrade_supermarket3.onclick = addUpgrade_supermarket3;
 
 //upgrades factory
 elemUpgrade_factory1 = document.getElementById("ten");
-elemUpgrade_factory1.onclick = addUpgrade_factory;
+elemUpgrade_factory1.onclick = addUpgrade_factory1;
 elemUpgrade_factory2 = document.getElementById("eleven");
-elemUpgrade_factory2.onclick = addUpgrade_factory;
+elemUpgrade_factory2.onclick = addUpgrade_factory2;
 elemUpgrade_factory3 = document.getElementById("twelve");
-elemUpgrade_factory3.onclick = addUpgrade_factory;
+elemUpgrade_factory3.onclick = addUpgrade_factory3;
 
 //upgrades bank
 elemUpgrade_bank1 = document.getElementById("thirteen");
-elemUpgrade_bank1.onclick = addUpgrade_bank;
+elemUpgrade_bank1.onclick = addUpgrade_bank1;
 elemUpgrade_bank2 = document.getElementById("fourteen");
-elemUpgrade_bank2.onclick = addUpgrade_bank;
+elemUpgrade_bank2.onclick = addUpgrade_bank2;
 elemUpgrade_bank3 = document.getElementById("fifteen");
-elemUpgrade_bank3.onclick = addUpgrade_bank;
+elemUpgrade_bank3.onclick = addUpgrade_bank3;
 
 //upgrades mine
 elemUpgrade_mine1 = document.getElementById("sixteen");
-elemUpgrade_mine1.onclick = addUpgrade_mine;
+elemUpgrade_mine1.onclick = addUpgrade_mine1;
 elemUpgrade_mine2 = document.getElementById("seventeen");
-elemUpgrade_mine2.onclick = addUpgrade_mine;
+elemUpgrade_mine2.onclick = addUpgrade_mine2;
 elemUpgrade_mine3 = document.getElementById("eighteen");
-elemUpgrade_mine3.onclick = addUpgrade_mine;
+elemUpgrade_mine3.onclick = addUpgrade_mine3;
 
 //upgrades president
 elemUpgrade_president1 = document.getElementById("nineteen");
-elemUpgrade_president1.onclick = addUpgrade_president;
+elemUpgrade_president1.onclick = addUpgrade_president1;
 elemUpgrade_president2 = document.getElementById("twenty");
-elemUpgrade_president2.onclick = addUpgrade_president;
+elemUpgrade_president2.onclick = addUpgrade_president2;
 elemUpgrade_president3 = document.getElementById("twenty-one");
-elemUpgrade_president3.onclick = addUpgrade_president;
+elemUpgrade_president3.onclick = addUpgrade_president3;
 
 //upgrades antimatter
 elemUpgrade_antimatter1 = document.getElementById("twenty-two");
-elemUpgrade_antimatter1.onclick = addUpgrade_antimatter;
+elemUpgrade_antimatter1.onclick = addUpgrade_antimatter1;
 elemUpgrade_antimatter2 = document.getElementById("twenty-three");
-elemUpgrade_antimatter2.onclick = addUpgrade_antimatter;
+elemUpgrade_antimatter2.onclick = addUpgrade_antimatter2;
 elemUpgrade_antimatter3 = document.getElementById("twenty-four");
-elemUpgrade_antimatter3.onclick = addUpgrade_antimatter;
+elemUpgrade_antimatter3.onclick = addUpgrade_antimatter3;
