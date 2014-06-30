@@ -1,5 +1,8 @@
-<?php include("header.php"); ?>
-<body>
+<?php 
+
+include("header.php"); 
+
+?>
   <div class="container">
     <div class="row">
       <section id="desc" class="col-lg-6">

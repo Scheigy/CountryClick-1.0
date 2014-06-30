@@ -34,8 +34,8 @@ include("header.php");
 	else
 		echo "Pseudo ou mail déjà utilisé. Merci de vérifier vos informations.<br />";
 
-	echo 'Vous allez être redirigé dans 10 secondes. <a href="index.php" title="Accueil">Cliquez ici si la redirection ne se fait pas.</a>';
-	header ("Refresh: 10;URL=index.php");
+	echo 'Vous allez être redirigé dans 5 secondes. <a href="index.php" title="Accueil">Cliquez ici si la redirection ne se fait pas.</a>';
+	header ("Refresh: 5;URL=index.php");
 	?>
 </section>
 </div>

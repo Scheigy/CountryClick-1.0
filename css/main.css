@@ -164,11 +164,6 @@ figure
 
 /* GAME_PAGE */
 
-#wrap
-{
-	height: 160px;
-}
-
 #msg
 {
 	margin-bottom: 10px;
@@ -176,7 +171,7 @@ figure
 
 #left
 {
-	height: 100%;
+	height: 750px;
 	text-align: center;
 }
 
@@ -193,6 +188,12 @@ figure
 #central
 {
 	text-align: center;
+
+}
+
+#msg
+{
+	border-bottom: 1px solid black;
 }
 
 #upgrade
