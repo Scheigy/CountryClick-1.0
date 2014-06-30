@@ -130,6 +130,12 @@ a:hover
 	text-align: center;
 }
 
+#changelog
+{
+	text-align: left;
+	font-size: 70%;
+}
+
 section
 {
 	font-size: 1.4em;
@@ -157,6 +163,11 @@ figure
 #wrap
 {
 	height: 160px;
+}
+
+#msg
+{
+	margin-bottom: 10px;
 }
 
 #left

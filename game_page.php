@@ -17,6 +17,7 @@
 				</section>
 
 				<section id="central" class="col-lg-offset-1 col-xs-4 col-lg-4">
+					<div id="msg">Bonjour Sach_u</div>
 					<div id="upgrade">
 						<h1>Améliorations</h1><br />
 

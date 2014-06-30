@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="icon" type="image/png" href="img/favicon.png" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Country Click - Alpha 1.0</title>
+	<title>Country Click - Alpha 1.1</title>
 </head>
 <header class="row">
 	<div class="col-lg-12">

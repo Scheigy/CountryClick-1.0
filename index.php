@@ -17,6 +17,7 @@
           Il sera également possible d'augmenter le nombre de dollar gagné par clic avec d'autres améliorations.<br/><br/>
           Le jeu fonctionnera avec un système de sauvegarde par compte utilisateur.<br/>
         </p>
+        <div id="changelog"><a href="changelog.php">Changelog</a></div>
       </section>
       <section class="col-lg-offset-1 col-lg-5">
         <?php include("form.php"); ?>
