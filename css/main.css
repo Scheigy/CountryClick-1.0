@@ -154,10 +154,15 @@ figure
 
 /* GAME_PAGE */
 
+#wrap
+{
+	height: 160px;
+}
+
 #left
 {
+	height: 100%;
 	text-align: center;
-	height: 750px;
 }
 
 #left img:hover
@@ -172,11 +177,11 @@ figure
 
 #central
 {
-	height: 750px;
+
 	text-align: center;
 }
 
-#bloc
+#upgrade
 {
 	padding: 10px;
 }
@@ -244,14 +249,14 @@ figure
 	background-color: green;
 }
 
-@keyframes workerHover
+@keyframes flashDiv
 {
 	0% {opacity: 1;}
 	50% {opacity: 0.7;}
 	100% {opacity: 1;}
 }
 
-@-webkit-keyframes workerHover /* Safari and Chrome */
+@-webkit-keyframes flashDiv /* Safari and Chrome */
 {
 	0% {opacity: 1;}
 	50% {opacity: 0.7;}
@@ -268,8 +273,8 @@ figure
 
 .worker_div:hover
 {
-	-webkit-animation: workerHover 0.8s ease-in infinite; /* Chrome, Safari, Opera */
-	animation: workerHover 0.8s ease-in infinite;
+	-webkit-animation: flashDiv 0.8s ease-in infinite; /* Chrome, Safari, Opera */
+	animation: flashDiv 0.8s ease-in infinite;
 }
 
 .worker_div:active
