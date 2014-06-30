@@ -57,6 +57,7 @@ function	setObject()
 	mult.mine = parseInt(window.localStorage.getItem('upmine'));
 	mult.president = parseInt(window.localStorage.getItem('uppresident'));
 	mult.antimatter = parseInt(window.localStorage.getItem('upantimatter'));
+	mult.random_boost = parseInt(window.localStorage.getItem('randomboost'));
 	mult.dollar_valor = parseInt(window.localStorage.getItem('dollar_boost'));
 }
 
@@ -83,6 +84,7 @@ function	createStorage()
 	window.localStorage.setItem('upmine', mult.mine);
 	window.localStorage.setItem('uppresident', mult.president);
 	window.localStorage.setItem('upantimatter', mult.antimatter);
+	window.localStorage.setItem('randomboost', mult.random_boost);
 	window.localStorage.setItem('dollar_boost', mult.dollar_valor);
 }
 
@@ -167,6 +169,7 @@ function	calc_prod()
 	game.prod_money += game.mine * 1000 * mult.mine;
 	game.prod_money += game.president * 5000 * mult.president;
 	game.prod_money += game.antimatter * 50000 * mult.antimatter;
+	game.prod_money = game.prod_money * mult.random_boost;
 }
 
 function	calc_price(nb, price)
@@ -823,6 +826,7 @@ window.onload = function() {
 function	random_events()
 {
 	var nb = Math.floor((Math.random() * 720) + 1);
+	nb = 1;
 	if (nb == 1)
 	{
 		mult.random_boost = 20;
@@ -839,6 +843,7 @@ function	decrease_prod()
 	calc_prod();
 }
 
+//window.localStorage.clear();
 lcStorage();
 my_aff_buildings();
 my_aff_upgrades();
