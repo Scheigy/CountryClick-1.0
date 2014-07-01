@@ -205,7 +205,6 @@ function	clickValue()
 			value *= 8;
 		i += 3;
 	}
-	alert(value);
 	return (value);
 }
 
