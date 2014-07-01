@@ -210,8 +210,8 @@ function	clickValue()
 
 function	addDollar()
 {
-	game.money = game.money + clickValue();
-	game.total_money = game.total_money + clickValue();
+	game.money = game.money + clickValue() * bonusCalculator();
+	game.total_money = game.total_money + clickValue() * bonusCalculator();
 	myDollar.innerHTML = changeNumber(game.money) + ' $';
 	myDollarTotal.innerHTML = 'TOTAL : ' + changeNumber(game.total_money) + ' $';
 }
@@ -330,6 +330,112 @@ function	addAntimatter()
 	}
 }
 
+////////////////////////////////////////Vente///////////////////////////////////////////////////////////////
+/*
+
+function	calc_sell_price()
+{
+	return(parseInt((price * Math.pow(1.15, nb)) / 2));	
+}
+
+function	sellWorker()
+{
+	if (game.worker > 0)
+	{ 
+		game.money = game.money + calc_sell_price(game.worker, 100);
+		game.worker = game.worker - 1;
+		myWorker.innerHTML = game.worker + ' ouvrier(s)';
+		myWorkerPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.worker, 100)) + ' $';
+		calc_prod();
+	}
+}
+
+function	sellBusinessman()
+{
+	if (game.businessman > 0)
+	{ 
+		game.money = game.money + calc_sell_price(game.businessman, 500);
+		game.businessman = game.businessman - 1;
+		myBusinessman.innerHTML = game.businessman + ' cadre(s)';
+		myBusinessmanPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.businessman, 500)) + ' $';
+		calc_prod();
+	}
+}
+
+function	sellSupermarket()
+{
+	if (game.supermarket > 0)
+	{ 
+		game.money = game.money + calc_sell_price(game.supermarket, 3000);
+		game.supermarket = game.supermarket - 1;
+		mySupermarket.innerHTML = game.supermarket + ' supermarché(s)';
+		mySupermarketPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.supermarket, 3000)) + ' $';
+		calc_prod();
+	}
+}
+
+function	sellFactory()
+{
+	if (game.factory > 0)
+	{ 
+		game.money = game.money + calc_sell_price(game.factory, 10000);
+		game.factory = game.factory - 1;
+		myFactory.innerHTML = game.factory + ' usine(s)';
+		myFactoryPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.factory, 10000)) + ' $';
+		calc_prod();
+	}
+}
+
+function	sellBank()
+{
+	if (game.bank > 0)
+	{ 
+		game.money = game.money + calc_sell_price(game.bank, 100000);
+		game.bank = game.bank - 1;
+		myBank.innerHTML = game.bank + ' banque(s)';
+		myBankPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.bank, 100000)) + ' $';
+		calc_prod();
+	}
+}
+
+function	sellMine()
+{
+	if (game.mine > 0)
+	{ 
+		game.money = game.money + calc_sell_price(game.mine, 1000000);
+		game.mine = game.mine - 1;
+		myMine.innerHTML = game.mine + ' mine(s)';
+		myMinePrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.mine, 1000000)) + ' $';
+		calc_prod();
+	}
+}
+
+function	sellPresident()
+{
+	if (game.president > 0)
+	{ 
+		game.money = game.money + calc_sell_price(game.president, 20000000);
+		game.president = game.president - 1;
+		myPresident.innerHTML = game.president + ' président(s)';
+		myPresidentPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.president, 20000000)) + ' $';
+		calc_prod();
+	}
+}
+
+function	sellAntimatter()
+{
+	if (game.antimatter > 0)
+	{ 
+		game.money = game.money + calc_sell_price(game.antimatter, 1128256512);
+		game.antimatter = game.antimatter - 1;
+		myAntimatter.innerHTML = game.antimatter + ' nuage(s) d\'antimatière';
+		myAntimatterPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.antimatter, 1128256512)) + ' $';
+		calc_prod();
+	}
+}
+*/
+/*==================================================================================================================*/
+
 function	my_aff_buildings()
 {
 	myWorker = document.getElementById('nb_worker');
@@ -400,7 +506,7 @@ function	my_aff_buildings()
 		myMine.innerHTML = game.mine + ' mine(s)';
 		myMinePrice = document.getElementById('mine_cost');
 		myMinePrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.mine, 1000000)) + ' $';
-		myMineBenefit = document.getElementById('mine_benefit');
+		myMineBenefit = document.getElementById('min-e_benefit');
 		myMineBenefit.innerHTML = 'Bénéfice : ' + changeNumber(1000 * mult.mine) + ' $/sec';
 	}
 
@@ -1053,6 +1159,25 @@ elemPresident = document.getElementById("president_button");
 elemPresident.onclick = addPresident;
 elemAntimatter = document.getElementById("antimatter_button");
 elemAntimatter.onclick = addAntimatter;
+
+/*
+elemSellWorker = document.getElementById("worker_sell");
+elemSellWorker.onclick = sellWorker;
+elemSellBusinessman = document.getElementById("businessman_sell");
+elemSellBusinessman.onclick = sellBusinessman;
+elemSellSupermarket = document.getElementById("supermarket_sell");
+elemSellSupermarket.onclick = sellSupermarket;
+elemSellFactory = document.getElementById("factory_sell");
+elemSellFactory.onclick = sellFactory;
+elemSellBank = document.getElementById("bank_sell");
+elemSellBank.onclick = sellBank;
+elemSellMine = document.getElementById("mine_sell");
+elemSellMine.onclick = sellMine;
+elemSellPresident = document.getElementById("president_sell");
+elemSellPresident.onclick = sellPresident;
+elemSellAntimatter = document.getElementById("antimatter_sell");
+elemSellAntimatter.onclick = sellAntimatter;
+*/
 
 //upgrades workers
 elemUpgrade_worker1 = document.getElementById("one");
