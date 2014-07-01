@@ -7,7 +7,7 @@ session_destroy();
 	<section id="unique">
 		<p>
 			Vous êtes bien déconnecté. Vous allez être redirigé dans 5 secondes. 
-			<a href="game_page.php" title="Jouer!">Cliquez ici si la redirection ne se fait pas.</a>
+			<a href="index.php" title="Accueil">Cliquez ici si la redirection ne se fait pas.</a>
 		</p>
 	</section>
 

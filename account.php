@@ -28,7 +28,13 @@
 					</div>
 				</div>
 
-			</form><br />
+			</form>
+
+			<h2>Supprimer mon compte</h2><br />
+			<form action="confirmdelete.php" method="post">
+				<input class="submit btn-lg btn-danger" type="submit" name="Supprimer" value="Supprimer"/><br /><br />
+			</form>
+
 			<h2>Effacer la sauvegarde</h2><br/>
 			<input class="submit btn-lg btn-danger" type="submit" name="Valider" onclick="if (confirm('Voulez vous vraiment supprimer votre sauvegarde ?')){
 			window.localStorage.clear();}" value="Réinitialiser"/><br /><br />

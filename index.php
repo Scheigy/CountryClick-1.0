@@ -2,8 +2,6 @@
 
 include("header.php"); 
 
-var_dump($_SESSION);
-
 ?>
 <div class="container">
   <div class="row">
@@ -22,13 +20,25 @@ var_dump($_SESSION);
         Il sera également possible d'augmenter le nombre de dollar gagné par clic avec d'autres améliorations.<br/><br/>
         Le jeu fonctionnera avec un système de sauvegarde par compte utilisateur.<br/>
       </p>
-      <div id="changelog"><a href="changelog.php">Changelog v1.1</a></div>
+      <div id="changelog"><a href="changelog.php">Changelog v1.2</a></div>
     </section>
     <?php 
     if (!isset($_SESSION['pseudo']))
-      include("form.php"); 
+      include("form.php");
+    else
+      echo '<section class="col-lg-offset-1 col-lg-5">Vous êtes déjà inscrit, cliquez sur Jouer dans le menu pour accéder au jeu !</section>';
     ?>
   </div>
 </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52440454-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
