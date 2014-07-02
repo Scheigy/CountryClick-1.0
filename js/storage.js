@@ -1220,7 +1220,8 @@ window.onload = function() {
 		}, 1000);
 	}
 };
-
+///////////////////////////////////Acheivement/////////////////////////////////////
+/*
 function	unlock_workers_achievements()
 {
 	var str = "0000000";
@@ -1454,7 +1455,8 @@ function	call_achievements_functions()
 	time_played_achievements();
 	nb_click_achievements();
 }
-
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////
 lcStorage();
 my_aff_buildings();
 my_aff_upgrades();
