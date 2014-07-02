@@ -127,7 +127,7 @@ function	prodColor()
 {
 	var	color;
 
-	if (timer_bonusBuilding > 0)
+	if ((timer_bonusBuilding > 0) || (timer_bonusRandom > 0))
 		color = 'red';
 	else
 		color = 'white';
@@ -138,7 +138,7 @@ function	prodMoney()
 {
 	var	texte;
 
-	if (timer_bonusBuilding > 0)
+	if ((timer_bonusBuilding > 0) || (timer_bonusRandom > 0))
 	{
 		texte = (changeNumber(game.prod_money) + ' $ par seconde').big();
 		if (document.getElementById('msg').style.display == 'none')
@@ -1100,13 +1100,27 @@ function	bonusBuilding()
 	return (20);
 }
 
+function	bonusRandom()
+{
+	timer_bonusRandom -= (1 / time);
+	return (20);
+}
+
 function	bonusCalculator()
 {
 	var	nb_building;
+	var random;
 	var multiplicator;
 
 	multiplicator = 1;
 	nb_building = game.worker + game.businessman + game.supermarket + game.factory + game.bank + game.mine + game.president + game.antimatter;
+	random = Math.floor((Math.random() * (3600 * time)) + 1);
+	
+	if (random == 1)
+		timer_bonusRandom = 20;
+	if (timer_bonusRandom > 0)
+		multiplicator *= bonusRandom();
+
 	if ((nb_building % 100) == 0 && timer_bonusBuilding == 0)
 		timer_bonusBuilding = 20;
 	if (timer_bonusBuilding > 0)
@@ -1118,6 +1132,7 @@ function	bonusCalculator()
 
 time = 10;
 timer_bonusBuilding = -1;
+timer_bonusRandom = -1;
 interval = setInterval(function(){dollarCounter();unlock_upgrades();}, 100);
 window.onload = function() { 
 	window.onfocus = function() { 
