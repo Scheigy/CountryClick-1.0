@@ -440,10 +440,38 @@ function	sellAntimatter()
 
 function	my_backgrounds()
 {
-	if (game.money < 100)
-		elemWorker.style.background = 'red';
+	if (game.money < calc_price(game.worker, 100))
+		elemWorker.style.opacity = 0.7;
 	else
-		elemWorker.style.background = 'green';
+		elemWorker.style.opacity = 1;
+	if (game.money < calc_price(game.businessman, 500))
+		elemBusinessman.style.opacity = 0.7;
+	else
+		elemBusinessman.style.opacity = 1;
+	if (game.money < calc_price(game.supermarket, 3000))
+		elemSupermarket.style.opacity = 0.7;
+	else
+		elemSupermarket.style.opacity = 1;
+	if (game.money < calc_price(game.factory, 10000))
+		elemFactory.style.opacity = 0.7;
+	else
+		elemFactory.style.opacity = 1;
+	if (game.money < calc_price(game.bank, 100000))
+		elemBank.style.opacity = 0.7;
+	else
+		elemBank.style.opacity = 1;
+	if (game.money < calc_price(game.mine, 1000000))
+		elemMine.style.opacity = 0.7;
+	else
+		elemMine.style.opacity = 1;
+	if (game.money < calc_price(game.president, 20000000))
+		elemPresident.style.opacity = 0.7;
+	else
+		elemPresident.style.opacity = 1;
+	if (game.money < calc_price(game.antimatter, 1128256512))
+		elemAntimatter.style.opacity = 0.7;
+	else
+		elemAntimatter.style.opacity = 1;
 }
 
 function	my_aff_buildings()
