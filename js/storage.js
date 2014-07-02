@@ -15,6 +15,8 @@ function	createObject()
 	game.president = 0;
 	game.antimatter = 0;
 	game.upgrade = "000000000000000000000000";
+	game.timecounter = 0;
+	ame.clickcounter = 0;
 }
 
 function	createMultiplicator()
@@ -46,6 +48,8 @@ function	setObject()
 	game.president = parseInt(window.localStorage.getItem('president'));
 	game.antimatter = parseInt(window.localStorage.getItem('antimatter'));
 	game.upgrade = window.localStorage.getItem('upgrade');
+	game.upgrade = window.localStorage.getItem('timecounter');
+	game.upgrade = window.localStorage.getItem('clickcounter');
 	
 	mult = new Object();
 	mult.worker = parseInt(window.localStorage.getItem('upworker'));
@@ -73,6 +77,8 @@ function	createStorage()
 	window.localStorage.setItem('president', game.president);
 	window.localStorage.setItem('antimatter', game.antimatter);
 	window.localStorage.setItem('upgrade', game.upgrade);
+	window.localStorage.setItem('timecounter', game.timecounter);
+	window.localStorage.setItem('clickcounter', game.clickcounter);
 
 	window.localStorage.setItem('upworker', mult.worker);
 	window.localStorage.setItem('upbusinessman', mult.businessman);
@@ -212,6 +218,7 @@ function	clickValue()
 
 function	addDollar()
 {
+	game.clickcounter = game.clickcounter + 1;
 	game.money = game.money + clickValue() * bonusCalculator();
 	game.total_money = game.total_money + clickValue() * bonusCalculator();
 	myDollar.innerHTML = changeNumber(game.money) + ' $';
@@ -1192,6 +1199,241 @@ window.onload = function() {
 		}, 1000);
 	}
 };
+
+function	unlock_workers_achievements()
+{
+	var str = "0000000";
+	if (game.workers >= 1)
+		str = setCharAt(str, 0, '1');
+	if (game.workers >= 10)
+		str = setCharAt(str, 1, '1');
+	if (game.workers >= 25)
+		str = setCharAt(str, 2, '1');
+	if (game.workers >= 50)
+		str = setCharAt(str, 3, '1');
+	if (game.workers >= 100)
+		str = setCharAt(str, 4, '1');
+	if (game.workers >= 200)
+		str = setCharAt(str, 5, '1');
+	if (game.workers >= 300)
+		str = setCharAt(str, 6, '1');
+	return (str);
+}
+
+function	unlock_businessmen_achievements()
+{
+	var str = "0000000";
+	if (game.businessman >= 1)
+		str = setCharAt(str, 0, '1');
+	if (game.businessman >= 10)
+		str = setCharAt(str, 1, '1');
+	if (game.businessman >= 25)
+		str = setCharAt(str, 2, '1');
+	if (game.businessman >= 50)
+		str = setCharAt(str, 3, '1');
+	if (game.businessman >= 100)
+		str = setCharAt(str, 4, '1');
+	if (game.businessman >= 200)
+		str = setCharAt(str, 5, '1');
+	if (game.businessman >= 300)
+		str = setCharAt(str, 6, '1');
+	return (str);
+}
+
+function	unlock_supermarkets_achievements()
+{
+	var str = "0000000";
+	if (game.supermarket >= 1)
+		str = setCharAt(str, 0, '1');
+	if (game.supermarket >= 10)
+		str = setCharAt(str, 1, '1');
+	if (game.supermarket >= 25)
+		str = setCharAt(str, 2, '1');
+	if (game.supermarket >= 50)
+		str = setCharAt(str, 3, '1');
+	if (game.supermarket >= 100)
+		str = setCharAt(str, 4, '1');
+	if (game.supermarket >= 200)
+		str = setCharAt(str, 5, '1');
+	if (game.supermarket >= 300)
+		str = setCharAt(str, 6, '1');
+	return (str);
+}
+
+function	unlock_factory_achievements()
+{
+	var str = "0000000";
+	if (game.factory >= 1)
+		str = setCharAt(str, 0, '1');
+	if (game.factory >= 10)
+		str = setCharAt(str, 1, '1');
+	if (game.factory >= 25)
+		str = setCharAt(str, 2, '1');
+	if (game.factory >= 50)
+		str = setCharAt(str, 3, '1');
+	if (game.factory >= 100)
+		str = setCharAt(str, 4, '1');
+	if (game.factory >= 200)
+		str = setCharAt(str, 5, '1');
+	if (game.factory >= 300)
+		str = setCharAt(str, 6, '1');
+	return (str);
+}
+
+function	unlock_banks_achievements()
+{
+	var str = "0000000";
+	if (game.bank >= 1)
+		str = setCharAt(str, 0, '1');
+	if (game.bank >= 10)
+		str = setCharAt(str, 1, '1');
+	if (game.bank >= 25)
+		str = setCharAt(str, 2, '1');
+	if (game.bank >= 50)
+		str = setCharAt(str, 3, '1');
+	if (game.bank >= 100)
+		str = setCharAt(str, 4, '1');
+	if (game.bank >= 200)
+		str = setCharAt(str, 5, '1');
+	if (game.bank >= 300)
+		str = setCharAt(str, 6, '1');
+	return (str);
+}
+
+function	unlock_mines_achievements()
+{
+	var str = "0000000";
+	if (game.mine >= 1)
+		str = setCharAt(str, 0, '1');
+	if (game.mine >= 10)
+		str = setCharAt(str, 1, '1');
+	if (game.mine >= 25)
+		str = setCharAt(str, 2, '1');
+	if (game.mine >= 50)
+		str = setCharAt(str, 3, '1');
+	if (game.mine >= 100)
+		str = setCharAt(str, 4, '1');
+	if (game.mine >= 200)
+		str = setCharAt(str, 5, '1');
+	if (game.mine >= 300)
+		str = setCharAt(str, 6, '1');
+	return (str);
+}
+
+function	unlock_presidents_achievements()
+{
+	var str = "0000000";
+	if (game.president >= 1)
+		str = setCharAt(str, 0, '1');
+	if (game.president >= 10)
+		str = setCharAt(str, 1, '1');
+	if (game.president >= 25)
+		str = setCharAt(str, 2, '1');
+	if (game.president >= 50)
+		str = setCharAt(str, 3, '1');
+	if (game.president >= 100)
+		str = setCharAt(str, 4, '1');
+	if (game.president >= 200)
+		str = setCharAt(str, 5, '1');
+	if (game.president >= 300)
+		str = setCharAt(str, 6, '1');
+	return (str);
+}
+
+function	unlock_antimatter_achievements()
+{
+	var str = "0000000";
+	if (game.antimatter >= 1)
+		str = setCharAt(str, 0, '1');
+	if (game.antimatter >= 10)
+		str = setCharAt(str, 1, '1');
+	if (game.antimatter >= 25)
+		str = setCharAt(str, 2, '1');
+	if (game.antimatter >= 50)
+		str = setCharAt(str, 3, '1');
+	if (game.antimatter >= 100)
+		str = setCharAt(str, 4, '1');
+	if (game.antimatter >= 200)
+		str = setCharAt(str, 5, '1');
+	if (game.antimatter >= 300)
+		str = setCharAt(str, 6, '1');
+	return (str);
+}
+
+function	unlock_totalbuildings_achievements()
+{
+	var str = "000000";
+	if ((game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter) >= 50)
+	str = setCharAt(str, 0, '1');
+	if ((game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter) >= 100)
+	str = setCharAt(str, 1, '1');
+	if ((game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter) >= 300)
+	str = setCharAt(str, 2, '1');
+	if ((game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter) >= 500)
+	str = setCharAt(str, 3, '1');
+	if ((game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter) >= 1000)
+	str = setCharAt(str, 4, '1');
+	if ((game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter) >= 1500)				
+	str = setCharAt(str, 5, '1');
+	return (str);
+}
+
+function	time_counter()
+{
+	game.timecounter = game.timecounter + 1;
+}
+
+function	time_played_achievements()
+{
+	str = "00000"
+	if (game.timecounter >= 6) // 30min
+		str = setCharAt(str, 0, '1');
+	if (game.timecounter >= 12) // 1h
+		str = setCharAt(str, 1, '1');
+	if (game.timecounter >= 288) // 1j
+		str = setCharAt(str, 2, '1');
+	if (game.timecounter >= 864) // 3j
+		str = setCharAt(str, 3, '1');
+	if (game.timecounter >= 2016) // 1semaine
+		str = setCharAt(str, 4, '1');
+	return (str);
+}
+
+function	nb_click_achievements()
+{
+	str = "0000";
+	if (game.clickcounter >= 100)
+		str = setCharAt(str, 0, '1');
+	if (game.clickcounter >= 1000)
+		str = setCharAt(str, 1, '1');
+	if (game.clickcounter >= 10000)
+		str = setCharAt(str, 2, '1');
+	if (game.clickcounter >= 100000)
+		str = setCharAt(str, 3, '1');
+	return (str);
+}
+
+function	call_achievements_functions()
+{
+	unlock_workers_achievements();
+	unlock_businessmen_achievements();
+	unlock_supermarkets_achievements();
+	unlock_factory_achievements();
+	unlock_banks_achievements();
+	unlock_mines_achievements();
+	unlock_presidents_achievements();
+	unlock_antimatter_achievements();
+	unlock_totalbuildings_achievements();
+	time_played_achievements();
+	nb_click_achievements();
+}
+
 lcStorage();
 my_aff_buildings();
 my_aff_upgrades();
@@ -1200,6 +1442,7 @@ setInterval(function(){createStorage();
 	my_aff_buildings();
 	AC();
 }, 5000);
+setInterval(function() {time_counter();}, 300000);
 elemDollar = document.getElementById("dollar");
 elemDollar.onclick = addDollar;
 elemSave = document.getElementById("save_button");
