@@ -134,7 +134,7 @@ function	prodColor()
 	var	color;
 
 	if ((timer_bonusBuilding > 0) || (timer_bonusRandom > 0))
-		color = 'red';
+		color = 'green';
 	else
 		color = 'white';
 	return (color);
@@ -144,7 +144,7 @@ function	prodMoney()
 {
 	var	texte;
 
-	if ((timer_bonusBuilding > 0) || (timer_bonusRandom > 0))
+	if ((timer_bonusBuilding > 0) || (timer_bonusRandom > 0) || (timer_strike > 0))
 	{
 		texte = (changeNumber(game.prod_money) + ' $ par seconde').big();
 		if (document.getElementById('msg').style.display == 'none')
@@ -1180,8 +1180,8 @@ function	onStrike()
 	var strike = 0;
 
 	if (game.worker > 50)
-		strike = Math.floor((Math.random() * (10 * time)) + 1);
-	if (strike == 1 && timer_strike < 0)
+		strike = Math.floor((Math.random() * (14400 * time)) + 1);
+	if (strike == 1)
 		timer_strike = 600;
 	if (timer_strike == 600)
 		document.getElementById('pop_up').style.display = 'block';
