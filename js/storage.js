@@ -16,7 +16,7 @@ function	createObject()
 	game.antimatter = 0;
 	game.upgrade = "000000000000000000000000";
 	game.timecounter = 0;
-	ame.clickcounter = 0;
+	game.clickcounter = 0;
 }
 
 function	createMultiplicator()
@@ -227,7 +227,7 @@ function	addDollar()
 
 function	calc_prod()
 {
-	game.prod_money = game.worker * 1 * mult.worker;
+	game.prod_money = game.worker * 1 * mult.worker * onStrike();
 	game.prod_money += game.businessman * 5 * mult.businessman;
 	game.prod_money += game.supermarket * 15 * mult.supermarket;
 	game.prod_money += game.factory * 40 * mult.factory;
@@ -488,7 +488,7 @@ function	my_aff_buildings()
 	myWorkerPrice = document.getElementById('worker_cost');
 	myWorkerPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.worker, 100)) + ' $';
 	myWorkerBenefit = document.getElementById('worker_benefit');
-	myWorkerBenefit.innerHTML = 'Bénéfice : ' + changeNumber(mult.worker) + ' $/sec';
+	myWorkerBenefit.innerHTML = 'Bénéfice : ' + (changeNumber(mult.worker) * onStrike()) + ' $/sec';
 	
 	if (game.total_money < 500)
 		document.getElementById('businessman_button').style.display = 'none';
@@ -1180,9 +1180,11 @@ function	onStrike()
 	var strike = 0;
 
 	if (game.worker > 50)
-		strike = Math.floor((Math.random() * (14400 * time)) + 1);
-	if (strike == 1)
+		strike = Math.floor((Math.random() * (10 * time)) + 1);
+	if (strike == 1 && timer_strike < 0)
 		timer_strike = 600;
+	if (timer_strike == 600)
+		document.getElementById('pop_up').style.display = 'block';
 	if (timer_strike > 0)
 	{
 		timer_strike -= (1 / time);
@@ -1219,7 +1221,6 @@ window.onload = function() {
 		}, 1000);
 	}
 };
-document.getElementById('pop_up').style.display = 'block';
 ///////////////////////////////////Acheivement/////////////////////////////////////
 /*
 function	unlock_workers_achievements()
