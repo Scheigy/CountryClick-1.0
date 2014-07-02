@@ -444,7 +444,6 @@ function	my_backgrounds()
 		elemWorker.style.background = 'red';
 	else
 		elemWorker.style.background = 'green';
-
 }
 
 function	my_aff_buildings()
@@ -1144,7 +1143,11 @@ function	bonusCalculator()
 time = 10;
 timer_bonusBuilding = -1;
 timer_bonusRandom = -1;
-interval = setInterval(function(){dollarCounter();unlock_upgrades();}, 100);
+interval = setInterval(function(){
+	dollarCounter();
+	unlock_upgrades();
+	my_backgrounds();
+}, 100);
 window.onload = function() { 
 	window.onfocus = function() { 
 		time = 10;
