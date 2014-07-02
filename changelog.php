@@ -7,7 +7,7 @@
 				<h1>Changelog</h1>
 				<ul class="nav nav-tabs">
 					<li class="dropdown">
-						<a data-toggle="dropdown" class="dropdown-toggle" href="#">Version <b class="caret"></b></a>
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">Version <b class="active caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a data-toggle="tab" href="#dropdown3">A venir</a></li>
 							<li><a data-toggle="tab" href="#dropdown2">1.2</a></li>
@@ -17,13 +17,14 @@
 				</ul>
 				<div class="tab-content">
 					<div id="dropdown3" class="tab-pane fade">
-						<p>
-							<h3>A venir</h3>
+						<h2>A venir</h2>
+						<p>					
 							- Récupération de votre sauvegarde sur d'autres machines/navigateurs<br />
 							- Succès<br />
 						</p>
 					</div>
 					<div id="dropdown2" class="tab-pane fade active">
+						<h2>1.2</h2>
 						<p>
 							<h3>Divers</h3>
 							- Nom de nomaine countryclick.fr<br />
@@ -41,6 +42,7 @@
 						</p>
 					</div>
 					<div id="dropdown1" class="tab-pane fade">
+						<h2>1.1</h2>
 						<p><h3>Gameplay</h3>
 							- Ajout d'un bonus temporaire à partir de 100 bâtiments d'un même type<br />
 							- Augmentation du nombre de $ gagnés par clic<br />
@@ -61,8 +63,6 @@
 			</section>
 		</div>
 	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+	<?php include("footer.php"); ?>
 </body>
+</html>

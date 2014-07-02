@@ -13,7 +13,7 @@ session_start();
 	<title>Country Click - Alpha 1.2</title>
 </head>
 <body>
-	<header class="row">
+	<header id="header" class="row">
 		<div class="col-lg-12">
 			<!--<h1 id="titre"><a href="index.php" title="Index">Country Click</a></h1>-->
 			<a href="index.php" title="Index"><img src="img/logo.png" alt="Logo"/></a>
@@ -30,3 +30,11 @@ session_start();
 			<?php include("menu.php"); ?>
 		</div>
 	</header>
+	<a href="#" title="expand"><img src="img/expand.png" id="exButton" alt="expand" /></a>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/few_fonctions.js"></script>

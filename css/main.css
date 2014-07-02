@@ -38,6 +38,35 @@ header {
 	margin-bottom: 10px;
 }
 
+#exButton {
+	width: 2%;
+	position: absolute;
+	right: 5px;
+	z-index: 1000;
+}
+
+@keyframes quake
+{
+	0% {margin-top: 0;}
+	25% {margin-top: 5px;}
+	50% {margin-top: 0;}
+	100% {margin-top: -5px;}
+}
+
+@-webkit-keyframes quake /* Safari and Chrome */
+{
+	0% {margin-top: 0;}
+	25% {margin-top: 5px;}
+	50% {margin-top: 0;}
+	100% {margin-top: -5px;}
+}
+
+#exButton:hover
+{
+	-webkit-animation: quake 1.5s infinite; /* Chrome, Safari, Opera */
+	animation: quake 1.5s infinite;
+}
+
 section {
 	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 2px;
@@ -85,20 +114,6 @@ a:hover
 {
 	font-size: 1.5em;
 	text-transform: uppercase;
-}
-
-@keyframes menuHover
-{
-	0% {color: white;}
-	50% {color: #2aadbc;}
-	100% {color: white;}
-}
-
-@-webkit-keyframes menuHover /* Safari and Chrome */
-{
-	0% {color: white;}
-	50% {color: #2aadbc;}
-	100% {color: white;}
 }
 
 #menu

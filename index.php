@@ -30,6 +30,6 @@ include("header.php");
     ?>
   </div>
 </div>
-<script src="footer.js"></script>
+<?php include("footer.php"); ?>
 </body>
 </html>

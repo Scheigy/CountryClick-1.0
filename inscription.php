@@ -49,4 +49,5 @@ include("header.php");
 		}
 		?>
 	</section>
+<script src="js/footer.js"></script>
 </div>
