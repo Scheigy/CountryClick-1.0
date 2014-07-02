@@ -142,8 +142,10 @@ function	prodMoney()
 	{
 		texte = (changeNumber(game.prod_money) + ' $ par seconde').big();
 		if (document.getElementById('msg').style.display == 'none')
+		{
 			document.getElementById('msg').style.display = 'block';
-		document.getElementById('msg').innerHTML = 'Félicitation vous avez un bonus x 20';
+			document.getElementById('msg').innerHTML = '<marquee>Félicitation vous avez un bonus x 20 </marquee>';
+		}
 	}
 	else
 	{
@@ -436,6 +438,15 @@ function	sellAntimatter()
 */
 /*==================================================================================================================*/
 
+function	my_backgrounds()
+{
+	if (game.money < 100)
+		elemWorker.style.background = 'red';
+	else
+		elemWorker.style.background = 'green';
+
+}
+
 function	my_aff_buildings()
 {
 	myWorker = document.getElementById('nb_worker');
@@ -506,7 +517,7 @@ function	my_aff_buildings()
 		myMine.innerHTML = game.mine + ' mine(s)';
 		myMinePrice = document.getElementById('mine_cost');
 		myMinePrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.mine, 1000000)) + ' $';
-		myMineBenefit = document.getElementById('min-e_benefit');
+		myMineBenefit = document.getElementById('mine_benefit');
 		myMineBenefit.innerHTML = 'Bénéfice : ' + changeNumber(1000 * mult.mine) + ' $/sec';
 	}
 
@@ -1138,12 +1149,20 @@ window.onload = function() {
 	window.onfocus = function() { 
 		time = 10;
 		clearInterval(interval);
-		interval = setInterval(function(){dollarCounter();unlock_upgrades();}, 100);
+		interval = setInterval(function(){
+			dollarCounter();
+			unlock_upgrades();
+			my_backgrounds();
+		}, 100);
 	};
 	window.onblur = function() {
 		time = 1;
 		clearInterval(interval);
-		interval = setInterval(function(){dollarCounter();unlock_upgrades();}, 1000);
+		interval = setInterval(function(){
+			dollarCounter();
+			unlock_upgrades();
+			my_backgrounds();
+		}, 1000);
 	}
 };
 lcStorage();
@@ -1193,6 +1212,8 @@ elemSellPresident.onclick = sellPresident;
 elemSellAntimatter = document.getElementById("antimatter_sell");
 elemSellAntimatter.onclick = sellAntimatter;
 */
+
+my_backgrounds();
 
 //upgrades workers
 elemUpgrade_worker1 = document.getElementById("one");
