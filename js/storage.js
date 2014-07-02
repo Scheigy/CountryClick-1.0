@@ -1175,10 +1175,31 @@ function	bonusCalculator()
 	return (multiplicator);
 }
 
+/*function	onStrike()
+{
+	var strike = 0;
+
+	if (game.worker > 50)
+		strike = Math.floor((Math.random() * (14400 * time)) + 1);
+	if (strike == 1)
+		timer_strike = 600;
+	if (timer_strike > 0)
+	{
+		timer_strike -= (1 / time);
+		return (0);
+	}
+	return (1);
+}*/
+
 time = 10;
 timer_bonusBuilding = -1;
 timer_bonusRandom = -1;
-interval = setInterval(function(){dollarCounter();unlock_upgrades();}, 100);
+timer_strike = -1;
+interval = setInterval(function(){
+	dollarCounter();
+	unlock_upgrades();
+	my_backgrounds();
+}, 100);
 window.onload = function() { 
 	window.onfocus = function() { 
 		time = 10;
