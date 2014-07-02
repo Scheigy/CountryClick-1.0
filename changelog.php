@@ -1,30 +1,46 @@
-<?php include("header.php"); ?>
-
 <body>
+	<?php include("header.php"); ?>
+
+
 	<div class="container">
 		<div class="row">
 			<section id="unique">
 				<h1>Changelog</h1>
 				<ul class="nav nav-tabs">
 					<li class="dropdown">
-						<a data-toggle="dropdown" class="dropdown-toggle" href="#">Version <b class="active caret"></b></a>
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">Version <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a data-toggle="tab" href="#dropdown3">A venir</a></li>
-							<li><a data-toggle="tab" href="#dropdown2">1.2</a></li>
-							<li><a data-toggle="tab" href="#dropdown1">1.1</a></li>
+							<li><a data-toggle="tab" href="#dropdown4">A venir</a></li>
+							<li><a data-toggle="tab" href="#dropdown3">Alpha 1.3 (02/07/14)</a></li>
+							<li><a data-toggle="tab" href="#dropdown2">Alpha 1.2 (31/06/14)</a></li>
+							<li><a data-toggle="tab" href="#dropdown1">Alpha 1.1 (28/06/14)</a></li>
 						</ul>
 					</li>
 				</ul>
 				<div class="tab-content">
-					<div id="dropdown3" class="tab-pane fade">
+					<div id="dropdown4" class="tab-pane fade active">
 						<h2>A venir</h2>
 						<p>					
 							- Récupération de votre sauvegarde sur d'autres machines/navigateurs<br />
 							- Succès<br />
 						</p>
 					</div>
-					<div id="dropdown2" class="tab-pane fade active">
-						<h2>1.2</h2>
+					<div id="dropdown3" class="tab-pane fade active">
+						<h2>Alpha 1.3 (02/07/14)</h2>
+						<p>
+							<h3>Gameplay</h3>
+							- Une chance d'avoir un bonus d'une durée de vingt secondes n'importe quand<br />
+							__________
+							<h3>PHP</h3>
+							- Possibilité de supprimer son compte<br />
+							__________
+							<h3>Mise en page</h3>
+							- Le menu peut être rangé pour avoir plus d'espace<br />
+							- On voit quel bâtiment on peut acheter avec notre argent plus facilement<br />
+						</p>
+					</div>
+					<div id="dropdown2" class="tab-pane fade">
+						<h2>Alpha 1.2 (31/06/14)</h2>
 						<p>
 							<h3>Divers</h3>
 							- Nom de nomaine countryclick.fr<br />
@@ -42,7 +58,7 @@
 						</p>
 					</div>
 					<div id="dropdown1" class="tab-pane fade">
-						<h2>1.1</h2>
+						<h2>Alpha 1.1 (28/06/14)</h2>
 						<p><h3>Gameplay</h3>
 							- Ajout d'un bonus temporaire à partir de 100 bâtiments d'un même type<br />
 							- Augmentation du nombre de $ gagnés par clic<br />
@@ -63,6 +79,10 @@
 			</section>
 		</div>
 	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 	<?php include("footer.php"); ?>
 </body>
 </html>
