@@ -24,12 +24,12 @@ include("header.php");
     </section>
     <?php 
     if (!isset($_SESSION['pseudo']))
-      include("form.php");
+      include_once("form.php");
     else
       echo '<section class="col-lg-offset-1 col-lg-5">Vous êtes déjà inscrit, cliquez sur Jouer dans le menu pour accéder au jeu !</section>';
     ?>
   </div>
 </div>
-<?php include("footer.php"); ?>
+<?php include_once("footer.php"); ?>
 </body>
 </html>

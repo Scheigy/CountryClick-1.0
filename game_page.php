@@ -3,6 +3,11 @@ include("header.php");
 if (empty($_SESSION['pseudo']))
 	header("Location: game_session.php");
 ?>
+
+<div style="display:none;" id="pop_up">
+	<p><span class="glyphicon glyphicon-info-sign"></span> Vos impôts sont trop chers, vous perdez 25% de vos ouvriers.</p>
+	<button type="submit" class="btn-lg btn-danger"><span class="glyphicon glyphicon-ok-sign"></span> Ok</button>
+</div>
 <div class="container">
 	<div id="wrap">
 		<div class="row" id="first_row">

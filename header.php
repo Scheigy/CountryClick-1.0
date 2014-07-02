@@ -15,7 +15,6 @@ session_start();
 <body>
 	<header id="header" class="row">
 		<div class="col-lg-12">
-			<!--<h1 id="titre"><a href="index.php" title="Index">Country Click</a></h1>-->
 			<a href="index.php" title="Index"><img src="img/logo.png" alt="Logo"/></a>
 
 			<div id="social_bar">
@@ -32,7 +31,7 @@ session_start();
 					<img class="social_element" src="img/google_plus.png" alt="google_plus" />
 				</a>
 			</div>
-			<?php include("menu.php"); ?>
+			<?php include_once("menu.php"); ?>
 		</div>
 	</header>
 	<div id="exButton"><a href="#" title="expand"><img src="img/expand.png" alt="expand" /></a></div>
