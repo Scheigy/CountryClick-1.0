@@ -1175,7 +1175,7 @@ function	bonusCalculator()
 	return (multiplicator);
 }
 
-/*function	onStrike()
+function	onStrike()
 {
 	var strike = 0;
 
@@ -1189,8 +1189,7 @@ function	bonusCalculator()
 		return (0);
 	}
 	return (1);
-}*/
-
+}
 time = 10;
 timer_bonusBuilding = -1;
 timer_bonusRandom = -1;
@@ -1220,6 +1219,7 @@ window.onload = function() {
 		}, 1000);
 	}
 };
+document.getElementById('pop_up').style.display = 'block';
 ///////////////////////////////////Acheivement/////////////////////////////////////
 /*
 function	unlock_workers_achievements()
@@ -1451,6 +1451,7 @@ function	call_achievements_functions()
 	unlock_mines_achievements();
 	unlock_presidents_achievements();
 	unlock_antimatter_achievements();
+
 	unlock_totalbuildings_achievements();
 	time_played_achievements();
 	nb_click_achievements();
@@ -1487,6 +1488,8 @@ elemPresident.onclick = addPresident;
 elemAntimatter = document.getElementById("antimatter_button");
 elemAntimatter.onclick = addAntimatter;
 
+elemPopup = document.getElementById('pop_up_button');
+elemPopup.onclick = function() {document.getElementById('pop_up').style.display = 'none';};
 /*
 elemSellWorker = document.getElementById("worker_sell");
 elemSellWorker.onclick = sellWorker;
