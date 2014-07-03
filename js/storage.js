@@ -135,6 +135,8 @@ function	prodColor()
 
 	if ((timer_bonusBuilding > 0) || (timer_bonusRandom > 0))
 		color = 'green';
+	else if (timer_strike > 0)
+		color = 'red';
 	else
 		color = 'white';
 	return (color);
@@ -144,7 +146,7 @@ function	prodMoney()
 {
 	var	texte;
 
-	if ((timer_bonusBuilding > 0) || (timer_bonusRandom > 0) || (timer_strike > 0))
+	if ((timer_bonusBuilding > 0) || (timer_bonusRandom > 0))
 	{
 		texte = (changeNumber(game.prod_money) + ' $ par seconde').big();
 		if (document.getElementById('msg').style.display == 'none')
@@ -1184,7 +1186,10 @@ function	onStrike()
 	if (strike == 1)
 		timer_strike = 600;
 	if (timer_strike == 600)
+	{
 		document.getElementById('pop_up').style.display = 'block';
+		document.getElementById('pop_up_p').innerHTML = '<span class="glyphicon glyphicon-info-sign"></span> Attention ! Vos ouvriers en ont marre de travailler! Ils font GREVE!!!';
+	}
 	if (timer_strike > 0)
 	{
 		timer_strike -= (1 / time);
@@ -1192,6 +1197,7 @@ function	onStrike()
 	}
 	return (1);
 }
+
 time = 10;
 timer_bonusBuilding = -1;
 timer_bonusRandom = -1;

@@ -5,7 +5,7 @@ if (empty($_SESSION['pseudo']))
 ?>
 
 <div style="display:none;" id="pop_up">
-	<p><span class="glyphicon glyphicon-info-sign"></span> Vos impôts sont trop chers, vous perdez 25% de vos ouvriers.</p>
+	<p id="pop_up_p" ><span class="glyphicon glyphicon-info-sign"></span> Vos impôts sont trop chers, vous perdez 25% de vos ouvriers.</p>
 	<button type="submit" id="pop_up_button" class="btn-lg btn-danger"><span class="glyphicon glyphicon-ok-sign"></span> Ok</button>
 </div>
 <div class="container">
