@@ -1535,10 +1535,23 @@ function	call_achievements_functions()
 }
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////
+
+function reparation()
+{
+	if (game.upgrade.length != 24)
+	{
+		game.upgrade = '000000000000000000000000';
+		createMultiplicator();
+	}
+	alert(game.upgrade);
+}
+
 lcStorage();
 my_aff_buildings();
 my_aff_upgrades();
 calc_prod();
+reparation();
+my_aff_upgrades();
 setInterval(function(){createStorage();
 	my_aff_buildings();
 	AC();
@@ -1547,7 +1560,7 @@ setInterval(function() {time_counter();}, 300000);
 elemDollar = document.getElementById("dollar");
 elemDollar.onclick = addDollar;
 elemSave = document.getElementById("save_button");
-elemSave.onclick = function(){createStorage; alert('Partie sauvegardé');};
+elemSave.onclick = function(){createStorage; alert('Partie sauvegardée');};
 elemWorker = document.getElementById("worker_button");
 elemWorker.onclick = addWorker;
 elemBusinessman = document.getElementById("businessman_button");
