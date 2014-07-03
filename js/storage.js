@@ -227,12 +227,17 @@ function	addDollar()
 	myDollarTotal.innerHTML = 'TOTAL : ' + changeNumber(game.total_money) + ' $';
 }
 
+function    lowerMalus(malus)
+{
+	return (malus + 0.5);
+}
+
 function	calc_prod()
 {
 	game.prod_money = game.worker * 1 * mult.worker * onStrike();
 	game.prod_money += game.businessman * 5 * mult.businessman;
 	game.prod_money += game.supermarket * 15 * mult.supermarket;
-	game.prod_money += game.factory * 40 * mult.factory;
+	game.prod_money += game.factory * 40 * mult.factory * lowerMalus(onStrike());
 	game.prod_money += game.bank * 300 * mult.bank;
 	game.prod_money += game.mine * 1000 * mult.mine;
 	game.prod_money += game.president * 5000 * mult.president;
@@ -483,6 +488,11 @@ function	my_backgrounds()
 		elemAntimatter.style.opacity = 1;
 }
 
+function    my_aff_total_buildings()
+{
+		document.getElementById('total_buildings').innerHTML = (game.worker + game.businessman + game.supermarket + game.factory + game.bank + game.mine + game.president + game.antimatter);
+}
+
 function	my_aff_buildings()
 {
 	myWorker = document.getElementById('nb_worker');
@@ -491,7 +501,6 @@ function	my_aff_buildings()
 	myWorkerPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.worker, 100)) + ' $';
 	myWorkerBenefit = document.getElementById('worker_benefit');
 	myWorkerBenefit.innerHTML = 'Bénéfice : ' + (changeNumber(mult.worker) * onStrike()) + ' $/sec';
-//	document.getElementById('') = (game.worker + game.businessman + game.supermarket + game.factory + game.bank + game.mine + game.president + game.antimatter);
 	if (game.total_money < 500)
 		document.getElementById('businessman_button').style.display = 'none';
 	else
@@ -1188,7 +1197,7 @@ function	onStrike()
 	if (timer_strike == 600)
 	{
 		document.getElementById('pop_up').style.display = 'block';
-		document.getElementById('pop_up_p').innerHTML = '<span class="glyphicon glyphicon-info-sign"></span> Attention ! Vos ouvriers en ont marre de travailler! Ils font GREVE!!!';
+		document.getElementById('pop_up_p').innerHTML = '<span class="glyphicon glyphicon-info-sign"></span> Attention ! Vos ouvriers en ont marre de travailler! Les usines produisent moins! Ils font GREVE!!!';
 	}
 	if (timer_strike > 0)
 	{
@@ -1720,6 +1729,7 @@ function reparation()
 
 lcStorage();
 my_aff_buildings();
+my_aff_total_buildings();
 my_aff_upgrades();
 calc_prod();
 reparation();
