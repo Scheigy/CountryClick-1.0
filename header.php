@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (empty($_SESSION['pseudo']) && !empty($_COOKIE['userSession']))
+{
+	if (isset($_COOKIE['userSession']))
+		$_SESSION['pseudo'] = $_COOKIE['userSession'];
+}
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

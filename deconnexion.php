@@ -1,7 +1,12 @@
 <?php
+unset($_COOKIE['userSession']);
+
+var_dump($_COOKIE);
+
 include('header.php');
 
 session_destroy();
+
 ?>
 <div class="container">
 	<section id="unique">

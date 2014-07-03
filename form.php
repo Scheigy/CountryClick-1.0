@@ -44,7 +44,7 @@
             <div class="col-sm-offset-3 col-sm-9">
               <div class="checkbox">
                 <label>
-                  <input type="checkbox">Se souvenir de moi
+                  <input type="checkbox" name="setcookie">Se souvenir de moi (1 mois)
                 </label>
               </div>
             </div>
