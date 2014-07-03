@@ -491,7 +491,7 @@ function	my_aff_buildings()
 	myWorkerPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.worker, 100)) + ' $';
 	myWorkerBenefit = document.getElementById('worker_benefit');
 	myWorkerBenefit.innerHTML = 'Bénéfice : ' + (changeNumber(mult.worker) * onStrike()) + ' $/sec';
-	
+//	document.getElementById('') = (game.worker + game.businessman + game.supermarket + game.factory + game.bank + game.mine + game.president + game.antimatter);
 	if (game.total_money < 500)
 		document.getElementById('businessman_button').style.display = 'none';
 	else
@@ -1179,7 +1179,7 @@ function	bonusCalculator()
 
 function	onStrike()
 {
-/*	var strike = 0;
+	var strike = 0;
 
 	if (game.worker > 50)
 		strike = Math.floor((Math.random() * (14400 * time)) + 1);
@@ -1194,7 +1194,7 @@ function	onStrike()
 	{
 		timer_strike -= (1 / time);
 		return (0);
-	}*/
+	}
 	return (1);
 }
 
