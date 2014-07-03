@@ -9,7 +9,7 @@ if (empty($_SESSION['pseudo']))
 	<button type="submit" id="pop_up_button" class="btn-lg btn-danger"><span class="glyphicon glyphicon-ok-sign"></span> Ok</button>
 </div>
 <div id="achievements">
-<canvas height="200px" width="200px"></canvas>
+
 
 </div>
 <div class="container">
@@ -91,7 +91,7 @@ if (empty($_SESSION['pseudo']))
 			</section>
 
 			<section id="right" class="col-lg-offset-1 col-xs-4 col-lg-3">
-				<!--<div style="text-align:center;"><p>Total des bâtiments : <span id="total_buildings">NULL</span></p></div>-->
+				<div style="text-align:center;"><p>Total des bâtiments : <span id="total_buildings">NULL</span></p></div>
 				<div class="row worker_div" id="worker_button">
 					<img class="col-lg-4 worker_img" src="img/Worker.png" alt="worker" />
 					<div class="text col-lg-offset-1 col-lg-7">
