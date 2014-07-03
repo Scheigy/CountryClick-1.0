@@ -48,8 +48,8 @@ function	setObject()
 	game.president = parseInt(window.localStorage.getItem('president'));
 	game.antimatter = parseInt(window.localStorage.getItem('antimatter'));
 	game.upgrade = window.localStorage.getItem('upgrade');
-	game.upgrade = window.localStorage.getItem('timecounter');
-	game.upgrade = window.localStorage.getItem('clickcounter');
+	game.timecounter = parseInt(window.localStorage.getItem('timecounter'));
+	game.clickcounter = parseInt(window.localStorage.getItem('clickcounter'));
 	
 	mult = new Object();
 	mult.worker = parseInt(window.localStorage.getItem('upworker'));
@@ -1221,6 +1221,7 @@ window.onload = function() {
 		}, 1000);
 	}
 };
+
 ///////////////////////////////////Acheivement/////////////////////////////////////
 /*
 function	unlock_workers_achievements()
@@ -1442,6 +1443,72 @@ function	nb_click_achievements()
 	return (str);
 }
 
+function	total_dollar_achievements()
+{
+	str = "0000000";
+	if (game.total_money >= 1000)
+		str = setCharAt(str, 0, '1');
+	if (game.total_money >= 100000)
+		str = setCharAt(str, 1, '1');
+	if (game.total_money >= 1000000)
+		str = setCharAt(str, 2, '1');
+	if (game.total_money >= 100000000)
+		str = setCharAt(str, 3, '1');
+	if (game.total_money >= 10000000000)
+		str = setCharAt(str, 4, '1');
+	if (game.total_money >= 100000000000)
+		str = setCharAt(str, 5, '1');
+	if (game.total_money >= 10000000000000)
+		str = setCharAt(str, 6, '1');
+	return (str);	
+}
+
+function	prod_dollar_achievements()
+{
+	str = "0000000";
+	if (game.prod_money >= 10)
+		str = setCharAt(str, 0, '1');
+	if (game.prod_money >= 1000)
+		str = setCharAt(str, 1, '1');
+	if (game.prod_money >= 50000)
+		str = setCharAt(str, 2, '1');
+	if (game.prod_money >= 500000)
+		str = setCharAt(str, 3, '1');
+	if (game.prod_money >= 10000000)
+		str = setCharAt(str, 4, '1');
+	if (game.prod_money >= 100000000)
+		str = setCharAt(str, 5, '1');
+	if (game.prod_money >= 10000000000)
+		str = setCharAt(str, 6, '1');
+	return (str);
+}
+
+function	upgrades_bought_achievements()
+{
+	str = "000000";
+	var i = 0;
+	var unlocked = 0;
+	while (i < 24)
+	{
+		if (game.upgrade[i] == '2')
+			unlocked = unlocked + 1;
+		i = i + 1;	
+	}
+	if (unlocked >= 1)
+		str = setCharAt(str, 0, '1');
+	if (unlocked >= 5)
+		str = setCharAt(str, 1, '1');
+	if (unlocked >= 10)
+		str = setCharAt(str, 2, '1');
+	if (unlocked >= 15)
+		str = setCharAt(str, 3, '1');
+	if (unlocked >= 20)
+		str = setCharAt(str, 4, '1');
+	if (unlocked >= 24)
+		str = setCharAt(str, 5, '1');
+	return (str);
+}
+
 function	call_achievements_functions()
 {
 	unlock_workers_achievements();
@@ -1456,6 +1523,9 @@ function	call_achievements_functions()
 	unlock_totalbuildings_achievements();
 	time_played_achievements();
 	nb_click_achievements();
+	total_dollar_achievements();
+	prod_dollar_achievements();
+	upgrades_bought_achievements();
 }
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////
