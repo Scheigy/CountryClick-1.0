@@ -1179,7 +1179,7 @@ function	bonusCalculator()
 
 function	onStrike()
 {
-	var strike = 0;
+/*	var strike = 0;
 
 	if (game.worker > 50)
 		strike = Math.floor((Math.random() * (14400 * time)) + 1);
@@ -1194,7 +1194,7 @@ function	onStrike()
 	{
 		timer_strike -= (1 / time);
 		return (0);
-	}
+	}*/
 	return (1);
 }
 
