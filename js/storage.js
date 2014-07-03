@@ -1542,8 +1542,8 @@ function reparation()
 	{
 		game.upgrade = '000000000000000000000000';
 		createMultiplicator();
+		alert('Suite à un problème avec les upgrades, ils ont été réinitialisés. Nous sommes désolés pour les inconvénients.');
 	}
-	alert(game.upgrade);
 }
 
 lcStorage();
