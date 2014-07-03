@@ -1228,211 +1228,12 @@ window.onload = function() {
 	}
 };
 
-///////////////////////////////////Acheivement/////////////////////////////////////
+///////////////////////////////////Achievement/////////////////////////////////////
 /*
-function	unlock_workers_achievements()
-{
-	var str = "0000000";
-	if (game.workers >= 1)
-		str = setCharAt(str, 0, '1');
-	if (game.workers >= 10)
-		str = setCharAt(str, 1, '1');
-	if (game.workers >= 25)
-		str = setCharAt(str, 2, '1');
-	if (game.workers >= 50)
-		str = setCharAt(str, 3, '1');
-	if (game.workers >= 100)
-		str = setCharAt(str, 4, '1');
-	if (game.workers >= 200)
-		str = setCharAt(str, 5, '1');
-	if (game.workers >= 300)
-		str = setCharAt(str, 6, '1');
-	return (str);
-}
-
-function	unlock_businessmen_achievements()
-{
-	var str = "0000000";
-	if (game.businessman >= 1)
-		str = setCharAt(str, 0, '1');
-	if (game.businessman >= 10)
-		str = setCharAt(str, 1, '1');
-	if (game.businessman >= 25)
-		str = setCharAt(str, 2, '1');
-	if (game.businessman >= 50)
-		str = setCharAt(str, 3, '1');
-	if (game.businessman >= 100)
-		str = setCharAt(str, 4, '1');
-	if (game.businessman >= 200)
-		str = setCharAt(str, 5, '1');
-	if (game.businessman >= 300)
-		str = setCharAt(str, 6, '1');
-	return (str);
-}
-
-function	unlock_supermarkets_achievements()
-{
-	var str = "0000000";
-	if (game.supermarket >= 1)
-		str = setCharAt(str, 0, '1');
-	if (game.supermarket >= 10)
-		str = setCharAt(str, 1, '1');
-	if (game.supermarket >= 25)
-		str = setCharAt(str, 2, '1');
-	if (game.supermarket >= 50)
-		str = setCharAt(str, 3, '1');
-	if (game.supermarket >= 100)
-		str = setCharAt(str, 4, '1');
-	if (game.supermarket >= 200)
-		str = setCharAt(str, 5, '1');
-	if (game.supermarket >= 300)
-		str = setCharAt(str, 6, '1');
-	return (str);
-}
-
-function	unlock_factory_achievements()
-{
-	var str = "0000000";
-	if (game.factory >= 1)
-		str = setCharAt(str, 0, '1');
-	if (game.factory >= 10)
-		str = setCharAt(str, 1, '1');
-	if (game.factory >= 25)
-		str = setCharAt(str, 2, '1');
-	if (game.factory >= 50)
-		str = setCharAt(str, 3, '1');
-	if (game.factory >= 100)
-		str = setCharAt(str, 4, '1');
-	if (game.factory >= 200)
-		str = setCharAt(str, 5, '1');
-	if (game.factory >= 300)
-		str = setCharAt(str, 6, '1');
-	return (str);
-}
-
-function	unlock_banks_achievements()
-{
-	var str = "0000000";
-	if (game.bank >= 1)
-		str = setCharAt(str, 0, '1');
-	if (game.bank >= 10)
-		str = setCharAt(str, 1, '1');
-	if (game.bank >= 25)
-		str = setCharAt(str, 2, '1');
-	if (game.bank >= 50)
-		str = setCharAt(str, 3, '1');
-	if (game.bank >= 100)
-		str = setCharAt(str, 4, '1');
-	if (game.bank >= 200)
-		str = setCharAt(str, 5, '1');
-	if (game.bank >= 300)
-		str = setCharAt(str, 6, '1');
-	return (str);
-}
-
-function	unlock_mines_achievements()
-{
-	var str = "0000000";
-	if (game.mine >= 1)
-		str = setCharAt(str, 0, '1');
-	if (game.mine >= 10)
-		str = setCharAt(str, 1, '1');
-	if (game.mine >= 25)
-		str = setCharAt(str, 2, '1');
-	if (game.mine >= 50)
-		str = setCharAt(str, 3, '1');
-	if (game.mine >= 100)
-		str = setCharAt(str, 4, '1');
-	if (game.mine >= 200)
-		str = setCharAt(str, 5, '1');
-	if (game.mine >= 300)
-		str = setCharAt(str, 6, '1');
-	return (str);
-}
-
-function	unlock_presidents_achievements()
-{
-	var str = "0000000";
-	if (game.president >= 1)
-		str = setCharAt(str, 0, '1');
-	if (game.president >= 10)
-		str = setCharAt(str, 1, '1');
-	if (game.president >= 25)
-		str = setCharAt(str, 2, '1');
-	if (game.president >= 50)
-		str = setCharAt(str, 3, '1');
-	if (game.president >= 100)
-		str = setCharAt(str, 4, '1');
-	if (game.president >= 200)
-		str = setCharAt(str, 5, '1');
-	if (game.president >= 300)
-		str = setCharAt(str, 6, '1');
-	return (str);
-}
-
-function	unlock_antimatter_achievements()
-{
-	var str = "0000000";
-	if (game.antimatter >= 1)
-		str = setCharAt(str, 0, '1');
-	if (game.antimatter >= 10)
-		str = setCharAt(str, 1, '1');
-	if (game.antimatter >= 25)
-		str = setCharAt(str, 2, '1');
-	if (game.antimatter >= 50)
-		str = setCharAt(str, 3, '1');
-	if (game.antimatter >= 100)
-		str = setCharAt(str, 4, '1');
-	if (game.antimatter >= 200)
-		str = setCharAt(str, 5, '1');
-	if (game.antimatter >= 300)
-		str = setCharAt(str, 6, '1');
-	return (str);
-}
-
-function	unlock_totalbuildings_achievements()
-{
-	var str = "000000";
-	if ((game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter) >= 50)
-	str = setCharAt(str, 0, '1');
-	if ((game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter) >= 100)
-	str = setCharAt(str, 1, '1');
-	if ((game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter) >= 300)
-	str = setCharAt(str, 2, '1');
-	if ((game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter) >= 500)
-	str = setCharAt(str, 3, '1');
-	if ((game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter) >= 1000)
-	str = setCharAt(str, 4, '1');
-	if ((game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter) >= 1500)				
-	str = setCharAt(str, 5, '1');
-	return (str);
-}
 
 function	time_counter()
 {
 	game.timecounter = game.timecounter + 1;
-}
-
-function	time_played_achievements()
-{
-	str = "00000"
-	if (game.timecounter >= 6) // 30min
-		str = setCharAt(str, 0, '1');
-	if (game.timecounter >= 12) // 1h
-		str = setCharAt(str, 1, '1');
-	if (game.timecounter >= 288) // 1j
-		str = setCharAt(str, 2, '1');
-	if (game.timecounter >= 864) // 3j
-		str = setCharAt(str, 3, '1');
-	if (game.timecounter >= 2016) // 1semaine
-		str = setCharAt(str, 4, '1');
-	return (str);
 }
 
 function	nb_click_achievements()
@@ -1447,26 +1248,6 @@ function	nb_click_achievements()
 	if (game.clickcounter >= 100000)
 		str = setCharAt(str, 3, '1');
 	return (str);
-}
-
-function	total_dollar_achievements()
-{
-	str = "0000000";
-	if (game.total_money >= 1000)
-		str = setCharAt(str, 0, '1');
-	if (game.total_money >= 100000)
-		str = setCharAt(str, 1, '1');
-	if (game.total_money >= 1000000)
-		str = setCharAt(str, 2, '1');
-	if (game.total_money >= 100000000)
-		str = setCharAt(str, 3, '1');
-	if (game.total_money >= 10000000000)
-		str = setCharAt(str, 4, '1');
-	if (game.total_money >= 100000000000)
-		str = setCharAt(str, 5, '1');
-	if (game.total_money >= 10000000000000)
-		str = setCharAt(str, 6, '1');
-	return (str);	
 }
 
 function	prod_dollar_achievements()
@@ -1533,6 +1314,397 @@ function	call_achievements_functions()
 	prod_dollar_achievements();
 	upgrades_bought_achievements();
 }
+
+function	my_aff_worker_achievements()
+{
+	1_worker = document.getElementById('1_worker');
+	if (game.worker >= 1)
+		1_worker.innerHTML = '1wo';
+	else
+		1_worker.innerHTML = 'lock'
+			
+	2_worker = document.getElementById('2_worker');
+	if (game.worker >= 30)
+		2_worker.innerHTML = '30wo';
+	else
+		2_worker.innerHTML = 'lock'
+		
+	3_worker = document.getElementById('3_worker');
+	if (game.worker >= 80)
+		3_worker.innerHTML = '80wo';
+	else
+		3_worker.innerHTML = 'lock'
+		
+	4_worker = document.getElementById('4_worker');
+	if (game.worker >= 150)
+		4_worker.innerHTML = '150wo';
+	else
+		4_worker.innerHTML = 'lock'
+}
+
+function	my_aff_businessman_achievements()
+{
+	1_businessman = document.getElementById('1_businessman');
+	if (game.businessman >= 1)
+		1_businessman.innerHTML = '1bu';
+	else
+		1_businessman.innerHTML = 'lock'
+			
+	2_businessman = document.getElementById('2_businessman');
+	if (game.businessman >= 30)
+		2_businessman.innerHTML = '30bu';
+	else
+		2_businessman.innerHTML = 'lock'
+		
+	3_businessman = document.getElementById('3_businessman');
+	if (game.businessman >= 80)
+		3_businessman.innerHTML = '80bu';
+	else
+		3_businessman.innerHTML = 'lock'
+		
+	4_businessman = document.getElementById('4_businessman');
+	if (game.businessman >= 150)
+		4_businessman.innerHTML = '150bu';
+	else
+		4_businessman.innerHTML = 'lock'
+}
+
+function	my_aff_supermarket_achievements()
+{
+	1_supermarket = document.getElementById('1_supermarket');
+	if (game.supermarket >= 1)
+		1_supermarket.innerHTML = '1su';
+	else
+		1_supermarket.innerHTML = 'lock'
+			
+	2_supermarket = document.getElementById('2_supermarket');
+	if (game.supermarket >= 30)
+		2_supermarket.innerHTML = '30su';
+	else
+		2_supermarket.innerHTML = 'lock'
+		
+	3_supermarket = document.getElementById('3_supermarket');
+	if (game.supermarket >= 80)
+		3_supermarket.innerHTML = '80su';
+	else
+		3_supermarket.innerHTML = 'lock'
+		
+	4_supermarket = document.getElementById('4_supermarket');
+	if (game.supermarket >= 150)
+		4_supermarket.innerHTML = '150su';
+	else
+		4_supermarket.innerHTML = 'lock'
+}
+
+function	my_aff_factory_achievements()
+{
+	1_factory = document.getElementById('1_factory');
+	if (game.factory >= 1)
+		1_factory.innerHTML = '1fa';
+	else
+		1_factory.innerHTML = 'lock'
+			
+	2_factory = document.getElementById('2_factory');
+	if (game.factory >= 30)
+		2_factory.innerHTML = '30fa';
+	else
+		2_factory.innerHTML = 'lock'
+		
+	3_factory = document.getElementById('3_factory');
+	if (game.factory >= 80)
+		3_factory.innerHTML = '80fa';
+	else
+		3_factory.innerHTML = 'lock'
+		
+	4_factory = document.getElementById('4_factory');
+	if (game.factory >= 150)
+		4_factory.innerHTML = '150fa';
+	else
+		4_factory.innerHTML = 'lock'	
+}
+
+function	my_aff_bank_achievements()
+{
+	1_bank = document.getElementById('1_bank');
+	if (game.bank >= 1)
+		1_bank.innerHTML = '1ba';
+	else
+		1_bank.innerHTML = 'lock'
+			
+	2_bank = document.getElementById('2_bank');
+	if (game.bank >= 30)
+		2_bank.innerHTML = '30ba';
+	else
+		2_bank.innerHTML = 'lock'
+		
+	3_bank = document.getElementById('3_bank');
+	if (game.bank >= 80)
+		3_bank.innerHTML = '80ba';
+	else
+		3_bank.innerHTML = 'lock'
+		
+	4_bank = document.getElementById('4_bank');
+	if (game.bank >= 150)
+		4_bank.innerHTML = '150ba';
+	else
+		4_bank.innerHTML = 'lock'	
+}
+
+function	my_aff_mine_achievements()
+{
+	1_mine = document.getElementById('1_mine');
+	if (game.mine >= 1)
+		1_mine.innerHTML = '1mi';
+	else
+		1_mine.innerHTML = 'lock'
+			
+	2_mine = document.getElementById('2_mine');
+	if (game.mine >= 30)
+		2_mine.innerHTML = '30mi';
+	else
+		2_mine.innerHTML = 'lock'
+		
+	3_mine = document.getElementById('3_mine');
+	if (game.mine >= 80)
+		3_mine.innerHTML = '80mi';
+	else
+		3_mine.innerHTML = 'lock'
+		
+	4_mine = document.getElementById('4_mine');
+	if (game.mine >= 150)
+		4_mine.innerHTML = '150mi';
+	else
+		4_mine.innerHTML = 'lock'	
+}
+
+function	my_aff_president_achievements()
+{
+	1_president = document.getElementById('1_president');
+	if (game.president >= 1)
+		1_president.innerHTML = '1pr';
+	else
+		1_president.innerHTML = 'lock'
+			
+	2_president = document.getElementById('2_president');
+	if (game.president >= 30)
+		2_president.innerHTML = '30pr';
+	else
+		2_president.innerHTML = 'lock'
+		
+	3_president = document.getElementById('3_president');
+	if (game.president >= 80)
+		3_president.innerHTML = '80pr';
+	else
+		3_president.innerHTML = 'lock'
+		
+	4_president = document.getElementById('4_president');
+	if (game.president >= 120)
+		4_president.innerHTML = '120pr';
+	else
+		4_president.innerHTML = 'lock'	
+}
+
+function	my_aff_antimatter_achievements()
+{
+	1_antimatter = document.getElementById('1_antimatter');
+	if (game.antimatter >= 1)
+		1_antimatter.innerHTML = '1an';
+	else
+		1_antimatter.innerHTML = 'lock'
+			
+	2_antimatter = document.getElementById('2_antimatter');
+	if (game.antimatter >= 30)
+		2_antimatter.innerHTML = '30an';
+	else
+		2_antimatter.innerHTML = 'lock'
+		
+	3_antimatter = document.getElementById('3_antimatter');
+	if (game.antimatter >= 80)
+		3_antimatter.innerHTML = '80an';
+	else
+		3_antimatter.innerHTML = 'lock'
+		
+	4_antimatter = document.getElementById('4_antimatter');
+	if (game.antimatter >= 120)
+		4_antimatter.innerHTML = '120an';
+	else
+		4_antimatter.innerHTML = 'lock'	
+}
+
+function	my_aff_totalbat_achievements()
+{
+	1_totalbuild = document.getElementById('1_totalbuild');
+	if (game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter >= 50)
+		1_totalbuild.innerHTML = '50all';
+	else
+		1_totalbuild.innerHTML = 'lock'
+			
+	2_totalbuild = document.getElementById('2_totalbuild');
+	if (game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter >= 100)
+		2_totalbuild.innerHTML = '100all';
+	else
+		2_totalbuild.innerHTML = 'lock'
+		
+	3_totalbuild = document.getElementById('3_totalbuild');
+	if (game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter >= 500)
+		3_totalbuild.innerHTML = '500all';
+	else
+		3_totalbuild.innerHTML = 'lock'
+		
+	4_totalbuild = document.getElementById('4_totalbuild');
+	if (game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter >= 1000)
+		4_totalbuild.innerHTML = '1000all';
+	else
+		4_totalbuild.innerHTML = 'lock'
+		
+	5_totalbuild = document.getElementById('5_totalbuild');
+	if (game.worker + game.businessman + game.supermarket + game.factory + 
+		game.bank + game.mine + game.president + game.antimatter >= 2000)
+		5_totalbuild.innerHTML = '2000all';
+	else
+		5_totalbuild.innerHTML = 'lock'	
+}
+
+function	my_aff_totalmoney_achievements()
+{			
+	1_totalmoney = document.getElementById('1_totalmoney');
+	if (game.total_money >= 100)
+		1_totalmoney.innerHTML = '$total';
+	else
+		1_totalmoney.innerHTML = 'lock'
+		
+	2_totalmoney = document.getElementById('2_totalmoney');
+	if (game.total_money >= 1000)
+		2_totalmoney.innerHTML = '$total';
+	else
+		2_totalmoney.innerHTML = 'lock'
+		
+	3_totalmoney = document.getElementById('3_totalmoney');
+	if (game.total_money >= 100000)
+		3_totalmoney.innerHTML = '$total';
+	else
+		3_totalmoney.innerHTML = 'lock'
+		
+	4_totalmoney = document.getElementById('4_totalmoney');
+	if (game.total_money >= 1000000)
+		4_totalmoney.innerHTML = '$total';
+	else
+		4_totalmoney.innerHTML = 'lock'
+		
+	5_totalmoney = document.getElementById('5_totalmoney');
+	if (game.total_money >= 100000000)
+		5_totalmoney.innerHTML = '$total';
+	else
+		5_totalmoney.innerHTML = 'lock'	
+		
+	6_totalmoney = document.getElementById('6_totalmoney');
+	if (game.total_money >= 1000000000)
+		6_totalmoney.innerHTML = '$total';
+	else
+		6_totalmoney.innerHTML = 'lock'	
+		
+	7_totalmoney = document.getElementById('7_totalmoney');
+	if (game.total_money >= 100000000000)
+		7_totalmoney.innerHTML = '$total';
+	else
+		7_totalmoney.innerHTML = 'lock'
+	
+	8_totalmoney = document.getElementById('8_totalmoney');
+	if (game.total_money >= 100000000000000)
+		8_totalmoney.innerHTML = '$total';
+	else
+		8_totalmoney.innerHTML = 'lock'
+		
+}
+
+function	my_aff_prod_achievements()
+{
+	achiev_55 = document.getElementById('55_a');
+	if (game.prod_money >= 1)
+		achiev_55.innerHTML = '$prod';
+	else
+		achiev_55.innerHTML = 'lock'
+
+	achiev_56 = document.getElementById('56_a');
+	if (game.prod_money >= 10)
+		achiev_56.innerHTML = '$prod';
+	else
+		achiev_56.innerHTML = 'lock'
+
+	achiev_57 = document.getElementById('57_a');
+	if (game.prod_money >= 100)
+		achiev_57.innerHTML = '$prod';
+	else
+		achiev_57.innerHTML = 'lock'
+		
+	achiev_58 = document.getElementById('58_a');
+	if (game.prod_money >= 1000)
+		achiev_58.innerHTML = '$prod';
+	else
+		achiev_58.innerHTML = 'lock'
+		
+	achiev_59 = document.getElementById('59_a');
+	if (game.prod_money >= 10000)
+		achiev_59.innerHTML = '$prod';
+	else
+		achiev_59.innerHTML = 'lock'
+		
+	achiev_60 = document.getElementById('60_a');
+	if (game.prod_money >= 100000)
+		achiev_60.innerHTML = '$prod';
+	else
+		achiev_60.innerHTML = 'lock'
+		
+	achiev_61 = document.getElementById('61_a');
+	if (game.prod_money >= 1000000)
+		achiev_61.innerHTML = '$prod';
+	else
+		achiev_61.innerHTML = 'lock'	
+	
+	achiev_62 = document.getElementById('62_a');
+	if (game.prod_money >= 10000000)
+		achiev_62.innerHTML = '$prod';
+	else
+		achiev_62.innerHTML = 'lock'	
+}
+
+function	my_aff_timeplayed_achievements()
+{
+	achiev_55 = document.getElementById('55_a');
+	if (game.prod_money >= 1)
+		achiev_55.innerHTML = '$prod';
+	else
+		achiev_55.innerHTML = 'lock'
+
+	achiev_56 = document.getElementById('56_a');
+	if (game.prod_money >= 10)
+		achiev_56.innerHTML = '$prod';
+	else
+		achiev_56.innerHTML = 'lock'	
+	
+	
+}
+
+function	time_played_achievements()
+{
+	str = "00000"
+	if (game.timecounter >= 6) // 30min
+		str = setCharAt(str, 0, '1');
+	if (game.timecounter >= 12) // 1h
+		str = setCharAt(str, 1, '1');
+	if (game.timecounter >= 288) // 1j
+		str = setCharAt(str, 2, '1');
+	if (game.timecounter >= 864) // 3j
+		str = setCharAt(str, 3, '1');
+	if (game.timecounter >= 2016) // 1semaine
+		str = setCharAt(str, 4, '1');
+	return (str);
+}
+
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
