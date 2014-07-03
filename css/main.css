@@ -191,6 +191,23 @@ figure
 
 /* GAME_PAGE */
 
+#achievements
+{
+	z-index: 8999;
+	font-size: 1.5em;
+	background-color: rgba(255,255,255,0.9);
+	border: black 1px solid;
+	position: fixed;
+	text-align: center;
+	height: 700px;
+	padding: 10px;
+	width: 700px;
+	left: 50%;
+	top: 50%;
+	margin-top: -350px;
+	margin-left: -350px;
+}
+
 #pop_up
 {
 	z-index: 9000;

@@ -2,8 +2,6 @@
 unset($_COOKIE['userSession']);
 setcookie('userSession', null, -1);
 
-var_dump($_COOKIE);
-
 include('header.php');
 
 session_destroy();
