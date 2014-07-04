@@ -15,3 +15,15 @@ document.getElementById("exButton").onclick = function(){
 		}, 800 );
 	}
 }
+
+function closePop_up(name)
+{
+	var popUp = document.getElementById(name);
+	$(popUp).fadeOut(600);
+}
+
+function displayPop_up(name)
+{
+	var popUp = document.getElementById(name);
+	$(popUp).fadeIn(600);
+}

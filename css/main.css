@@ -194,6 +194,7 @@ figure
 #achievements
 {
 	z-index: 8999;
+	display: none;
 	font-size: 1.5em;
 	background-color: rgba(255,255,255,0.9);
 	border: black 1px solid;

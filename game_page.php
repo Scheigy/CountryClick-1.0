@@ -9,7 +9,7 @@ if (empty($_SESSION['pseudo']))
 	<button type="submit" id="pop_up_button" class="btn-lg btn-danger"><span class="glyphicon glyphicon-ok-sign"></span> Ok</button>
 </div>
 <div id="achievements">
-	<a href="#"><span class="cross glyphicon glyphicon-remove"></span></a>
+	<a href="#"><span id="crossAch" class="cross glyphicon glyphicon-remove" onclick="closePop_up('achievements');"></span></a>
 	<h1>Succès</h1><br />
 	<a href="#" title="Acheter un ouvrier"><img class="achImg" src="img/upgrade/worker1.png" alt="worker" /></a>
 	<a href="#"><img class="achImg" src="img/upgrade/worker2.png" alt="worker" /></a>
@@ -142,7 +142,7 @@ if (empty($_SESSION['pseudo']))
 				<div class="row" id="central_menu">
 					<button type="submit" class="btn-lg btn-success">Bâtiments</button>
 					<button type="submit" class="btn-lg btn-warning">Améliorations</button>
-					<button type="submit" class="btn-lg btn-danger">Succès</button>
+					<button type="submit" onclick="displayPop_up('achievements');" class="btn-lg btn-danger">Succès</button>
 				</div>
 
 			</section>
