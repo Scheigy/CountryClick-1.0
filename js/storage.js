@@ -229,7 +229,9 @@ function	addDollar()
 
 function    lowerMalus(malus)
 {
-	return (malus + 0.5);
+	if (malus == 0)
+		return (malus + 0.5);
+	return (1);
 }
 
 function	calc_prod()
@@ -537,7 +539,7 @@ function	my_aff_buildings()
 		myFactoryPrice = document.getElementById('factory_cost');
 		myFactoryPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.factory, 10000)) + ' $';
 		myFactoryBenefit = document.getElementById('factory_benefit');
-		myFactoryBenefit.innerHTML = 'Bénéfice : ' + changeNumber(40 * mult.factory) + ' $/sec';
+		myFactoryBenefit.innerHTML = 'Bénéfice : ' + changeNumber(40 * mult.factory * lowerMalus(onStrike())) + ' $/sec';
 	}
 
 	if (game.total_money < 100000)
