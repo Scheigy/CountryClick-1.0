@@ -260,6 +260,7 @@ function	addWorker()
 		game.worker = game.worker + 1;
 		myWorker.innerHTML = game.worker + ' ouvrier(s)';
 		myWorkerPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.worker, 100)) + ' $';
+		my_aff_total_buildings();
 		calc_prod();
 	}
 }
@@ -272,6 +273,7 @@ function	addBusinessman()
 		game.businessman = game.businessman + 1;
 		myBusinessman.innerHTML = game.businessman + ' cadre(s)';
 		myBusinessmanPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.businessman, 500)) + ' $';
+		my_aff_total_buildings();
 		calc_prod();
 	}
 }
@@ -284,6 +286,7 @@ function	addSupermarket()
 		game.supermarket = game.supermarket + 1;
 		mySupermarket.innerHTML = game.supermarket + ' supermarché(s)';
 		mySupermarketPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.supermarket, 3000)) + ' $';
+		my_aff_total_buildings();
 		calc_prod();
 	}
 }
@@ -296,6 +299,7 @@ function	addFactory()
 		game.factory = game.factory + 1;
 		myFactory.innerHTML = game.factory + ' usine(s)';
 		myFactoryPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.factory, 10000)) + ' $';
+		my_aff_total_buildings();
 		calc_prod();
 	}
 }
@@ -308,6 +312,7 @@ function	addBank()
 		game.bank = game.bank + 1;
 		myBank.innerHTML = game.bank + ' banque(s)';
 		myBankPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.bank, 100000)) + ' $';
+		my_aff_total_buildings();
 		calc_prod();
 	}
 }
@@ -320,6 +325,7 @@ function	addMine()
 		game.mine = game.mine + 1;
 		myMine.innerHTML = game.mine + ' mine(s)';
 		myMinePrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.mine, 1000000)) + ' $';
+		my_aff_total_buildings();
 		calc_prod();
 	}
 }
@@ -332,6 +338,7 @@ function	addPresident()
 		game.president = game.president + 1;
 		myPresident.innerHTML = game.president + ' président(s)';
 		myPresidentPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.president, 20000000)) + ' $';
+		my_aff_total_buildings();
 		calc_prod();
 	}
 }
@@ -344,6 +351,7 @@ function	addAntimatter()
 		game.antimatter = game.antimatter + 1;
 		myAntimatter.innerHTML = game.antimatter + ' nuage(s) d\'antimatière';
 		myAntimatterPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.antimatter, 1128256512)) + ' $';
+		my_aff_total_buildings();
 		calc_prod();
 	}
 }
@@ -492,7 +500,7 @@ function	my_backgrounds()
 
 function    my_aff_total_buildings()
 {
-		document.getElementById('total_buildings').innerHTML = (game.worker + game.businessman + game.supermarket + game.factory + game.bank + game.mine + game.president + game.antimatter);
+	document.getElementById('total_buildings').innerHTML = (game.worker + game.businessman + game.supermarket + game.factory + game.bank + game.mine + game.president + game.antimatter);
 }
 
 function	my_aff_buildings()
