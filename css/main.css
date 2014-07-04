@@ -208,6 +208,36 @@ figure
 	margin-left: -350px;
 }
 
+.achImg
+{
+	padding: 2px;
+	margin-bottom: 5px;
+	background-color: white;
+	border: 4px black double;
+	border-radius: 120px;
+	background: #5cb85c;
+}
+
+.achImg:hover
+{
+	opacity: 0.8;
+}
+
+.cross
+{
+  	color: red;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.cross:hover
+{
+	opacity: 0.8;
+}
+
 #pop_up
 {
 	z-index: 9000;
