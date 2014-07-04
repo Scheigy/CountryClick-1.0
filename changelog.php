@@ -8,7 +8,8 @@
 				<li class="dropdown">
 					<a data-toggle="dropdown" class="dropdown-toggle" href="#">Version <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a data-toggle="tab" href="#dropdown4">A venir</a></li>
+						<li><a data-toggle="tab" href="#dropdown5">A venir</a></li>
+						<li><a data-toggle="tab" href="#dropdown4">Alpha 1.4 (04/07/14)</a></li>
 						<li><a data-toggle="tab" href="#dropdown3">Alpha 1.3 (02/07/14)</a></li>
 						<li><a data-toggle="tab" href="#dropdown2">Alpha 1.2 (31/06/14)</a></li>
 						<li><a data-toggle="tab" href="#dropdown1">Alpha 1.1 (28/06/14)</a></li>
@@ -16,11 +17,17 @@
 				</li>
 			</ul>
 			<div class="tab-content">
-				<div id="dropdown4" class="tab-pane fade active">
+				<div id="dropdown5" class="tab-pane fade">
 					<h2>A venir</h2>
 					<p>					
 						- Récupération de votre sauvegarde sur d'autres machines/navigateurs<br />
 						- Succès<br />
+					</p>
+				</div>
+				<div id="dropdown4" class="tab-pane fade">
+					<h2>Alpha 1.4 (04/07/14)</h2>
+					<p>					
+						Sera écris demain :)<br />
 					</p>
 				</div>
 				<div id="dropdown3" class="tab-pane fade active">
@@ -77,5 +84,6 @@
 		</section>
 	</div>
 </div>
+<?php include_once("footer.php"); ?>
 </body>
 </html>

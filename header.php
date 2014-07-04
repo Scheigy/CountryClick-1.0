@@ -40,10 +40,3 @@ if (empty($_SESSION['pseudo']) && !empty($_COOKIE['userSession']))
 		</div>
 	</header>
 	<div id="exButton"><a href="#" title="expand"><img src="img/expand.png" alt="expand" /></a></div>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
-
-	<script src="js/few_fonctions.js"></script>

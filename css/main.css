@@ -209,6 +209,24 @@ figure
 	margin-left: -350px;
 }
 
+.pop
+{
+	z-index: 8999;
+	display: none;
+	font-size: 1.5em;
+	background-color: rgba(255,255,255,0.9);
+	border: black 1px solid;
+	position: fixed;
+	text-align: center;
+	height: 700px;
+	padding: 10px;
+	width: 700px;
+	left: 50%;
+	top: 50%;
+	margin-top: -350px;
+	margin-left: -350px;
+}
+
 .achImg
 {
 	padding: 2px;
@@ -226,7 +244,7 @@ figure
 
 .cross
 {
-  	color: red;
+	color: red;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -267,6 +285,22 @@ figure
 	margin-bottom: 10px;
 }
 
+#buildings
+{
+
+}
+
+.spriteLine
+{
+	line-height: 60px;
+	border: 4px solid black;
+	border-bottom: none;
+}
+.last
+{
+	border-bottom: 4px solid black;
+}
+
 #left
 {
 	height: 750px;
@@ -305,6 +339,8 @@ figure
 	margin-bottom: 10px;
 	line-height: 60px;
 	background-color: #428bca;
+	text-shadow: 0px 2px 2px white;
+	border: 1px solid #357ebd;
 }
 
 .square:hover
@@ -376,6 +412,15 @@ figure
 	100% {opacity: 1;}
 }
 
+.crossBuilding
+{
+	float: right;
+	margin-bottom: -20px;
+	margin-right: 5px;
+	margin-top: 5px;
+	color: red;
+}
+
 .worker_div
 {
 	margin-bottom: 5px;
@@ -415,4 +460,101 @@ figure
 	display: inline-block;
 	margin-bottom: 30px;
 	vertical-align: middle;
+}
+
+a[data-tooltip] {
+	position: relative;
+}
+a[data-tooltip]::before,
+a[data-tooltip]::after {
+	position: absolute;
+	display: none;
+	opacity: 0.85;
+}
+a[data-tooltip]::before {
+  /*
+   * using data-tooltip instead of title so we 
+   * don't have the real tooltip overlapping
+   */
+   content: attr(data-tooltip);
+   background: #000;
+   color: #fff;
+   font-size: 20px;
+   padding: 5px;
+   border-radius: 5px;
+   /* we don't want the text to wrap */
+   white-space: nowrap;
+   text-decoration: none;
+}
+a[data-tooltip]::after {
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	content: '';
+}
+
+a[data-tooltip]:hover::before,
+a[data-tooltip]:hover::after {
+	display: block;
+}
+
+/** positioning **/
+
+/* left tooltip */
+a[data-tooltip][data-placement="left"]::before {
+	top: -25%;
+	right: 100%;
+	margin-right: 10px;
+}
+
+a[data-tooltip][data-placement="left"]::after {
+	border-left-color: #000;
+	border-right: none;
+	top: 50%;
+	right: 100%;
+	margin-top: -6px;
+	margin-right: 4px;
+}
+
+/* right tooltip */
+a[data-tooltip][data-placement="right"]::before {
+	top: -25%;
+	left: 100%;
+	margin-left: 10px;
+}
+a[data-tooltip][data-placement="right"]::after {
+	border-right-color: #000;
+	border-left: none;
+	top: 50%;
+	left: 100%;
+	margin-top: -6px;
+	margin-left: 4px;
+}
+
+/* top tooltip */
+a[data-tooltip][data-placement="top"]::before {
+	bottom: 100%;
+	left: 0;
+	margin-bottom: 28px;
+}
+a[data-tooltip][data-placement="top"]::after {
+	border-top-color: #000;
+	border-bottom: none;
+	bottom: 100%;
+	left: 10px;
+	margin-bottom: 23px;
+}
+
+/* bottom tooltip */
+a[data-tooltip][data-placement="bottom"]::before {
+	top: 100%;
+	left: 0;
+	margin-top: 10px;
+}
+a[data-tooltip][data-placement="bottom"]::after {
+	border-bottom-color: #000;
+	border-top: none;
+	top: 100%;
+	left: 10px;
+	margin-top: 4px;
 }

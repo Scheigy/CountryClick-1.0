@@ -4,13 +4,13 @@ document.getElementById("exButton").onclick = function(){
 	{
 		bool = true;
 		$('#header').animate({ 
-			marginTop: "-140px",
-		}, 800 );
+			marginTop: "-160px",
+		}, 800 ).fadeOut(400);
 	}
 	else
 	{
 		bool = false;
-		$('#header').animate({ 
+		$('#header').fadeIn(400).animate({ 
 			marginTop: "0",
 		}, 800 );
 	}
@@ -19,11 +19,13 @@ document.getElementById("exButton").onclick = function(){
 function closePop_up(name)
 {
 	var popUp = document.getElementById(name);
-	$(popUp).fadeOut(600);
+	$(popUp).fadeOut(300);
 }
 
 function displayPop_up(name)
 {
 	var popUp = document.getElementById(name);
-	$(popUp).fadeIn(600);
+	popUp.style.opacity = "0";
+	popUp.style.display = "block";
+	$(popUp).transition({ opacity: 1 });
 }
