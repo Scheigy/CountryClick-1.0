@@ -221,8 +221,8 @@ function	clickValue()
 function	addDollar()
 {
 	game.clickcounter = game.clickcounter + 1;
-	game.money = game.money + clickValue() * bonusCalculator();
-	game.total_money = game.total_money + clickValue() * bonusCalculator();
+	game.money = game.money + clickValue();
+	game.total_money = game.total_money + clickValue();
 	myDollar.innerHTML = changeNumber(game.money) + ' $';
 	myDollarTotal.innerHTML = 'TOTAL : ' + changeNumber(game.total_money) + ' $';
 }
@@ -1202,7 +1202,7 @@ function	onStrike()
 
 	if (game.worker > 50)
 		strike = Math.floor((Math.random() * (14400 * time)) + 1);
-	if (strike == 1)
+	if (strike == 1) 
 		timer_strike = 600;
 	if (timer_strike == 600)
 	{
