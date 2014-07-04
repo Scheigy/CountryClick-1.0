@@ -1201,7 +1201,7 @@ function	onStrike()
 	var strike = 0;
 
 	if (game.worker > 50)
-		strike = Math.floor((Math.random() * (14400 * time)) + 1);
+		strike = Math.floor((Math.random() * (28800 * time)) + 1);
 	if (strike == 1) 
 		timer_strike = 600;
 	if (timer_strike == 600)
