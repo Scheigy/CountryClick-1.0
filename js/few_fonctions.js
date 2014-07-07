@@ -32,12 +32,12 @@ function displayPop_up(name)
 
 function appearSell(which)
 {
-	var div = "sell" + which;
-	document.getElementById(div).style.display = "block";
+	var sellDiv = "sell" + which;
+	document.getElementById(sellDiv).style.display = "block";
 }
 
 function disappearSell(which)
 {
 	var div = "sell" + which;
-	document.getElementById(div).style.display = "none";	
+	document.getElementById(div).style.display = "none";
 }

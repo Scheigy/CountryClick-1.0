@@ -435,7 +435,10 @@ figure
 .sell
 {
 	height: 30px;
+	background-color: #428bca;
 	margin-bottom: 5px;
+	margin-top: -5px;
+	border-radius
 }
 
 .sellLink
