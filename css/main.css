@@ -408,10 +408,10 @@ figure
 
 .worker_div
 {
-	margin-bottom: 5px;
 	background-color: #428bca;
 	border-color: #357ebd;
 	border-radius: 6px;
+	margin-bottom: 5px;
 }
 
 .worker_div:hover
@@ -430,6 +430,18 @@ figure
 {
 	color: white;
 	text-shadow: none;
+}
+
+.sell
+{
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+.sellLink
+{
+	cursor: pointer;
+	color: #428bca;
 }
 
 .infos

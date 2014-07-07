@@ -165,8 +165,9 @@ if (empty($_SESSION['pseudo']))
 
 			<section id="right" class="col-lg-offset-1 col-xs-4 col-lg-3">
 				<div style="text-align:center;"><p>Total des bâtiments : <span id="total_buildings">NULL</span></p></div>
-				<div class="row">
-					<div class="row col-lg-11 worker_div" id="worker_button">
+				
+				<div onMouseOut="disappearSell('Worker');"; onMouseOver="appearSell('Worker');">
+					<div class="row worker_div" id="worker_button">
 						<img class="col-lg-4 worker_img" src="img/Worker.png" alt="worker" />
 						<div class="text col-lg-offset-1 col-lg-7">
 							<div id="nb_worker" class="nb_worker">0 worker(s)</div>
@@ -174,77 +175,130 @@ if (empty($_SESSION['pseudo']))
 							<div id="worker_benefit" class="worker_benefit">Bénéfice : 1 $/sec</div>
 						</div>
 					</div>
-					<!--<a href="#"><span id="crossWorker" class="crossBuilding col-lg-1 glyphicon glyphicon-remove"></span></a>-->
-					<span style="font-size:0.7em; line-height:15px; background-color: red; color: white; width: 10px;">V<br />E<br />N<br />D<br />R<br />E</span>
-				</div>
-
-				<div class="row worker_div" id="businessman_button">
-					<span id="crossBusinessman" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
-					<img class="col-lg-4 worker_img" src="img/Businessman.png" alt="businessman" />
-					<div class="text col-lg-offset-1 col-lg-7">
-						<div id="nb_businessman" class="nb_worker">1 cadre(s)</div>
-						<div id="businessman_cost" class="worker_cost">Prix : 0$</div>
-						<div id="businessman_benefit" class="worker_benefit">Bénéfice : 5 $/sec</div>
+					<div id="sellWorker" style="display:none;" class="sell">
+						<span class="col-lg-3">Vendre</span>
+						<span class="col-lg-3"><span id="sell1Worker" class="sellLink">1</span></span>
+						<span class="col-lg-3"><span id="sell10Worker" class="sellLink">10</span></span>
+						<span class="col-lg-3"><span id="sellAllWorker" class="sellLink">Tout</span></span>
 					</div>
 				</div>
 
-				<div class="row worker_div" id="supermarket_button">
-					<span id="crossSupermarket" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
-					<img class="col-lg-4 worker_img" src="img/Supermarket.png" alt="supermarket" />
-					<div class="text col-lg-offset-1 col-lg-7">
-						<div id="nb_supermarket" class="nb_worker">1 supermarché(s)</div>
-						<div id="supermarket_cost" class="worker_cost">Prix : 0$</div>
-						<div id="supermarket_benefit" class="worker_benefit">Bénéfice : 15 $/sec</div>
+				<div onMouseOut="disappearSell('Businessman')"; onMouseOver="appearSell('Businessman');">
+					<div class="row worker_div" id="businessman_button">
+						<img class="col-lg-4 worker_img" src="img/Businessman.png" alt="businessman" />
+						<div class="text col-lg-offset-1 col-lg-7">
+							<div id="nb_businessman" class="nb_worker">1 cadre(s)</div>
+							<div id="businessman_cost" class="worker_cost">Prix : 0$</div>
+							<div id="businessman_benefit" class="worker_benefit">Bénéfice : 5 $/sec</div>
+						</div>
+					</div>
+					<div id="sellBusinessman" style="display:none;" class="sell">
+						<span class="col-lg-3">Vendre</span>
+						<span class="col-lg-3"><span id="sell1Businessman" class="sellLink">1</span></span>
+						<span class="col-lg-3"><span id="sell10Businessman" class="sellLink">10</span></span>
+						<span class="col-lg-3"><span id="sellAllBusinessman" class="sellLink">Tout</span></span>
 					</div>
 				</div>
 
-				<div class="row worker_div" id="factory_button">
-					<span id="crossFactory" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
-					<img class="col-lg-4 worker_img" src="img/Factory.png" alt="factory" />
-					<div class="text col-lg-offset-1 col-lg-7">
-						<div id="nb_factory" class="nb_worker">1 usine(s)</div>
-						<div id="factory_cost" class="worker_cost">Prix : 0$</div>
-						<div id="factory_benefit" class="worker_benefit">Bénéfice : 40 $/sec</div>
+				<div onMouseOut="disappearSell('Supermarket')"; onMouseOver="appearSell('Supermarket');">
+					<div class="row worker_div" id="supermarket_button">
+						<img class="col-lg-4 worker_img" src="img/Supermarket.png" alt="supermarket" />
+						<div class="text col-lg-offset-1 col-lg-7">
+							<div id="nb_supermarket" class="nb_worker">1 supermarché(s)</div>
+							<div id="supermarket_cost" class="worker_cost">Prix : 0$</div>
+							<div id="supermarket_benefit" class="worker_benefit">Bénéfice : 15 $/sec</div>
+						</div>
+					</div>
+					<div id="sellSupermarket" style="display:none;" class="sell">
+						<span class="col-lg-3">Vendre</span>
+						<span class="col-lg-3"><span id="sell1Supermarket" class="sellLink">1</span></span>
+						<span class="col-lg-3"><span id="sell10Supermarket" class="sellLink">10</span></span>
+						<span class="col-lg-3"><span id="sellAllSupermarket" class="sellLink">Tout</span></span>
 					</div>
 				</div>
 
-				<div class="row worker_div" id="bank_button">
-					<span id="crossBank" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
-					<img class="col-lg-4 worker_img" src="img/Bank.png" alt="bank" />
-					<div class="text col-lg-offset-1 col-lg-7">
-						<div id="nb_bank" class="nb_worker">1 banque(s)</div>
-						<div id="bank_cost" class="worker_cost">Prix : 0$</div>
-						<div id="bank_benefit" class="worker_benefit">Bénéfice : 300 $/sec</div>
+				<div onMouseOut="disappearSell('Factory')"; onMouseOver="appearSell('Factory');">
+					<div class="row worker_div" id="factory_button">
+						<img class="col-lg-4 worker_img" src="img/Factory.png" alt="factory" />
+						<div class="text col-lg-offset-1 col-lg-7">
+							<div id="nb_factory" class="nb_worker">1 usine(s)</div>
+							<div id="factory_cost" class="worker_cost">Prix : 0$</div>
+							<div id="factory_benefit" class="worker_benefit">Bénéfice : 40 $/sec</div>
+						</div>
+					</div>
+					<div id="sellFactory" style="display:none;" class="sell">
+						<span class="col-lg-3">Vendre</span>
+						<span class="col-lg-3"><span id="sell1Factory" class="sellLink">1</span></span>
+						<span class="col-lg-3"><span id="sell10Factory" class="sellLink">10</span></span>
+						<span class="col-lg-3"><span id="sellAllFactory" class="sellLink">Tout</span></span>
 					</div>
 				</div>
 
-				<div class="row worker_div" id="mine_button">
-					<span id="crossMine" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
-					<img class="col-lg-4 worker_img" src="img/Mine.png" alt="mine" />
-					<div class="text col-lg-offset-1 col-lg-7">
-						<div id="nb_mine" class="nb_worker">1 mine(s)</div>
-						<div id="mine_cost" class="worker_cost">Prix : 0$</div>
-						<div id="mine_benefit" class="worker_benefit">BénéficeBénéfice : 1 000 $/sec</div>
+				<div onMouseOut="disappearSell('Bank')"; onMouseOver="appearSell('Bank');">
+					<div class="row worker_div" id="bank_button">
+						<img class="col-lg-4 worker_img" src="img/Bank.png" alt="bank" />
+						<div class="text col-lg-offset-1 col-lg-7">
+							<div id="nb_bank" class="nb_worker">1 banque(s)</div>
+							<div id="bank_cost" class="worker_cost">Prix : 0$</div>
+							<div id="bank_benefit" class="worker_benefit">Bénéfice : 300 $/sec</div>
+						</div>
+					</div>
+					<div id="sellBank" style="display:none;" class="sell">
+						<span class="col-lg-3">Vendre</span>
+						<span class="col-lg-3"><span id="sell1Bank" class="sellLink">1</span></span>
+						<span class="col-lg-3"><span id="sell10Bank" class="sellLink">10</span></span>
+						<span class="col-lg-3"><span id="sellAllBank" class="sellLink">Tout</span></span>
 					</div>
 				</div>
 
-				<div class="row worker_div" id="president_button">
-					<span id="crossPresident" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
-					<img class="col-lg-4 worker_img" src="img/President.png" alt="president" />
-					<div class="text col-lg-offset-1 col-lg-7">
-						<div id="nb_president" class="nb_worker">1 président(s)</div>
-						<div id="president_cost" class="worker_cost">Prix : 0$</div>
-						<div id="president_benefit" class="worker_benefit">Bénéfice : 5 000 $/sec</div>
+				<div onMouseOut="disappearSell('Mine')"; onMouseOver="appearSell('Mine');">
+					<div class="row worker_div" id="mine_button">
+						<img class="col-lg-4 worker_img" src="img/Mine.png" alt="mine" />
+						<div class="text col-lg-offset-1 col-lg-7">
+							<div id="nb_mine" class="nb_worker">1 mine(s)</div>
+							<div id="mine_cost" class="worker_cost">Prix : 0$</div>
+							<div id="mine_benefit" class="worker_benefit">BénéficeBénéfice : 1 000 $/sec</div>
+						</div>
+					</div>
+					<div id="sellMine" style="display:none;" class="sell">
+						<span class="col-lg-3">Vendre</span>
+						<span class="col-lg-3"><span id="sell1Mine" class="sellLink">1</span></span>
+						<span class="col-lg-3"><span id="sell10Mine" class="sellLink">10</span></span>
+						<span class="col-lg-3"><span id="sellAllMine" class="sellLink">Tout</span></span>
 					</div>
 				</div>
 
-				<div class="row worker_div" id="antimatter_button">
-					<span id="crossAntimatter" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
-					<img class="col-lg-4 worker_img" src="img/Antimater.png" alt="antimater" />
-					<div class="text col-lg-offset-1 col-lg-7">
-						<div id="nb_antimatter" class="nb_worker">1 nuage(s) d'antimatière</div>
-						<div id="antimatter_cost" class="worker_cost">Prix : 0$</div>
-						<div id="antimatter_benefit" class="worker_benefit">Bénéfice : 50 000 $/sec</div>
+				<div onMouseOut="disappearSell('President')"; onMouseOver="appearSell('President');">
+					<div class="row worker_div" id="president_button">
+						<img class="col-lg-4 worker_img" src="img/President.png" alt="president" />
+						<div class="text col-lg-offset-1 col-lg-7">
+							<div id="nb_president" class="nb_worker">1 président(s)</div>
+							<div id="president_cost" class="worker_cost">Prix : 0$</div>
+							<div id="president_benefit" class="worker_benefit">Bénéfice : 5 000 $/sec</div>
+						</div>
+					</div>
+					<div id="sellPresident" style="display:none;" class="sell">
+						<span class="col-lg-3">Vendre</span>
+						<span class="col-lg-3"><span id="sell1President" class="sellLink">1</span></span>
+						<span class="col-lg-3"><span id="sell10President" class="sellLink">10</span></span>
+						<span class="col-lg-3"><span id="sellAllPresident" class="sellLink">Tout</span></span>
+					</div>
+				</div>
+
+				<div onMouseOut="disappearSell('Antimatter')"; onMouseOver="appearSell('Antimatter');">
+					<div class="row worker_div" id="antimatter_button">
+						<img class="col-lg-4 worker_img" src="img/Antimater.png" alt="antimater" />
+						<div class="text col-lg-offset-1 col-lg-7">
+							<div id="nb_antimatter" class="nb_worker">1 nuage(s) d'antimatière</div>
+							<div id="antimatter_cost" class="worker_cost">Prix : 0$</div>
+							<div id="antimatter_benefit" class="worker_benefit">Bénéfice : 50 000 $/sec</div>
+						</div>
+					</div>
+					<div id="sellAntimatter" style="display:none;" class="sell">
+						<span class="col-lg-3">Vendre</span>
+						<span class="col-lg-3"><span id="sell1Antimatter" class="sellLink">1</span></span>
+						<span class="col-lg-3"><span id="sell10Antimatter" class="sellLink">10</span></span>
+						<span class="col-lg-3"><span id="sellAllAntimatter" class="sellLink">Tout</span></span>
 					</div>
 				</div>
 			</section>

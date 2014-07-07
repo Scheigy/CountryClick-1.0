@@ -29,3 +29,15 @@ function displayPop_up(name)
 	popUp.style.display = "block";
 	$(popUp).transition({ opacity: 1 });
 }
+
+function appearSell(which)
+{
+	var div = "sell" + which;
+	document.getElementById(div).style.display = "block";
+}
+
+function disappearSell(which)
+{
+	var div = "sell" + which;
+	document.getElementById(div).style.display = "none";	
+}
