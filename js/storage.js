@@ -357,11 +357,11 @@ function	addAntimatter()
 }
 
 ////////////////////////////////////////Vente///////////////////////////////////////////////////////////////
-/*
 
-function	calc_sell_price()
+
+function	calc_sell_price(nb, price)
 {
-	return(parseInt((price * Math.pow(1.15, nb)) / 2));	
+	return(parseInt((price * Math.pow(1.15, nb)) / 2));
 }
 
 function	sellWorker(nb)
@@ -375,6 +375,7 @@ function	sellWorker(nb)
 			myWorker.innerHTML = game.worker + ' ouvrier(s)';
 			myWorkerPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.worker, 100)) + ' $';
 			calc_prod();
+			my_aff_total_buildings();
 		}
 		nb -= 1;
 	}
@@ -391,6 +392,7 @@ function	sellBusinessman(nb)
 			myBusinessman.innerHTML = game.businessman + ' cadre(s)';
 			myBusinessmanPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.businessman, 500)) + ' $';
 			calc_prod();
+			my_aff_total_buildings();
 		}
 		nb -= 1;
 	}
@@ -407,12 +409,13 @@ function	sellSupermarket(nb)
 			mySupermarket.innerHTML = game.supermarket + ' supermarché(s)';
 			mySupermarketPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.supermarket, 3000)) + ' $';
 			calc_prod();
+			my_aff_total_buildings();
 		}
 		nb -= 1;
 	}
 }
 
-function	sellFactory()
+function	sellFactory(nb)
 {
 	while (nb > 0)
 	{
@@ -423,6 +426,7 @@ function	sellFactory()
 			myFactory.innerHTML = game.factory + ' usine(s)';
 			myFactoryPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.factory, 10000)) + ' $';
 			calc_prod();
+			my_aff_total_buildings();
 		}
 		nb -= 1;
 	}
@@ -439,6 +443,7 @@ function	sellBank(nb)
 			myBank.innerHTML = game.bank + ' banque(s)';
 			myBankPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.bank, 100000)) + ' $';
 			calc_prod();
+			my_aff_total_buildings();
 		}
 		nb -= 1;
 	}
@@ -455,6 +460,7 @@ function	sellMine(nb)
 			myMine.innerHTML = game.mine + ' mine(s)';
 			myMinePrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.mine, 1000000)) + ' $';
 			calc_prod();
+			my_aff_total_buildings();
 		}
 		nb -= 1;
 	}
@@ -471,12 +477,13 @@ function	sellPresident(nb)
 			myPresident.innerHTML = game.president + ' président(s)';
 			myPresidentPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.president, 20000000)) + ' $';
 			calc_prod();
+			my_aff_total_buildings();
 		}
 		nb -= 1;
 	}
 }
 
-function	sellAntimatter()
+function	sellAntimatter(nb)
 {
 	while (nb > 0)
 	{
@@ -487,11 +494,12 @@ function	sellAntimatter()
 			myAntimatter.innerHTML = game.antimatter + ' nuage(s) d\'antimatière';
 			myAntimatterPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.antimatter, 1128256512)) + ' $';
 			calc_prod();
+			my_aff_total_buildings();
 		}
 		nb -= 1;
 	}
 }
-*/
+
 /*==================================================================================================================*/
 
 function	my_backgrounds()
@@ -1819,7 +1827,37 @@ elemAntimatter.onclick = addAntimatter;
 elemPopup = document.getElementById('pop_up_button');
 elemPopup.onclick = function() {document.getElementById('pop_up').style.display = 'none';};
 
-document.getElementById("sell1Worker").onclick = sellWorker(1);
+document.getElementById("sell1Worker").onclick = function(){sellWorker(1);};
+document.getElementById("sell10Worker").onclick = function(){sellWorker(10);};
+document.getElementById("sellAllWorker").onclick = function(){sellWorker(game.worker);};
+
+document.getElementById("sell1Businessman").onclick = function(){sellBusinessman(1);};
+document.getElementById("sell10Businessman").onclick = function(){sellBusinessman(10);};
+document.getElementById("sellAllBusinessman").onclick = function(){sellBusinessman(game.businessman);};
+
+document.getElementById("sell1Supermarket").onclick = function(){sellSupermarket(1);};
+document.getElementById("sell10Supermarket").onclick = function(){sellSupermarket(10);};
+document.getElementById("sellAllSupermarket").onclick = function(){sellSupermarket(game.supermarket);};
+
+document.getElementById("sell1Factory").onclick = function(){sellFactory(1);};
+document.getElementById("sell10Factory").onclick = function(){sellFactory(10);};
+document.getElementById("sellAllFactory").onclick = function(){sellFactory(game.factory);};
+
+document.getElementById("sell1Bank").onclick = function(){sellBank(1);};
+document.getElementById("sell10Bank").onclick = function(){sellBank(10);};
+document.getElementById("sellAllBank").onclick = function(){sellBank(game.bank);};
+
+document.getElementById("sell1Mine").onclick = function(){sellMine(1);};
+document.getElementById("sell10Mine").onclick = function(){sellMine(10);};
+document.getElementById("sellAllMine").onclick = function(){sellMine(game.mine);};
+
+document.getElementById("sell1President").onclick = function(){sellPresident(1);};
+document.getElementById("sell10President").onclick = function(){sellPresident(10);};
+document.getElementById("sellAllPresident").onclick = function(){sellPresident(game.president);};
+
+document.getElementById("sell1Antimatter").onclick = function(){sellAntimatter(1);};
+document.getElementById("sell10Antimatter").onclick = function(){sellAntimatter(10);};
+document.getElementById("sellAllAntimatter").onclick = function(){sellAntimatter(game.antimatter);};
 //elemSellWorker.onclick = sellWorker;
 /*elemSellBusinessman = document.getElementById("crossBusinessman");
 elemSellBusinessman.onclick = sellBusinessman;
