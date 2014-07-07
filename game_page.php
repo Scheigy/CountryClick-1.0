@@ -228,7 +228,7 @@ if (empty($_SESSION['pseudo']))
 					</div>
 					<div id="sellFactory" style="display:none;" class="sell">
 						<span class="col-lg-3">Vendre</span>
-						<span class="col-lg-3"><span id="sell1F02actory" class="sellLink">1</span></span>
+						<span class="col-lg-3"><span id="sell1Factory" class="sellLink">1</span></span>
 						<span class="col-lg-3"><span id="sell10Factory" class="sellLink">10</span></span>
 						<span class="col-lg-3"><span id="sellAllFactory" class="sellLink">Tout</span></span>
 					</div>
