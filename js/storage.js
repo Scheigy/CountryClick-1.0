@@ -1754,7 +1754,6 @@ function reparation()
 	}
 }
 
-window.localStorage.clear();
 lcStorage();
 my_aff_buildings();
 my_aff_total_buildings();
