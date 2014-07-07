@@ -166,7 +166,7 @@ if (empty($_SESSION['pseudo']))
 			<section id="right" class="col-lg-offset-1 col-xs-4 col-lg-3">
 				<div style="text-align:center;"><p>Total des bâtiments : <span id="total_buildings">NULL</span></p></div>
 				<div class="row worker_div" id="worker_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<div id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></div>
 					<img class="col-lg-4 worker_img" src="img/Worker.png" alt="worker" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_worker" class="nb_worker">0 worker(s)</div>
