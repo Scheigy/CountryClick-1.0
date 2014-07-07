@@ -1786,22 +1786,22 @@ elemAntimatter.onclick = addAntimatter;
 
 elemPopup = document.getElementById('pop_up_button');
 elemPopup.onclick = function() {document.getElementById('pop_up').style.display = 'none';};
-/*
-elemSellWorker = document.getElementById("worker_sell");
-elemSellWorker.onclick = sellWorker;
-elemSellBusinessman = document.getElementById("businessman_sell");
+
+elemSellWorker = document.getElementById("crossWorker");
+elemSellWorker.onclick = function(){alert('salut');};
+/*elemSellBusinessman = document.getElementById("crossBusinessman");
 elemSellBusinessman.onclick = sellBusinessman;
-elemSellSupermarket = document.getElementById("supermarket_sell");
+elemSellSupermarket = document.getElementById("crossSupermarket");
 elemSellSupermarket.onclick = sellSupermarket;
-elemSellFactory = document.getElementById("factory_sell");
+elemSellFactory = document.getElementById("crossFactory");
 elemSellFactory.onclick = sellFactory;
-elemSellBank = document.getElementById("bank_sell");
+elemSellBank = document.getElementById("crossBank");
 elemSellBank.onclick = sellBank;
-elemSellMine = document.getElementById("mine_sell");
+elemSellMine = document.getElementById("crossMine");
 elemSellMine.onclick = sellMine;
-elemSellPresident = document.getElementById("president_sell");
+elemSellPresident = document.getElementById("crossPresident");
 elemSellPresident.onclick = sellPresident;
-elemSellAntimatter = document.getElementById("antimatter_sell");
+elemSellAntimatter = document.getElementById("crossAntimatter");
 elemSellAntimatter.onclick = sellAntimatter;
 */
 
@@ -1871,5 +1871,3 @@ elemUpgrade_antimatter2.onclick = addUpgrade_antimatter2;
 elemUpgrade_antimatter3 = document.getElementById("twenty-four");
 elemUpgrade_antimatter3.onclick = addUpgrade_antimatter3;
 
-
-document.getElementById("crossSell").onclick = function(){alert('vend');};
