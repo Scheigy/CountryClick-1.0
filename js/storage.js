@@ -1819,7 +1819,7 @@ elemAntimatter.onclick = addAntimatter;
 elemPopup = document.getElementById('pop_up_button');
 elemPopup.onclick = function() {document.getElementById('pop_up').style.display = 'none';};
 
-//elemSellWorker = document.getElementById("crossWorker");
+document.getElementById("sell1Worker").onclick = sellWorker(1);
 //elemSellWorker.onclick = sellWorker;
 /*elemSellBusinessman = document.getElementById("crossBusinessman");
 elemSellBusinessman.onclick = sellBusinessman;
