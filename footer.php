@@ -1,5 +1,5 @@
+
 <script src="js/jquery-1.11.1.min.js"> </script>
-<script src="js/storage.js"> </script>
 <script src="js/jquery.transit.min.js"> </script>
 <script src="js/bootstrap.min.js"> </script>
 <script src="js/few_fonctions.js"> </script>

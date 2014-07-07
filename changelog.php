@@ -21,13 +21,14 @@
 					<h2>A venir</h2>
 					<p>					
 						- Récupération de votre sauvegarde sur d'autres machines/navigateurs<br />
-						- Succès<br />
+						- Boutique Premium. Cela ne changera en rien votre façon habituelle de jouer si vous ne voulez rien payer.<br />
 					</p>
 				</div>
 				<div id="dropdown4" class="tab-pane fade">
 					<h2>Alpha 1.4 (04/07/14)</h2>
 					<p>					
-						Sera écris demain :)<br />
+						<h3>Gameplay</h3>
+						- Les succès sont désormais disponible. Attendez vous à une vague de notifications si vous avez déjà bien avancé.<br />
 					</p>
 				</div>
 				<div id="dropdown3" class="tab-pane fade active">

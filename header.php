@@ -14,7 +14,7 @@ if (empty($_SESSION['pseudo']) && !empty($_COOKIE['userSession']))
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="icon" type="image/png" href="img/favicon.png" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Country Click - Alpha 1.3</title>
 </head>
 <body>

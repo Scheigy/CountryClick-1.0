@@ -13,38 +13,38 @@ if (empty($_SESSION['pseudo']))
 	<a href="#"><span id="crossAch" class="cross glyphicon glyphicon-remove" onclick="closePop_up('achievements');"></span></a>
 	<h1>Succès</h1>
 	<h2>Coming soon</h2>
-	<a href="#" data-tooltip="Acheter 1 ouvrier" data-placement="top"><img class="achImg" src="img/upgrade/worker1.png" alt="worker" /></a>
-	<a href="#" data-tooltip="Acheter 30 ouvriers" data-placement="top"><img class="achImg" src="img/upgrade/worker2.png" alt="worker" /></a>
-	<a href="#" data-tooltip="Acheter 80 ouvriers" data-placement="top"><img class="achImg" src="img/upgrade/worker3.png" alt="worker" /></a>
-	<a href="#" data-tooltip="Acheter 150 ouvriers" data-placement="top"><img class="achImg" src="img/upgrade/worker4.png" alt="worker" /></a>
-	<a href="#" data-tooltip="Acheter 1 cadre" data-placement="top"><img class="achImg" src="img/upgrade/businessman1.png" alt="businessman" /></a>
-	<a href="#" data-tooltip="Acheter 30 cadres" data-placement="top"><img class="achImg" src="img/upgrade/businessman2.png" alt="businessman" /></a>
-	<a href="#" data-tooltip="Acheter 80 cadres" data-placement="top"><img class="achImg" src="img/upgrade/businessman3.png" alt="businessman" /></a>
-	<a href="#" data-tooltip="Acheter 150 cadres" data-placement="top"><img class="achImg" src="img/upgrade/businessman4.png" alt="businessman" /></a><br />
-	<a href="#" data-tooltip="Acheter 1 supermarché" data-placement="top"><img class="achImg" src="img/upgrade/supermarket1.png" alt="supermarket" /></a>
-	<a href="#" data-tooltip="Acheter 30 supermarchés" data-placement="top"><img class="achImg" src="img/upgrade/supermarket2.png" alt="supermarket" /></a>
-	<a href="#" data-tooltip="Acheter 80 supermarchés" data-placement="top"><img class="achImg" src="img/upgrade/supermarket3.png" alt="supermarket" /></a>
-	<a href="#" data-tooltip="Acheter 150 supermarchés" data-placement="top"><img class="achImg" src="img/upgrade/supermarket4.png" alt="supermarket" /></a>
-	<a href="#" data-tooltip="Acheter 1 usine" data-placement="top"><img class="achImg" src="img/upgrade/factory1.png" alt="factory" /></a>
-	<a href="#" data-tooltip="Acheter 30 usines" data-placement="top"><img class="achImg" src="img/upgrade/factory2.png" alt="factory" /></a>
-	<a href="#" data-tooltip="Acheter 80 usines" data-placement="top"><img class="achImg" src="img/upgrade/factory3.png" alt="factory" /></a>
-	<a href="#" data-tooltip="Acheter 150 usines" data-placement="top"><img class="achImg" src="img/upgrade/factory4.png" alt="factory" /></a><br />	
-	<a href="#" data-tooltip="Acheter 1 banque" data-placement="top"><img class="achImg" src="img/upgrade/bank1.png" alt="bank" /></a>
-	<a href="#" data-tooltip="Acheter 30 banques" data-placement="top"><img class="achImg" src="img/upgrade/bank2.png" alt="bank" /></a>
-	<a href="#" data-tooltip="Acheter 80 banques" data-placement="top"><img class="achImg" src="img/upgrade/bank3.png" alt="bank" /></a>
-	<a href="#" data-tooltip="Acheter 150 banques" data-placement="top"><img class="achImg" src="img/upgrade/bank4.png" alt="bank" /></a>
-	<a href="#" data-tooltip="Acheter 1 mine" data-placement="top"><img class="achImg" src="img/upgrade/mine1.png" alt="mine" /></a>
-	<a href="#" data-tooltip="Acheter 30 mines" data-placement="top"><img class="achImg" src="img/upgrade/mine2.png" alt="mine" /></a>
-	<a href="#" data-tooltip="Acheter 80 mines" data-placement="top"><img class="achImg" src="img/upgrade/mine3.png" alt="mine" /></a>
-	<a href="#" data-tooltip="Acheter 150 mines" data-placement="top"><img class="achImg" src="img/upgrade/mine4.png" alt="mine" /></a><br />
-	<a href="#" data-tooltip="Acheter 1 président" data-placement="top"><img class="achImg" src="img/upgrade/president1.png" alt="president" /></a>
-	<a href="#" data-tooltip="Acheter 30 présidents" data-placement="top"><img class="achImg" src="img/upgrade/president2.png" alt="president" /></a>
-	<a href="#" data-tooltip="Acheter 80 présidents" data-placement="top"><img class="achImg" src="img/upgrade/president3.png" alt="president" /></a>
-	<a href="#" data-tooltip="Acheter 150 présidents" data-placement="top"><img class="achImg" src="img/upgrade/president4.png" alt="president" /></a>
-	<a href="#" data-tooltip="Acheter 1 nuage d'antimatière" data-placement="top"><img class="achImg" src="img/upgrade/antimatter1.png" alt="antimatter" /></a>
-	<a href="#" data-tooltip="Acheter 30 nuages d'antimatière" data-placement="top"><img class="achImg" src="img/upgrade/antimatter2.png" alt="antimatter" /></a>
-	<a href="#" data-tooltip="Acheter 80 nuages d'antimatière" data-placement="top"><img class="achImg" src="img/upgrade/antimatter3.png" alt="antimatter" /></a>
-	<a href="#" data-tooltip="Acheter 150 nuages d'antimatière" data-placement="top"><img class="achImg" src="img/upgrade/antimatter4.png" alt="antimatter" /></a><br />
+	<a href="#" data-tooltip="Acheter 1 ouvrier" data-placement="top"><img class="achImg" id ="1_worker" src="img/upgrade/worker1.png" alt="worker" /></a>
+	<a href="#" data-tooltip="Acheter 30 ouvriers" data-placement="top"><img class="achImg" id ="2_worker" src="img/upgrade/worker2.png" alt="worker" /></a>
+	<a href="#" data-tooltip="Acheter 80 ouvriers" data-placement="top"><img class="achImg" id ="3_worker" src="img/upgrade/worker3.png" alt="worker" /></a>
+	<a href="#" data-tooltip="Acheter 150 ouvriers" data-placement="top"><img class="achImg" id ="4_worker" src="img/upgrade/worker4.png" alt="worker" /></a>
+	<a href="#" data-tooltip="Acheter 1 cadre" data-placement="top"><img class="achImg" id ="1_businessman" src="img/upgrade/businessman1.png" alt="businessman" /></a>
+	<a href="#" data-tooltip="Acheter 30 cadres" data-placement="top"><img class="achImg" id ="2_businessman" src="img/upgrade/businessman2.png" alt="businessman" /></a>
+	<a href="#" data-tooltip="Acheter 80 cadres" data-placement="top"><img class="achImg" id ="3_businessman" src="img/upgrade/businessman3.png" alt="businessman" /></a>
+	<a href="#" data-tooltip="Acheter 150 cadres" data-placement="top"><img class="achImg" id ="4_businessman" src="img/upgrade/businessman4.png" alt="businessman" /></a><br />
+	<a href="#" data-tooltip="Acheter 1 supermarché" data-placement="top"><img class="achImg" id ="1_supermarket" src="img/upgrade/supermarket1.png" alt="supermarket" /></a>
+	<a href="#" data-tooltip="Acheter 30 supermarchés" data-placement="top"><img class="achImg" id ="2_supermarket" src="img/upgrade/supermarket2.png" alt="supermarket" /></a>
+	<a href="#" data-tooltip="Acheter 80 supermarchés" data-placement="top"><img class="achImg" id ="3_supermarket" src="img/upgrade/supermarket3.png" alt="supermarket" /></a>
+	<a href="#" data-tooltip="Acheter 150 supermarchés" data-placement="top"><img class="achImg" id ="4_supermarket" src="img/upgrade/supermarket4.png" alt="supermarket" /></a>
+	<a href="#" data-tooltip="Acheter 1 usine" data-placement="top"><img class="achImg" id ="1_factory" src="img/upgrade/factory1.png" alt="factory" /></a>
+	<a href="#" data-tooltip="Acheter 30 usines" data-placement="top"><img class="achImg" id ="2_factory" src="img/upgrade/factory2.png" alt="factory" /></a>
+	<a href="#" data-tooltip="Acheter 80 usines" data-placement="top"><img class="achImg" id ="3_factory" src="img/upgrade/factory3.png" alt="factory" /></a>
+	<a href="#" data-tooltip="Acheter 150 usines" data-placement="top"><img class="achImg" id ="4_factory" src="img/upgrade/factory4.png" alt="factory" /></a><br />	
+	<a href="#" data-tooltip="Acheter 1 banque" data-placement="top"><img class="achImg" id ="1_bank" src="img/upgrade/bank1.png" alt="bank" /></a>
+	<a href="#" data-tooltip="Acheter 30 banques" data-placement="top"><img class="achImg" id ="2_bank" src="img/upgrade/bank2.png" alt="bank" /></a>
+	<a href="#" data-tooltip="Acheter 80 banques" data-placement="top"><img class="achImg" id ="3_bank" src="img/upgrade/bank3.png" alt="bank" /></a>
+	<a href="#" data-tooltip="Acheter 150 banques" data-placement="top"><img class="achImg" id ="4_bank" src="img/upgrade/bank4.png" alt="bank" /></a>
+	<a href="#" data-tooltip="Acheter 1 mine" data-placement="top"><img class="achImg" id ="1_mine" src="img/upgrade/mine1.png" alt="mine" /></a>
+	<a href="#" data-tooltip="Acheter 30 mines" data-placement="top"><img class="achImg" id ="2_mine" src="img/upgrade/mine2.png" alt="mine" /></a>
+	<a href="#" data-tooltip="Acheter 80 mines" data-placement="top"><img class="achImg" id ="3_mine" src="img/upgrade/mine3.png" alt="mine" /></a>
+	<a href="#" data-tooltip="Acheter 150 mines" data-placement="top"><img class="achImg" id ="4_mine" src="img/upgrade/mine4.png" alt="mine" /></a><br />
+	<a href="#" data-tooltip="Acheter 1 président" data-placement="top"><img class="achImg" id ="1_president" src="img/upgrade/president1.png" alt="president" /></a>
+	<a href="#" data-tooltip="Acheter 30 présidents" data-placement="top"><img class="achImg" id ="2_president" src="img/upgrade/president2.png" alt="president" /></a>
+	<a href="#" data-tooltip="Acheter 80 présidents" data-placement="top"><img class="achImg" id ="3_president" src="img/upgrade/president3.png" alt="president" /></a>
+	<a href="#" data-tooltip="Acheter 150 présidents" data-placement="top"><img class="achImg" id ="4_president" src="img/upgrade/president4.png" alt="president" /></a>
+	<a href="#" data-tooltip="Acheter 1 nuage d'antimatière" data-placement="top"><img class="achImg" id ="1_antimatter" src="img/upgrade/antimatter1.png" alt="antimatter" /></a>
+	<a href="#" data-tooltip="Acheter 30 nuages d'antimatière" data-placement="top"><img class="achImg" id ="2_antimatter" src="img/upgrade/antimatter2.png" alt="antimatter" /></a>
+	<a href="#" data-tooltip="Acheter 80 nuages d'antimatière" data-placement="top"><img class="achImg" id ="3_antimatter" src="img/upgrade/antimatter3.png" alt="antimatter" /></a>
+	<a href="#" data-tooltip="Acheter 150 nuages d'antimatière" data-placement="top"><img class="achImg" id ="4_antimatter" src="img/upgrade/antimatter4.png" alt="antimatter" /></a><br />
 	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
 	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
 	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
@@ -166,7 +166,7 @@ if (empty($_SESSION['pseudo']))
 			<section id="right" class="col-lg-offset-1 col-xs-4 col-lg-3">
 				<div style="text-align:center;"><p>Total des bâtiments : <span id="total_buildings">NULL</span></p></div>
 				<div class="row worker_div" id="worker_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossWorker" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Worker.png" alt="worker" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_worker" class="nb_worker">0 worker(s)</div>
@@ -176,7 +176,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="businessman_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossBusinessman" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Businessman.png" alt="businessman" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_businessman" class="nb_worker">1 cadre(s)</div>
@@ -186,7 +186,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="supermarket_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossSupermarket" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Supermarket.png" alt="supermarket" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_supermarket" class="nb_worker">1 supermarché(s)</div>
@@ -196,7 +196,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="factory_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossFactory" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Factory.png" alt="factory" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_factory" class="nb_worker">1 usine(s)</div>
@@ -206,7 +206,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="bank_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossBank" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Bank.png" alt="bank" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_bank" class="nb_worker">1 banque(s)</div>
@@ -216,7 +216,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="mine_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossMine" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Mine.png" alt="mine" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_mine" class="nb_worker">1 mine(s)</div>
@@ -226,7 +226,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="president_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossPresident" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/President.png" alt="president" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_president" class="nb_worker">1 président(s)</div>
@@ -236,7 +236,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="antimatter_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossAntimatter" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Antimater.png" alt="antimater" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_antimatter" class="nb_worker">1 nuage(s) d'antimatière</div>
@@ -254,6 +254,7 @@ if (empty($_SESSION['pseudo']))
 		</div>
 	</div>
 </div>
+<script src="js/storage.js"> </script>
 <?php include("footer.php"); ?>
 </body>
 </html>
