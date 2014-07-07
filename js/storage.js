@@ -952,7 +952,7 @@ function	unlock_upgrades()
 		game.upgrade = setCharAt(game.upgrade, 0, '1');
 	if (game.worker >= 50 && game.upgrade[1] != '2')
 		game.upgrade = setCharAt(game.upgrade, 1, '1');
-	if (game.worker >= 100)
+	if (game.worker >= 100 && game.upgrade[2] != '2')
 		game.upgrade = setCharAt(game.upgrade, 2, '1');
 
 	/*upgrades businessman*/
@@ -960,7 +960,7 @@ function	unlock_upgrades()
 		game.upgrade = setCharAt(game.upgrade, 3, '1');
 	if (game.businessman >= 50 && game.upgrade[4] != '2')
 		game.upgrade = setCharAt(game.upgrade, 4, '1');
-	if (game.businessman >= 100)
+	if (game.businessman >= 100 && game.upgrade[5] != '2')
 		game.upgrade = setCharAt(game.upgrade, 5, '1');
 
 	/*upgrades supermarket*/
@@ -968,7 +968,7 @@ function	unlock_upgrades()
 		game.upgrade = setCharAt(game.upgrade, 6, '1');
 	if (game.supermarket >= 50 && game.upgrade[7] != '2')
 		game.upgrade = setCharAt(game.upgrade, 7, '1');
-	if (game.supermarket >= 100)
+	if (game.supermarket >= 100 && game.upgrade[8] != '2')
 		game.upgrade = setCharAt(game.upgrade, 8, '1');
 
 	/*upgrades factory*/
@@ -976,7 +976,7 @@ function	unlock_upgrades()
 		game.upgrade = setCharAt(game.upgrade, 9, '1');
 	if (game.factory >= 50 && game.upgrade[10] != '2')
 		game.upgrade = setCharAt(game.upgrade, 10, '1');
-	if (game.factory >= 100)
+	if (game.factory >= 100 && game.upgrade[11] != '2')
 		game.upgrade = setCharAt(game.upgrade, 11, '1');
 
 	/*upgrades bank*/
@@ -984,7 +984,7 @@ function	unlock_upgrades()
 		game.upgrade = setCharAt(game.upgrade, 12, '1');
 	if (game.bank >= 50 && game.upgrade[13] != '2')
 		game.upgrade = setCharAt(game.upgrade, 13, '1');
-	if (game.bank >= 100)
+	if (game.bank >= 100 && game.upgrade[14] != '2')
 		game.upgrade = setCharAt(game.upgrade, 14, '1');
 
 	/*upgrades mine*/
@@ -992,7 +992,7 @@ function	unlock_upgrades()
 		game.upgrade = setCharAt(game.upgrade, 15, '1');
 	if (game.mine >= 50 && game.upgrade[16] != '2')
 		game.upgrade = setCharAt(game.upgrade, 16, '1');
-	if (game.mine >= 100)
+	if (game.mine >= 100 && game.upgrade[17] != '2')
 		game.upgrade = setCharAt(game.upgrade, 17, '1');
 
 	/*upgrades president*/
@@ -1000,7 +1000,7 @@ function	unlock_upgrades()
 		game.upgrade = setCharAt(game.upgrade, 18, '1');
 	if (game.president >= 50 && game.upgrade[19] != '2')
 		game.upgrade = setCharAt(game.upgrade, 19, '1');
-	if (game.president >= 100)
+	if (game.president >= 100 && game.upgrade[20] != '2')
 		game.upgrade = setCharAt(game.upgrade, 20, '1');
 
 	/*upgrades antimatter*/
@@ -1008,7 +1008,7 @@ function	unlock_upgrades()
 		game.upgrade = setCharAt(game.upgrade, 21, '1');
 	if (game.antimatter >= 50 && game.upgrade[22] != '2')
 		game.upgrade = setCharAt(game.upgrade, 22, '1');
-	if (game.antimatter >= 100)
+	if (game.antimatter >= 100 && game.upgrade[23] != '2')
 		game.upgrade = setCharAt(game.upgrade, 23, '1');
 }
 
