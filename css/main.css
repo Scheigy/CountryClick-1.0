@@ -64,7 +64,7 @@ header {
 }
 
 section {
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: 2px;
 	box-shadow: 0px 0px 2px white;
 	line-height: 30px;
@@ -435,16 +435,19 @@ figure
 .sell
 {
 	height: 30px;
-	background-color: #428bca;
 	margin-bottom: 5px;
 	margin-top: -5px;
-	border-radius
 }
 
 .sellLink
 {
 	cursor: pointer;
 	color: #428bca;
+}
+
+.sellLink:hover
+{
+	color:red;
 }
 
 .infos
