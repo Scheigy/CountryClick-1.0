@@ -165,14 +165,17 @@ if (empty($_SESSION['pseudo']))
 
 			<section id="right" class="col-lg-offset-1 col-xs-4 col-lg-3">
 				<div style="text-align:center;"><p>Total des bâtiments : <span id="total_buildings">NULL</span></p></div>
-				<div class="row worker_div" id="worker_button">
-					<span id="crossWorker" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
-					<img class="col-lg-4 worker_img" src="img/Worker.png" alt="worker" />
-					<div class="text col-lg-offset-1 col-lg-7">
-						<div id="nb_worker" class="nb_worker">0 worker(s)</div>
-						<div id="worker_cost" class="worker_cost">Prix : 0$</div>
-						<div id="worker_benefit" class="worker_benefit">Bénéfice : 1 $/sec</div>
+				<div class="row">
+					<div class="row col-lg-11 worker_div" id="worker_button">
+						<img class="col-lg-4 worker_img" src="img/Worker.png" alt="worker" />
+						<div class="text col-lg-offset-1 col-lg-7">
+							<div id="nb_worker" class="nb_worker">0 worker(s)</div>
+							<div id="worker_cost" class="worker_cost">Prix : 0$</div>
+							<div id="worker_benefit" class="worker_benefit">Bénéfice : 1 $/sec</div>
+						</div>
 					</div>
+					<!--<a href="#"><span id="crossWorker" class="crossBuilding col-lg-1 glyphicon glyphicon-remove"></span></a>-->
+					<span style="font-size:0.7em; line-height:15px; background-color: red; color: white; width: 10px;">V<br />E<br />N<br />D<br />R<br />E</span>
 				</div>
 
 				<div class="row worker_div" id="businessman_button">
