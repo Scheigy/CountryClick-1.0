@@ -364,99 +364,131 @@ function	calc_sell_price()
 	return(parseInt((price * Math.pow(1.15, nb)) / 2));	
 }
 
-function	sellWorker()
+function	sellWorker(nb)
 {
-	if (game.worker > 0)
-	{ 
-		game.money = game.money + calc_sell_price(game.worker, 100);
-		game.worker = game.worker - 1;
-		myWorker.innerHTML = game.worker + ' ouvrier(s)';
-		myWorkerPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.worker, 100)) + ' $';
-		calc_prod();
+	while (nb > 0)
+	{
+		if (game.worker > 0)
+		{ 
+			game.money = game.money + calc_sell_price(game.worker, 100);
+			game.worker = game.worker - 1;
+			myWorker.innerHTML = game.worker + ' ouvrier(s)';
+			myWorkerPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.worker, 100)) + ' $';
+			calc_prod();
+		}
+		nb -= 1;
 	}
 }
 
-function	sellBusinessman()
+function	sellBusinessman(nb)
 {
-	if (game.businessman > 0)
-	{ 
-		game.money = game.money + calc_sell_price(game.businessman, 500);
-		game.businessman = game.businessman - 1;
-		myBusinessman.innerHTML = game.businessman + ' cadre(s)';
-		myBusinessmanPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.businessman, 500)) + ' $';
-		calc_prod();
+	while (nb > 0)
+	{
+		if (game.businessman > 0)
+		{ 
+			game.money = game.money + calc_sell_price(game.businessman, 500);
+			game.businessman = game.businessman - 1;
+			myBusinessman.innerHTML = game.businessman + ' cadre(s)';
+			myBusinessmanPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.businessman, 500)) + ' $';
+			calc_prod();
+		}
+		nb -= 1;
 	}
 }
 
-function	sellSupermarket()
+function	sellSupermarket(nb)
 {
-	if (game.supermarket > 0)
-	{ 
-		game.money = game.money + calc_sell_price(game.supermarket, 3000);
-		game.supermarket = game.supermarket - 1;
-		mySupermarket.innerHTML = game.supermarket + ' supermarché(s)';
-		mySupermarketPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.supermarket, 3000)) + ' $';
-		calc_prod();
+	while (nb > 0)
+	{
+		if (game.supermarket > 0)
+		{ 
+			game.money = game.money + calc_sell_price(game.supermarket, 3000);
+			game.supermarket = game.supermarket - 1;
+			mySupermarket.innerHTML = game.supermarket + ' supermarché(s)';
+			mySupermarketPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.supermarket, 3000)) + ' $';
+			calc_prod();
+		}
+		nb -= 1;
 	}
 }
 
 function	sellFactory()
 {
-	if (game.factory > 0)
-	{ 
-		game.money = game.money + calc_sell_price(game.factory, 10000);
-		game.factory = game.factory - 1;
-		myFactory.innerHTML = game.factory + ' usine(s)';
-		myFactoryPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.factory, 10000)) + ' $';
-		calc_prod();
+	while (nb > 0)
+	{
+		if (game.factory > 0)
+		{ 
+			game.money = game.money + calc_sell_price(game.factory, 10000);
+			game.factory = game.factory - 1;
+			myFactory.innerHTML = game.factory + ' usine(s)';
+			myFactoryPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.factory, 10000)) + ' $';
+			calc_prod();
+		}
+		nb -= 1;
 	}
 }
 
-function	sellBank()
+function	sellBank(nb)
 {
-	if (game.bank > 0)
-	{ 
-		game.money = game.money + calc_sell_price(game.bank, 100000);
-		game.bank = game.bank - 1;
-		myBank.innerHTML = game.bank + ' banque(s)';
-		myBankPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.bank, 100000)) + ' $';
-		calc_prod();
+	while (nb > 0)
+	{
+		if (game.bank > 0)
+		{ 
+			game.money = game.money + calc_sell_price(game.bank, 100000);
+			game.bank = game.bank - 1;
+			myBank.innerHTML = game.bank + ' banque(s)';
+			myBankPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.bank, 100000)) + ' $';
+			calc_prod();
+		}
+		nb -= 1;
 	}
 }
 
-function	sellMine()
+function	sellMine(nb)
 {
-	if (game.mine > 0)
-	{ 
-		game.money = game.money + calc_sell_price(game.mine, 1000000);
-		game.mine = game.mine - 1;
-		myMine.innerHTML = game.mine + ' mine(s)';
-		myMinePrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.mine, 1000000)) + ' $';
-		calc_prod();
+	while (nb > 0)
+	{
+		if (game.mine > 0)
+		{ 
+			game.money = game.money + calc_sell_price(game.mine, 1000000);
+			game.mine = game.mine - 1;
+			myMine.innerHTML = game.mine + ' mine(s)';
+			myMinePrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.mine, 1000000)) + ' $';
+			calc_prod();
+		}
+		nb -= 1;
 	}
 }
 
-function	sellPresident()
+function	sellPresident(nb)
 {
-	if (game.president > 0)
-	{ 
-		game.money = game.money + calc_sell_price(game.president, 20000000);
-		game.president = game.president - 1;
-		myPresident.innerHTML = game.president + ' président(s)';
-		myPresidentPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.president, 20000000)) + ' $';
-		calc_prod();
+	while (nb > 0)
+	{
+		if (game.president > 0)
+		{ 
+			game.money = game.money + calc_sell_price(game.president, 20000000);
+			game.president = game.president - 1;
+			myPresident.innerHTML = game.president + ' président(s)';
+			myPresidentPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.president, 20000000)) + ' $';
+			calc_prod();
+		}
+		nb -= 1;
 	}
 }
 
 function	sellAntimatter()
 {
-	if (game.antimatter > 0)
-	{ 
-		game.money = game.money + calc_sell_price(game.antimatter, 1128256512);
-		game.antimatter = game.antimatter - 1;
-		myAntimatter.innerHTML = game.antimatter + ' nuage(s) d\'antimatière';
-		myAntimatterPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.antimatter, 1128256512)) + ' $';
-		calc_prod();
+	while (nb > 0)
+	{
+		if (game.antimatter > 0)
+		{ 
+			game.money = game.money + calc_sell_price(game.antimatter, 1128256512);
+			game.antimatter = game.antimatter - 1;
+			myAntimatter.innerHTML = game.antimatter + ' nuage(s) d\'antimatière';
+			myAntimatterPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.antimatter, 1128256512)) + ' $';
+			calc_prod();
+		}
+		nb -= 1;
 	}
 }
 */
@@ -1263,19 +1295,19 @@ function	my_aff_worker_achievements()
 	}
 	else
 		first_worker.innerHTML = 'lock'
-			
+
 	second_worker = document.getElementById('2_worker');
 	if (game.worker >= 30)
 		second_worker.innerHTML = '30wo';
 	else
 		second_worker.innerHTML = 'lock'
-		
+
 	third_worker = document.getElementById('3_worker');
 	if (game.worker >= 80)
 		third_worker.innerHTML = '80wo';
 	else
 		third_worker.innerHTML = 'lock'
-		
+
 	fourth_worker = document.getElementById('4_worker');
 	if (game.worker >= 150)
 		fourth_worker.innerHTML = '150wo';
@@ -1290,19 +1322,19 @@ function	my_aff_businessman_achievements()
 		first_businessman.innerHTML = '1bu';
 	else
 		first_businessman.innerHTML = 'lock'
-			
+
 	second_businessman = document.getElementById('2_businessman');
 	if (game.businessman >= 30)
 		second_businessman.innerHTML = '30bu';
 	else
 		second_businessman.innerHTML = 'lock'
-		
+
 	third_businessman = document.getElementById('3_businessman');
 	if (game.businessman >= 80)
 		third_businessman.innerHTML = '80bu';
 	else
 		third_businessman.innerHTML = 'lock'
-		
+
 	fourth_businessman = document.getElementById('4_businessman');
 	if (game.businessman >= 150)
 		fourth_businessman.innerHTML = '150bu';
@@ -1317,19 +1349,19 @@ function	my_aff_supermarket_achievements()
 		first_supermarket.innerHTML = '1su';
 	else
 		first_supermarket.innerHTML = 'lock'
-			
+
 	second_supermarket = document.getElementById('2_supermarket');
 	if (game.supermarket >= 30)
 		second_supermarket.innerHTML = '30su';
 	else
 		second_supermarket.innerHTML = 'lock'
-		
+
 	third_supermarket = document.getElementById('3_supermarket');
 	if (game.supermarket >= 80)
 		third_supermarket.innerHTML = '80su';
 	else
 		third_supermarket.innerHTML = 'lock'
-		
+
 	fourth_supermarket = document.getElementById('4_supermarket');
 	if (game.supermarket >= 150)
 		fourth_supermarket.innerHTML = '150su';
@@ -1344,19 +1376,19 @@ function	my_aff_factory_achievements()
 		first_factory.innerHTML = '1fa';
 	else
 		first_factory.innerHTML = 'lock'
-			
+
 	second_factory = document.getElementById('2_factory');
 	if (game.factory >= 30)
 		second_factory.innerHTML = '30fa';
 	else
 		second_factory.innerHTML = 'lock'
-		
+
 	third_factory = document.getElementById('3_factory');
 	if (game.factory >= 80)
 		third_factory.innerHTML = '80fa';
 	else
 		third_factory.innerHTML = 'lock'
-		
+
 	fourth_factory = document.getElementById('4_factory');
 	if (game.factory >= 150)
 		fourth_factory.innerHTML = '150fa';
@@ -1371,19 +1403,19 @@ function	my_aff_bank_achievements()
 		first_bank.innerHTML = '1ba';
 	else
 		first_bank.innerHTML = 'lock'
-			
+
 	second_bank = document.getElementById('2_bank');
 	if (game.bank >= 30)
 		second_bank.innerHTML = '30ba';
 	else
 		second_bank.innerHTML = 'lock'
-		
+
 	third_bank = document.getElementById('3_bank');
 	if (game.bank >= 80)
 		third_bank.innerHTML = '80ba';
 	else
 		third_bank.innerHTML = 'lock'
-		
+
 	fourth_bank = document.getElementById('4_bank');
 	if (game.bank >= 150)
 		fourth_bank.innerHTML = '150ba';
@@ -1398,19 +1430,19 @@ function	my_aff_mine_achievements()
 		first_mine.innerHTML = '1mi';
 	else
 		first_mine.innerHTML = 'lock'
-			
+
 	second_mine = document.getElementById('2_mine');
 	if (game.mine >= 30)
 		second_mine.innerHTML = '30mi';
 	else
 		second_mine.innerHTML = 'lock'
-		
+
 	third_mine = document.getElementById('3_mine');
 	if (game.mine >= 80)
 		third_mine.innerHTML = '80mi';
 	else
 		third_mine.innerHTML = 'lock'
-		
+
 	fourth_mine = document.getElementById('4_mine');
 	if (game.mine >= 150)
 		fourth_mine.innerHTML = '150mi';
@@ -1425,19 +1457,19 @@ function	my_aff_president_achievements()
 		first_president.innerHTML = '1pr';
 	else
 		first_president.innerHTML = 'lock'
-			
+
 	second_president = document.getElementById('2_president');
 	if (game.president >= 30)
 		second_president.innerHTML = '30pr';
 	else
 		second_president.innerHTML = 'lock'
-		
+
 	third_president = document.getElementById('3_president');
 	if (game.president >= 80)
 		third_president.innerHTML = '80pr';
 	else
 		third_president.innerHTML = 'lock'
-		
+
 	fourth_president = document.getElementById('4_president');
 	if (game.president >= 120)
 		fourth_president.innerHTML = '120pr';
@@ -1451,20 +1483,20 @@ function	my_aff_antimatter_achievements()
 	if (game.antimatter >= 1)
 		first_antimatter.innerHTML = '1an';
 	else
-	 	first_antimatter.innerHTML = 'lock'
-			
+		first_antimatter.innerHTML = 'lock'
+
 	second_antimatter = document.getElementById('2_antimatter');
 	if (game.antimatter >= 30)
 		second_antimatter.innerHTML = '30an';
 	else
 		second_antimatter.innerHTML = 'lock'
-		
+
 	third_antimatter = document.getElementById('3_antimatter');
 	if (game.antimatter >= 80)
 		third_antimatter.innerHTML = '80an';
 	else
 		third_antimatter.innerHTML = 'lock'
-		
+
 	fourth_antimatter = document.getElementById('4_antimatter');
 	if (game.antimatter >= 120)
 		fourth_antimatter.innerHTML = '120an';
@@ -1787,8 +1819,8 @@ elemAntimatter.onclick = addAntimatter;
 elemPopup = document.getElementById('pop_up_button');
 elemPopup.onclick = function() {document.getElementById('pop_up').style.display = 'none';};
 
-elemSellWorker = document.getElementById("crossWorker");
-elemSellWorker.onclick = function(){alert('salut');};
+//elemSellWorker = document.getElementById("crossWorker");
+//elemSellWorker.onclick = sellWorker;
 /*elemSellBusinessman = document.getElementById("crossBusinessman");
 elemSellBusinessman.onclick = sellBusinessman;
 elemSellSupermarket = document.getElementById("crossSupermarket");
