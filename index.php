@@ -25,7 +25,7 @@ include("header.php");
     if (!isset($_SESSION['pseudo']))
       include_once("form.php");
     else
-      echo '<section class="col-lg-offset-1 col-lg-5">Vous êtes déjà inscrit, cliquez sur Jouer dans le menu pour accéder au jeu !</section>';
+      include_once("already_connect.php");
     ?>
   </div>
 </div>

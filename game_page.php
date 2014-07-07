@@ -166,7 +166,7 @@ if (empty($_SESSION['pseudo']))
 			<section id="right" class="col-lg-offset-1 col-xs-4 col-lg-3">
 				<div style="text-align:center;"><p>Total des bâtiments : <span id="total_buildings">NULL</span></p></div>
 				<div class="row worker_div" id="worker_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossWorker" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Worker.png" alt="worker" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_worker" class="nb_worker">0 worker(s)</div>
@@ -176,7 +176,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="businessman_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossBusinessman" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Businessman.png" alt="businessman" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_businessman" class="nb_worker">1 cadre(s)</div>
@@ -186,7 +186,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="supermarket_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossSupermarket" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Supermarket.png" alt="supermarket" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_supermarket" class="nb_worker">1 supermarché(s)</div>
@@ -196,7 +196,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="factory_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossFactory" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Factory.png" alt="factory" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_factory" class="nb_worker">1 usine(s)</div>
@@ -206,7 +206,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="bank_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossBank" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Bank.png" alt="bank" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_bank" class="nb_worker">1 banque(s)</div>
@@ -216,7 +216,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="mine_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossMine" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Mine.png" alt="mine" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_mine" class="nb_worker">1 mine(s)</div>
@@ -226,7 +226,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="president_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossPresident" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/President.png" alt="president" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_president" class="nb_worker">1 président(s)</div>
@@ -236,7 +236,7 @@ if (empty($_SESSION['pseudo']))
 				</div>
 
 				<div class="row worker_div" id="antimatter_button">
-					<span id="crossSell" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
+					<span id="crossAntimatter" class="crossBuilding glyphicon glyphicon-remove" onclick=""></span>
 					<img class="col-lg-4 worker_img" src="img/Antimater.png" alt="antimater" />
 					<div class="text col-lg-offset-1 col-lg-7">
 						<div id="nb_antimatter" class="nb_worker">1 nuage(s) d'antimatière</div>
@@ -254,6 +254,7 @@ if (empty($_SESSION['pseudo']))
 		</div>
 	</div>
 </div>
+<script src="js/storage.js"> </script>
 <?php include("footer.php"); ?>
 </body>
 </html>
