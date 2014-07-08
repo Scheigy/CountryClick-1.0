@@ -3,7 +3,7 @@
 	Fonctionnalité à venir
 
 	<div style="border: 1px solid black;">
-		<a href="#"><h3>Partie 1</h3></a>
+		<a href="game_page.php"><h3>Partie 1</h3></a>
 		<p>
 			Temps de jeu: <br />
 			Dollars:

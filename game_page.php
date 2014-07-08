@@ -76,52 +76,65 @@ if (empty($_SESSION['pseudo']))
 	<a href="#"><span id="crossAch" class="cross glyphicon glyphicon-remove" onclick="closePop_up('upgrade');"></span></a>
 
 	<h1>Améliorations</h1><br />
+	<div class="row" style="text-align:center;">
+		<div class="col-lg-offset-3 col-lg-2 col-md-2 col-xs-2">x10</div>
+		<div class="col-lg-offset-1 col-lg-2 col-md-2 col-xs-2">x50</div>
+		<div class="col-lg-offset-1 col-lg-2 col-md-2 col-xs-2">x100</div>
+	</div>
 	<div class="row">
-		<div class="square col-lg-3 col-md-3 col-xs-3" id="one">1 K</div>
-		<div class="col-lg-offset-1 square col-lg-4 col-md-4 col-xs-4" id="two">10 K</div>
-		<div class="col-lg-offset-1 square col-lg-3 col-md-3 col-xs-3" id="three">100 K</div>
+		<div class="col-lg-1 col-md-1 col-xs-1">Ouvrier</div>
+		<div class="square col-lg-offset-2 col-lg-2 col-md-2 col-xs-2" id="one">1 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="two">10 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="three">100 K</div>
 	</div>
 
 	<div class="row">
-		<div class="square col-lg-3 col-md-3 col-xs-3" id="four">10 K</div>
-		<div class="col-lg-offset-1 square col-lg-4 col-md-4 col-xs-4" id="five">100 K</div>
-		<div class="col-lg-offset-1 square col-lg-3 col-md-3 col-xs-3" id="six">1 000 K</div>
+		<div class="col-lg-1 col-md-1 col-xs-1">Cadre</div>
+		<div class="square col-lg-offset-2 col-lg-2 col-md-2 col-xs-2" id="four">10 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="five">100 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="six">1 000 K</div>
 	</div>
 
 	<div class="row">
-		<div class="square col-lg-3 col-md-3 col-xs-3" id="seven">100 K</div>
-		<div class="col-lg-offset-1 square col-lg-4 col-md-4 col-xs-4" id="eight">1 000 K</div>
-		<div class="col-lg-offset-1 square col-lg-3 col-md-3 col-xs-3" id="nine">10 000 K</div>
+		<div class="col-lg-1 col-md-1 col-xs-1">Supermarché</div>
+		<div class="square col-lg-offset-2 col-lg-2 col-md-2 col-xs-2" id="seven">100 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="eight">1 000 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="nine">10 000 K</div>
 	</div>
 
 	<div class="row">
-		<div class="square col-lg-3 col-md-3 col-xs-3" id="ten">1 000 K</div>
-		<div class="col-lg-offset-1 square col-lg-4 col-md-4 col-xs-4" id="eleven">10 000 K</div>
-		<div class="col-lg-offset-1 square col-lg-3 col-md-3 col-xs-3" id="twelve">100 000 K</div>
+		<div class="col-lg-1 col-md-1 col-xs-1">Usine</div>
+		<div class="square col-lg-offset-2 col-lg-2 col-md-2 col-xs-2" id="ten">1 000 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="eleven">10 000 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="twelve">100 000 K</div>
 	</div>
 
 	<div class="row">
-		<div class="square col-lg-3 col-md-3 col-xs-3" id="thirteen">10 000 K</div>
-		<div class="col-lg-offset-1 square col-lg-4 col-md-4 col-xs-4" id="fourteen">100 000 K</div>
-		<div class="col-lg-offset-1 square col-lg-3 col-md-3 col-xs-3" id="fifteen">1 M</div>
+		<div class="col-lg-1 col-md-1 col-xs-1">Banque</div>
+		<div class="square col-lg-offset-2 col-lg-2 col-md-2 col-xs-2" id="thirteen">10 000 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="fourteen">100 000 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="fifteen">1 M</div>
 	</div>
 
 	<div class="row">
-		<div class="square col-lg-3 col-md-3 col-xs-3" id="sixteen">100 000 K</div>
-		<div class="col-lg-offset-1 square col-lg-4 col-md-4 col-xs-4" id="seventeen">1 M</div>
-		<div class="col-lg-offset-1 square col-lg-3 col-md-3 col-xs-3" id="eighteen">10 M</div>
+		<div class="col-lg-1 col-md-1 col-xs-1">Mine</div>
+		<div class="square col-lg-offset-2 col-lg-2 col-md-2 col-xs-2" id="sixteen">100 000 K</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="seventeen">1 M</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="eighteen">10 M</div>
 	</div>
 
 	<div class="row">
-		<div class="square col-lg-3 col-md-3 col-xs-3" id="nineteen">1 M</div>
-		<div class="col-lg-offset-1 square col-lg-4 col-md-4 col-xs-4" id="twenty">10 M</div>
-		<div class="col-lg-offset-1 square col-lg-3 col-md-3 col-xs-3" id="twenty-one">100 M</div>
+		<div class="col-lg-1 col-md-1 col-xs-1">Président</div>
+		<div class="square col-lg-offset-2 col-lg-2 col-md-2 col-xs-2" id="nineteen">1 M</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="twenty">10 M</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="twenty-one">100 M</div>
 	</div>
 
 	<div class="row">
-		<div class="square col-lg-3 col-md-3 col-xs-3" id="twenty-two">10 M</div>
-		<div class="col-lg-offset-1 square col-lg-4 col-md-4 col-xs-4" id="twenty-three">100 M</div>
-		<div class="col-lg-offset-1 square col-lg-3 col-md-3 col-xs-3" id="twenty-four">1 000 M</div>
+		<div class="col-lg-1 col-md-1 col-xs-1">Nuage d'antimatière</div>
+		<div class="square col-lg-offset-2 col-lg-2 col-md-2 col-xs-2" id="twenty-two">10 M</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="twenty-three">100 M</div>
+		<div class="col-lg-offset-1 square col-lg-2 col-md-2 col-xs-2" id="twenty-four">1 000 M</div>
 	</div>
 </div>
 
