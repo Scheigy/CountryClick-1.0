@@ -199,21 +199,7 @@ function	clickValue()
 	{
 		if (game.upgrade[i] == '2')
 			value *= 2;
-		i += 3;
-	}
-	i = 1;
-	while (i < 24)
-	{
-		if (game.upgrade[i] == '2')
-			value *= 4;
-		i += 3;
-	}
-	i = 2;
-	while (i < 24)
-	{
-		if (game.upgrade[i] == '2')
-			value *= 8;
-		i += 3;
+		i += 1;
 	}
 	return (value);
 }
