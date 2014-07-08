@@ -13,18 +13,18 @@ if (empty($_SESSION['pseudo']))
 	<a href="#"><span id="crossAch" class="cross glyphicon glyphicon-remove" onclick="closePop_up('achievements');"></span></a>
 	<h1>Succès</h1>
 	<h2>Coming soon</h2>
-	<a href="#" data-tooltip="Acheter 1 ouvrier" data-placement="top"><img class="achImg" id ="1_worker" src="img/upgrade/worker1.png" alt="worker" /></a>
-	<a href="#" data-tooltip="Acheter 30 ouvriers" data-placement="top"><img class="achImg" id ="2_worker" src="img/upgrade/worker2.png" alt="worker" /></a>
-	<a href="#" data-tooltip="Acheter 80 ouvriers" data-placement="top"><img class="achImg" id ="3_worker" src="img/upgrade/worker3.png" alt="worker" /></a>
-	<a href="#" data-tooltip="Acheter 150 ouvriers" data-placement="top"><img class="achImg" id ="4_worker" src="img/upgrade/worker4.png" alt="worker" /></a>
-	<a href="#" data-tooltip="Acheter 1 cadre" data-placement="top"><img class="achImg" id ="1_businessman" src="img/upgrade/businessman1.png" alt="businessman" /></a>
-	<a href="#" data-tooltip="Acheter 30 cadres" data-placement="top"><img class="achImg" id ="2_businessman" src="img/upgrade/businessman2.png" alt="businessman" /></a>
-	<a href="#" data-tooltip="Acheter 80 cadres" data-placement="top"><img class="achImg" id ="3_businessman" src="img/upgrade/businessman3.png" alt="businessman" /></a>
-	<a href="#" data-tooltip="Acheter 150 cadres" data-placement="top"><img class="achImg" id ="4_businessman" src="img/upgrade/businessman4.png" alt="businessman" /></a><br />
-	<a href="#" data-tooltip="Acheter 1 supermarché" data-placement="top"><img class="achImg" id ="1_supermarket" src="img/upgrade/supermarket1.png" alt="supermarket" /></a>
-	<a href="#" data-tooltip="Acheter 30 supermarchés" data-placement="top"><img class="achImg" id ="2_supermarket" src="img/upgrade/supermarket2.png" alt="supermarket" /></a>
-	<a href="#" data-tooltip="Acheter 80 supermarchés" data-placement="top"><img class="achImg" id ="3_supermarket" src="img/upgrade/supermarket3.png" alt="supermarket" /></a>
-	<a href="#" data-tooltip="Acheter 150 supermarchés" data-placement="top"><img class="achImg" id ="4_supermarket" src="img/upgrade/supermarket4.png" alt="supermarket" /></a>
+	<a href="#" data-tooltip="Acheter 1 ouvrier" data-placement="top"><img class="achImg" id ="1_worker" src="img/upgrade/locked.png" alt="worker" /></a>
+	<a href="#" data-tooltip="Acheter 30 ouvriers" data-placement="top"><img class="achImg" id ="2_worker" src="img/upgrade/locked.png" alt="worker" /></a>
+	<a href="#" data-tooltip="Acheter 80 ouvriers" data-placement="top"><img class="achImg" id ="3_worker" src="img/upgrade/locked.png" alt="worker" /></a>
+	<a href="#" data-tooltip="Acheter 150 ouvriers" data-placement="top"><img class="achImg" id ="4_worker" src="img/upgrade/locked.png" alt="worker" /></a>
+	<a href="#" data-tooltip="Acheter 1 cadre" data-placement="top"><img class="achImg" id ="1_businessman" src="img/upgrade/locked.png" alt="businessman" /></a>
+	<a href="#" data-tooltip="Acheter 30 cadres" data-placement="top"><img class="achImg" id ="2_businessman" src="img/upgrade/locked.png" alt="businessman" /></a>
+	<a href="#" data-tooltip="Acheter 80 cadres" data-placement="top"><img class="achImg" id ="3_businessman" src="img/upgrade/locked.png" alt="businessman" /></a>
+	<a href="#" data-tooltip="Acheter 150 cadres" data-placement="top"><img class="achImg" id ="4_businessman" src="img/upgrade/locked.png" alt="businessman" /></a><br />
+	<a href="#" data-tooltip="Acheter 1 supermarché" data-placement="top"><img class="achImg" id ="1_supermarket" src="img/upgrade/locked.png" alt="supermarket" /></a>
+	<a href="#" data-tooltip="Acheter 30 supermarchés" data-placement="top"><img class="achImg" id ="2_supermarket" src="img/upgrade/locked.png" alt="supermarket" /></a>
+	<a href="#" data-tooltip="Acheter 80 supermarchés" data-placement="top"><img class="achImg" id ="3_supermarket" src="img/upgrade/locked.png" alt="supermarket" /></a>
+	<a href="#" data-tooltip="Acheter 150 supermarchés" data-placement="top"><img class="achImg" id ="4_supermarket" src="img/upgrade/locked.png" alt="supermarket" /></a>
 	<a href="#" data-tooltip="Acheter 1 usine" data-placement="top"><img class="achImg" id ="1_factory" src="img/upgrade/locked.png" alt="factory" /></a>
 	<a href="#" data-tooltip="Acheter 30 usines" data-placement="top"><img class="achImg" id ="2_factory" src="img/upgrade/locked.png" alt="factory" /></a>
 	<a href="#" data-tooltip="Acheter 80 usines" data-placement="top"><img class="achImg" id ="3_factory" src="img/upgrade/locked.png" alt="factory" /></a>
