@@ -1485,7 +1485,7 @@ function	my_aff_president_achievements()
 		document.getElementById("3_president").src = tab_image[27].src;
 		
 	fourth_president = document.getElementById('4_president');
-	if (game.president >= 120)
+	if (game.president >= 150)
 		document.getElementById("4_president").src = tab_image[28].src;	
 }
 
@@ -1504,7 +1504,7 @@ function	my_aff_antimatter_achievements()
 		document.getElementById("3_antimatter").src = tab_image[31].src;
 		
 	fourth_antimatter = document.getElementById('4_antimatter');
-	if (game.antimatter >= 120)
+	if (game.antimatter >= 150)
 		document.getElementById("4_antimatter").src = tab_image[32].src;	
 }
 /*
