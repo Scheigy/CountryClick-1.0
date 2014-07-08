@@ -25,26 +25,26 @@ if (empty($_SESSION['pseudo']))
 	<a href="#" data-tooltip="Acheter 30 supermarchés" data-placement="top"><img class="achImg" id ="2_supermarket" src="img/upgrade/supermarket2.png" alt="supermarket" /></a>
 	<a href="#" data-tooltip="Acheter 80 supermarchés" data-placement="top"><img class="achImg" id ="3_supermarket" src="img/upgrade/supermarket3.png" alt="supermarket" /></a>
 	<a href="#" data-tooltip="Acheter 150 supermarchés" data-placement="top"><img class="achImg" id ="4_supermarket" src="img/upgrade/supermarket4.png" alt="supermarket" /></a>
-	<a href="#" data-tooltip="Acheter 1 usine" data-placement="top"><img class="achImg" id ="1_factory" src="img/upgrade/factory1.png" alt="factory" /></a>
-	<a href="#" data-tooltip="Acheter 30 usines" data-placement="top"><img class="achImg" id ="2_factory" src="img/upgrade/factory2.png" alt="factory" /></a>
-	<a href="#" data-tooltip="Acheter 80 usines" data-placement="top"><img class="achImg" id ="3_factory" src="img/upgrade/factory3.png" alt="factory" /></a>
-	<a href="#" data-tooltip="Acheter 150 usines" data-placement="top"><img class="achImg" id ="4_factory" src="img/upgrade/factory4.png" alt="factory" /></a><br />	
-	<a href="#" data-tooltip="Acheter 1 banque" data-placement="top"><img class="achImg" id ="1_bank" src="img/upgrade/bank1.png" alt="bank" /></a>
-	<a href="#" data-tooltip="Acheter 30 banques" data-placement="top"><img class="achImg" id ="2_bank" src="img/upgrade/bank2.png" alt="bank" /></a>
-	<a href="#" data-tooltip="Acheter 80 banques" data-placement="top"><img class="achImg" id ="3_bank" src="img/upgrade/bank3.png" alt="bank" /></a>
-	<a href="#" data-tooltip="Acheter 150 banques" data-placement="top"><img class="achImg" id ="4_bank" src="img/upgrade/bank4.png" alt="bank" /></a>
-	<a href="#" data-tooltip="Acheter 1 mine" data-placement="top"><img class="achImg" id ="1_mine" src="img/upgrade/mine1.png" alt="mine" /></a>
-	<a href="#" data-tooltip="Acheter 30 mines" data-placement="top"><img class="achImg" id ="2_mine" src="img/upgrade/mine2.png" alt="mine" /></a>
-	<a href="#" data-tooltip="Acheter 80 mines" data-placement="top"><img class="achImg" id ="3_mine" src="img/upgrade/mine3.png" alt="mine" /></a>
-	<a href="#" data-tooltip="Acheter 150 mines" data-placement="top"><img class="achImg" id ="4_mine" src="img/upgrade/mine4.png" alt="mine" /></a><br />
-	<a href="#" data-tooltip="Acheter 1 président" data-placement="top"><img class="achImg" id ="1_president" src="img/upgrade/president1.png" alt="president" /></a>
-	<a href="#" data-tooltip="Acheter 30 présidents" data-placement="top"><img class="achImg" id ="2_president" src="img/upgrade/president2.png" alt="president" /></a>
-	<a href="#" data-tooltip="Acheter 80 présidents" data-placement="top"><img class="achImg" id ="3_president" src="img/upgrade/president3.png" alt="president" /></a>
-	<a href="#" data-tooltip="Acheter 150 présidents" data-placement="top"><img class="achImg" id ="4_president" src="img/upgrade/president4.png" alt="president" /></a>
-	<a href="#" data-tooltip="Acheter 1 nuage d'antimatière" data-placement="top"><img class="achImg" id ="1_antimatter" src="img/upgrade/antimatter1.png" alt="antimatter" /></a>
-	<a href="#" data-tooltip="Acheter 30 nuages d'antimatière" data-placement="top"><img class="achImg" id ="2_antimatter" src="img/upgrade/antimatter2.png" alt="antimatter" /></a>
-	<a href="#" data-tooltip="Acheter 80 nuages d'antimatière" data-placement="top"><img class="achImg" id ="3_antimatter" src="img/upgrade/antimatter3.png" alt="antimatter" /></a>
-	<a href="#" data-tooltip="Acheter 150 nuages d'antimatière" data-placement="top"><img class="achImg" id ="4_antimatter" src="img/upgrade/antimatter4.png" alt="antimatter" /></a><br />
+	<a href="#" data-tooltip="Acheter 1 usine" data-placement="top"><img class="achImg" id ="1_factory" src="img/upgrade/locked.png" alt="factory" /></a>
+	<a href="#" data-tooltip="Acheter 30 usines" data-placement="top"><img class="achImg" id ="2_factory" src="img/upgrade/locked.png" alt="factory" /></a>
+	<a href="#" data-tooltip="Acheter 80 usines" data-placement="top"><img class="achImg" id ="3_factory" src="img/upgrade/locked.png" alt="factory" /></a>
+	<a href="#" data-tooltip="Acheter 150 usines" data-placement="top"><img class="achImg" id ="4_factory" src="img/upgrade/locked.png" alt="factory" /></a><br />	
+	<a href="#" data-tooltip="Acheter 1 banque" data-placement="top"><img class="achImg" id ="1_bank" src="img/upgrade/locked.png" alt="bank" /></a>
+	<a href="#" data-tooltip="Acheter 30 banques" data-placement="top"><img class="achImg" id ="2_bank" src="img/upgrade/locked.png" alt="bank" /></a>
+	<a href="#" data-tooltip="Acheter 80 banques" data-placement="top"><img class="achImg" id ="3_bank" src="img/upgrade/locked.png" alt="bank" /></a>
+	<a href="#" data-tooltip="Acheter 150 banques" data-placement="top"><img class="achImg" id ="4_bank" src="img/upgrade/locked.png" alt="bank" /></a>
+	<a href="#" data-tooltip="Acheter 1 mine" data-placement="top"><img class="achImg" id ="1_mine" src="img/upgrade/locked.png" alt="mine" /></a>
+	<a href="#" data-tooltip="Acheter 30 mines" data-placement="top"><img class="achImg" id ="2_mine" src="img/upgrade/locked.png" alt="mine" /></a>
+	<a href="#" data-tooltip="Acheter 80 mines" data-placement="top"><img class="achImg" id ="3_mine" src="img/upgrade/locked.png" alt="mine" /></a>
+	<a href="#" data-tooltip="Acheter 150 mines" data-placement="top"><img class="achImg" id ="4_mine" src="img/upgrade/locked.png" alt="mine" /></a><br />
+	<a href="#" data-tooltip="Acheter 1 président" data-placement="top"><img class="achImg" id ="1_president" src="img/upgrade/locked.png" alt="president" /></a>
+	<a href="#" data-tooltip="Acheter 30 présidents" data-placement="top"><img class="achImg" id ="2_president" src="img/upgrade/locked.png" alt="president" /></a>
+	<a href="#" data-tooltip="Acheter 80 présidents" data-placement="top"><img class="achImg" id ="3_president" src="img/upgrade/locked.png" alt="president" /></a>
+	<a href="#" data-tooltip="Acheter 150 présidents" data-placement="top"><img class="achImg" id ="4_president" src="img/upgrade/locked.png" alt="president" /></a>
+	<a href="#" data-tooltip="Acheter 1 nuage d'antimatière" data-placement="top"><img class="achImg" id ="1_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a>
+	<a href="#" data-tooltip="Acheter 30 nuages d'antimatière" data-placement="top"><img class="achImg" id ="2_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a>
+	<a href="#" data-tooltip="Acheter 80 nuages d'antimatière" data-placement="top"><img class="achImg" id ="3_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a>
+	<a href="#" data-tooltip="Acheter 150 nuages d'antimatière" data-placement="top"><img class="achImg" id ="4_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a><br />
 	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="1_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
 	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="2_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
 	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="3_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
