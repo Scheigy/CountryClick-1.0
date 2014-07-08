@@ -11,7 +11,7 @@ if (empty($_SESSION['pseudo']))
 
 <div id="achievements">
 	<a href="#"><span id="crossAch" class="cross glyphicon glyphicon-remove" onclick="closePop_up('achievements');"></span></a>
-	<h1>Succès</h1>
+	<h1 id="totalAchievements">Succès</h1>
 	<a href="#" data-tooltip="Acheter 1 ouvrier" data-placement="top"><img class="achImg" id ="1_worker" src="img/upgrade/locked.png" alt="worker" /></a>
 	<a href="#" data-tooltip="Acheter 30 ouvriers" data-placement="top"><img class="achImg" id ="2_worker" src="img/upgrade/locked.png" alt="worker" /></a>
 	<a href="#" data-tooltip="Acheter 80 ouvriers" data-placement="top"><img class="achImg" id ="3_worker" src="img/upgrade/locked.png" alt="worker" /></a>
