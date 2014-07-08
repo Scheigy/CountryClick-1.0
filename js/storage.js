@@ -33,6 +33,81 @@ function	createMultiplicator()
 	mult.dollar_valor = 1;
 }
 
+var tab_image = new Array(70);
+for (var i=0; i< tab_image.length;i++)
+	tab_image[i]= new Image();
+tab_image[0].src='img/upgrade/locked.png';
+tab_image[1].src='img/upgrade/worker1.png';
+tab_image[2].src='img/upgrade/worker2.png';
+tab_image[3].src='img/upgrade/worker3.png';
+tab_image[4].src='img/upgrade/worker4.png';
+tab_image[5].src='img/upgrade/businessman1.png';
+tab_image[6].src='img/upgrade/businessman2.png';
+tab_image[7].src='img/upgrade/businessman3.png';
+tab_image[8].src='img/upgrade/businessman4.png';
+tab_image[9].src='img/upgrade/supermarket1.png';
+tab_image[10].src='img/upgrade/supermarket2.png';
+tab_image[11].src='img/upgrade/supermarket3.png';
+tab_image[12].src='img/upgrade/supermarket4.png';
+tab_image[13].src='img/upgrade/factory1.png';
+tab_image[14].src='img/upgrade/factory2.png';
+tab_image[15].src='img/upgrade/factory3.png';
+tab_image[16].src='img/upgrade/factory4.png';
+tab_image[17].src='img/upgrade/bank1.png';
+tab_image[18].src='img/upgrade/bank2.png';
+tab_image[19].src='img/upgrade/bank3.png';
+tab_image[20].src='img/upgrade/bank4.png';
+tab_image[21].src='img/upgrade/mine1.png';
+tab_image[22].src='img/upgrade/mine2.png';
+tab_image[23].src='img/upgrade/mine3.png';
+tab_image[24].src='img/upgrade/mine4.png';
+tab_image[25].src='img/upgrade/president1.png';
+tab_image[26].src='img/upgrade/president2.png';
+tab_image[27].src='img/upgrade/president3.png';
+tab_image[28].src='img/upgrade/president4.png';
+tab_image[29].src='img/upgrade/antimatter1.png';
+tab_image[30].src='img/upgrade/antimatter2.png';
+tab_image[31].src='img/upgrade/antimatter3.png';
+tab_image[32].src='img/upgrade/antimatter4.png';
+/*tab_image[33].src='img/upgrade/totalbuild1.png';
+tab_image[34].src='img/upgrade/totalbuild2.png';
+tab_image[35].src='img/upgrade/totalbuild3.png';
+tab_image[36].src='img/upgrade/totalbuild4.png';
+tab_image[37].src='img/upgrade/totalbuild5.png';
+tab_image[38].src='img/upgrade/totalmoney1.png';
+tab_image[39].src='img/upgrade/totalmoney2.png';
+tab_image[40].src='img/upgrade/totalmoney3.png';
+tab_image[41].src='img/upgrade/totalmoney4.png';
+tab_image[42].src='img/upgrade/totalmoney5.png';
+tab_image[43].src='img/upgrade/totalmoney6.png';
+tab_image[44].src='img/upgrade/totalmoney7.png';
+tab_image[45].src='img/upgrade/totalmoney8.png';
+tab_image[46].src='img/upgrade/prod1.png';
+tab_image[47].src='img/upgrade/prod2.png';
+tab_image[48].src='img/upgrade/prod3.png';
+tab_image[49].src='img/upgrade/prod4.png';
+tab_image[50].src='img/upgrade/prod5.png';
+tab_image[51].src='img/upgrade/prod6.png';
+tab_image[52].src='img/upgrade/prod7.png';
+tab_image[53].src='img/upgrade/prod8.png';
+tab_image[54].src='img/upgrade/time1.png';
+tab_image[55].src='img/upgrade/time2.png';
+tab_image[56].src='img/upgrade/time3.png';
+tab_image[57].src='img/upgrade/time4.png';
+tab_image[58].src='img/upgrade/time5.png';
+tab_image[59].src='img/upgrade/click1.png';
+tab_image[60].src='img/upgrade/click2.png';
+tab_image[61].src='img/upgrade/click3.png';
+tab_image[62].src='img/upgrade/click4.png';
+tab_image[63].src='img/upgrade/click5.png';
+tab_image[64].src='img/upgrade/upgrade1.png';
+tab_image[65].src='img/upgrade/upgrade2.png';
+tab_image[66].src='img/upgrade/upgrade3.png';
+tab_image[67].src='img/upgrade/upgrade4.png';
+tab_image[68].src='img/upgrade/upgrade5.png';
+tab_image[69].src='img/upgrade/upgrade6.png';*/
+
+
 function	setObject()
 {	
 	game = new Object();
@@ -1273,6 +1348,9 @@ window.onload = function() {
 	}
 };
 
+
+									// ACHIEVEMENTS //
+
 function	time_counter()
 {
 	game.timecounter = game.timecounter + 1;
@@ -1282,427 +1360,298 @@ function	my_aff_worker_achievements()
 {
 	first_worker = document.getElementById('1_worker');
 	if (game.worker >= 1)
-	{
-		//alert("ACHIEVEMENT 1 WORKER");
-		//first_worker.style.display="none";
-		first_worker.innerHTML = '1wo';
-	}
-	else
-		first_worker.innerHTML = 'lock'
-
+		document.getElementById("1_worker").src = tab_image[1].src;
+			
 	second_worker = document.getElementById('2_worker');
 	if (game.worker >= 30)
-		second_worker.innerHTML = '30wo';
-	else
-		second_worker.innerHTML = 'lock'
-
+		document.getElementById("2_worker").src = tab_image[2].src;
+		
 	third_worker = document.getElementById('3_worker');
 	if (game.worker >= 80)
-		third_worker.innerHTML = '80wo';
-	else
-		third_worker.innerHTML = 'lock'
-
+		document.getElementById("3_worker").src = tab_image[3].src;
+		
 	fourth_worker = document.getElementById('4_worker');
 	if (game.worker >= 150)
-		fourth_worker.innerHTML = '150wo';
-	else
-		fourth_worker.innerHTML = 'lock'
+		document.getElementById("4_worker").src = tab_image[4].src;
 }
 
 function	my_aff_businessman_achievements()
 {
 	first_businessman = document.getElementById('1_businessman');
 	if (game.businessman >= 1)
-		first_businessman.innerHTML = '1bu';
-	else
-		first_businessman.innerHTML = 'lock'
-
+		document.getElementById("1_businessman").src = tab_image[5].src;
+			
 	second_businessman = document.getElementById('2_businessman');
 	if (game.businessman >= 30)
-		second_businessman.innerHTML = '30bu';
-	else
-		second_businessman.innerHTML = 'lock'
-
+		document.getElementById("2_businessman").src = tab_image[6].src;
+		
 	third_businessman = document.getElementById('3_businessman');
 	if (game.businessman >= 80)
-		third_businessman.innerHTML = '80bu';
-	else
-		third_businessman.innerHTML = 'lock'
-
+		document.getElementById("3_businessman").src = tab_image[7].src;
+		
 	fourth_businessman = document.getElementById('4_businessman');
 	if (game.businessman >= 150)
-		fourth_businessman.innerHTML = '150bu';
-	else
-		fourth_businessman.innerHTML = 'lock'
+		document.getElementById("4_businessman").src = tab_image[8].src;
 }
 
 function	my_aff_supermarket_achievements()
 {
 	first_supermarket = document.getElementById('1_supermarket');
 	if (game.supermarket >= 1)
-		first_supermarket.innerHTML = '1su';
-	else
-		first_supermarket.innerHTML = 'lock'
-
+		document.getElementById("1_supermarket").src = tab_image[9].src;
+			
 	second_supermarket = document.getElementById('2_supermarket');
 	if (game.supermarket >= 30)
-		second_supermarket.innerHTML = '30su';
-	else
-		second_supermarket.innerHTML = 'lock'
-
+		document.getElementById("2_supermarket").src = tab_image[10].src;
+		
 	third_supermarket = document.getElementById('3_supermarket');
 	if (game.supermarket >= 80)
-		third_supermarket.innerHTML = '80su';
-	else
-		third_supermarket.innerHTML = 'lock'
-
+		document.getElementById("3_supermarket").src = tab_image[11].src;
+		
 	fourth_supermarket = document.getElementById('4_supermarket');
 	if (game.supermarket >= 150)
-		fourth_supermarket.innerHTML = '150su';
-	else
-		fourth_supermarket.innerHTML = 'lock'
+		document.getElementById("4_supermarket").src = tab_image[12].src;
 }
 
 function	my_aff_factory_achievements()
 {
 	first_factory = document.getElementById('1_factory');
 	if (game.factory >= 1)
-		first_factory.innerHTML = '1fa';
-	else
-		first_factory.innerHTML = 'lock'
-
+		document.getElementById("1_factory").src = tab_image[13].src;
+			
 	second_factory = document.getElementById('2_factory');
 	if (game.factory >= 30)
-		second_factory.innerHTML = '30fa';
-	else
-		second_factory.innerHTML = 'lock'
-
+		document.getElementById("2_factory").src = tab_image[14].src;
+		
 	third_factory = document.getElementById('3_factory');
 	if (game.factory >= 80)
-		third_factory.innerHTML = '80fa';
-	else
-		third_factory.innerHTML = 'lock'
-
+		document.getElementById("3_factory").src = tab_image[15].src;
+		
 	fourth_factory = document.getElementById('4_factory');
 	if (game.factory >= 150)
-		fourth_factory.innerHTML = '150fa';
-	else
-		fourth_factory.innerHTML = 'lock'	
+		document.getElementById("4_factory").src = tab_image[16].src;
 }
 
 function	my_aff_bank_achievements()
 {
 	first_bank = document.getElementById('1_bank');
 	if (game.bank >= 1)
-		first_bank.innerHTML = '1ba';
-	else
-		first_bank.innerHTML = 'lock'
-
+		document.getElementById("1_bank").src = tab_image[17].src;
+			
 	second_bank = document.getElementById('2_bank');
 	if (game.bank >= 30)
-		second_bank.innerHTML = '30ba';
-	else
-		second_bank.innerHTML = 'lock'
-
+		document.getElementById("2_bank").src = tab_image[18].src;
+		
 	third_bank = document.getElementById('3_bank');
 	if (game.bank >= 80)
-		third_bank.innerHTML = '80ba';
-	else
-		third_bank.innerHTML = 'lock'
-
+		document.getElementById("3_bank").src = tab_image[19].src;
+		
 	fourth_bank = document.getElementById('4_bank');
 	if (game.bank >= 150)
-		fourth_bank.innerHTML = '150ba';
-	else
-		fourth_bank.innerHTML = 'lock'	
+		document.getElementById("4_bank").src = tab_image[20].src;	
 }
 
 function	my_aff_mine_achievements()
 {
 	first_mine = document.getElementById('1_mine');
 	if (game.mine >= 1)
-		first_mine.innerHTML = '1mi';
-	else
-		first_mine.innerHTML = 'lock'
-
+		document.getElementById("1_mine").src = tab_image[21].src;
+			
 	second_mine = document.getElementById('2_mine');
 	if (game.mine >= 30)
-		second_mine.innerHTML = '30mi';
-	else
-		second_mine.innerHTML = 'lock'
-
+		document.getElementById("2_mine").src = tab_image[22].src;
+		
 	third_mine = document.getElementById('3_mine');
 	if (game.mine >= 80)
-		third_mine.innerHTML = '80mi';
-	else
-		third_mine.innerHTML = 'lock'
-
+		document.getElementById("3_mine").src = tab_image[23].src;
+		
 	fourth_mine = document.getElementById('4_mine');
 	if (game.mine >= 150)
-		fourth_mine.innerHTML = '150mi';
-	else
-		fourth_mine.innerHTML = 'lock'	
+		document.getElementById("4_mine").src = tab_image[24].src;	
 }
 
 function	my_aff_president_achievements()
 {
 	first_president = document.getElementById('1_president');
 	if (game.president >= 1)
-		first_president.innerHTML = '1pr';
-	else
-		first_president.innerHTML = 'lock'
-
+		document.getElementById("1_president").src = tab_image[25].src;
+			
 	second_president = document.getElementById('2_president');
 	if (game.president >= 30)
-		second_president.innerHTML = '30pr';
-	else
-		second_president.innerHTML = 'lock'
-
+		document.getElementById("2_president").src = tab_image[26].src;
+		
 	third_president = document.getElementById('3_president');
 	if (game.president >= 80)
-		third_president.innerHTML = '80pr';
-	else
-		third_president.innerHTML = 'lock'
-
+		document.getElementById("3_president").src = tab_image[27].src;
+		
 	fourth_president = document.getElementById('4_president');
 	if (game.president >= 120)
-		fourth_president.innerHTML = '120pr';
-	else
-		fourth_president.innerHTML = 'lock'	
+		document.getElementById("4_president").src = tab_image[28].src;	
 }
 
 function	my_aff_antimatter_achievements()
 {
 	first_antimatter = document.getElementById('1_antimatter');
 	if (game.antimatter >= 1)
-		first_antimatter.innerHTML = '1an';
-	else
-		first_antimatter.innerHTML = 'lock'
-
+		document.getElementById("1_antimatter").src = tab_image[29].src;
+			
 	second_antimatter = document.getElementById('2_antimatter');
 	if (game.antimatter >= 30)
-		second_antimatter.innerHTML = '30an';
-	else
-		second_antimatter.innerHTML = 'lock'
-
+		document.getElementById("2_antimatter").src = tab_image[30].src;
+		
 	third_antimatter = document.getElementById('3_antimatter');
 	if (game.antimatter >= 80)
-		third_antimatter.innerHTML = '80an';
-	else
-		third_antimatter.innerHTML = 'lock'
-
+		document.getElementById("3_antimatter").src = tab_image[31].src;
+		
 	fourth_antimatter = document.getElementById('4_antimatter');
 	if (game.antimatter >= 120)
-		fourth_antimatter.innerHTML = '120an';
-	else
-		fourth_antimatter.innerHTML = 'lock'	
+		document.getElementById("4_antimatter").src = tab_image[32].src;	
 }
-
-/*function	my_aff_totalbuilding_achievements()
+/*
+function	my_aff_totalbuilding_achievements()
 {
 	first_totalbuild = document.getElementById('1_totalbuild');
 	if (game.worker + game.businessman + game.supermarket + game.factory + 
 		game.bank + game.mine + game.president + game.antimatter >= 50)
-		first_totalbuild.innerHTML = '50all';
-	else
-		first_totalbuild.innerHTML = 'lock'
+		document.getElementById("1_totalbuild").src = tab_image[33].src;
 			
 	second_totalbuild = document.getElementById('2_totalbuild');
 	if (game.worker + game.businessman + game.supermarket + game.factory + 
 		game.bank + game.mine + game.president + game.antimatter >= 100)
-		second_totalbuild.innerHTML = '100all';
-	else
-		second_totalbuild.innerHTML = 'lock'
-		
+		document.getElementById("2_totalbuild").src = tab_image[34].src;
+	
 	third_totalbuild = document.getElementById('3_totalbuild');
 	if (game.worker + game.businessman + game.supermarket + game.factory + 
 		game.bank + game.mine + game.president + game.antimatter >= 500)
-		third_totalbuild.innerHTML = '500all';
-	else
-		third_totalbuild.innerHTML = 'lock'
+		document.getElementById("3_totalbuild").src = tab_image[35].src;
 		
 	fourth_totalbuild = document.getElementById('4_totalbuild');
 	if (game.worker + game.businessman + game.supermarket + game.factory + 
 		game.bank + game.mine + game.president + game.antimatter >= 1000)
-		fourth_totalbuild.innerHTML = '1000all';
-	else
-		fourth_totalbuild.innerHTML = 'lock'
+		document.getElementById("4_totalbuild").src = tab_image[36].src;
 		
 	fifth_totalbuild = document.getElementById('5_totalbuild');
 	if (game.worker + game.businessman + game.supermarket + game.factory + 
 		game.bank + game.mine + game.president + game.antimatter >= 2000)
-		fifth_totalbuild.innerHTML = '2000all';
-	else
-		fifth_totalbuild.innerHTML = 'lock'	
+		document.getElementById("5_totalbuild").src = tab_image[37].src;	
 }
 
 function	my_aff_totalmoney_achievements()
 {			
 	first_totalmoney = document.getElementById('1_totalmoney');
 	if (game.total_money >= 100)
-		first_totalmoney.innerHTML = '$total';
-	else
-		first_totalmoney.innerHTML = 'lock'
+		document.getElementById("1_totalmoney").src = tab_image[38].src;
 		
 	second_totalmoney = document.getElementById('2_totalmoney');
 	if (game.total_money >= 1000)
-		second_totalmoney.innerHTML = '$total';
-	else
-		second_totalmoney.innerHTML = 'lock'
+		document.getElementById("2_totalmoney").src = tab_image[39].src;
 		
 	third_totalmoney = document.getElementById('3_totalmoney');
 	if (game.total_money >= 100000)
-		third_totalmoney.innerHTML = '$total';
-	else
-		third_totalmoney.innerHTML = 'lock'
+		document.getElementById("3_totalmoney").src = tab_image[40].src;
 		
 	fourth_totalmoney = document.getElementById('4_totalmoney');
 	if (game.total_money >= 1000000)
-		fourth_totalmoney.innerHTML = '$total';
-	else
-		fourth_totalmoney.innerHTML = 'lock'
+		document.getElementById("4_totalmoney").src = tab_image[41].src;
 		
 	fifth_totalmoney = document.getElementById('5_totalmoney');
 	if (game.total_money >= 100000000)
-		fifth_totalmoney.innerHTML = '$total';
-	else
-		fifth_totalmoney.innerHTML = 'lock'	
+		document.getElementById("5_totalmoney").src = tab_image[42].src;
 		
 	sixth_totalmoney = document.getElementById('6_totalmoney');
 	if (game.total_money >= 1000000000)
-		sixth_totalmoney.innerHTML = '$total';
-	else
-		sixth_totalmoney.innerHTML = 'lock'	
+		document.getElementById("6_totalmoney").src = tab_image[43].src;
 		
 	seventh_totalmoney = document.getElementById('7_totalmoney');
 	if (game.total_money >= 100000000000)
-		seventh_totalmoney.innerHTML = '$total';
-	else
-		seventh_totalmoney.innerHTML = 'lock'
+		document.getElementById("7_totalmoney").src = tab_image[44].src;
 	
 	eighth_totalmoney = document.getElementById('8_totalmoney');
 	if (game.total_money >= 100000000000000)
-		eighth_totalmoney.innerHTML = '$total';
-	else
-		eighth_totalmoney.innerHTML = 'lock'
-		
+
+		document.getElementById("8_totalmoney").src = tab_image[45].src;
 }
 
 function	my_aff_prod_achievements()
 {
 	first_prod = document.getElementById('1_prod');
 	if (game.prod_money >= 1)
-		first_prod.innerHTML = '$prod';
-	else
-		first_prod.innerHTML = 'lock'
-
+		document.getElementById("1_prod").src = tab_image[46].src;
+		
 	second_prod = document.getElementById('2_prod');
 	if (game.prod_money >= 10)
-		second_prod.innerHTML = '$prod';
-	else
-		second_prod.innerHTML = 'lock'
+		document.getElementById("2_prod").src = tab_image[47].src;
+
 
 	third_prod = document.getElementById('3_prod');
 	if (game.prod_money >= 100)
-		third_prod.innerHTML = '$prod';
-	else
-		third_prod.innerHTML = 'lock'
+		document.getElementById("3_prod").src = tab_image[48].src;
 		
 	fourth_prod = document.getElementById('4_prod');
 	if (game.prod_money >= 1000)
-		fourth_prod.innerHTML = '$prod';
-	else
-		fourth_prod.innerHTML = 'lock'
+		document.getElementById("4_prod").src = tab_image[49].src;
 		
 	fifth_prod = document.getElementById('5_prod');
 	if (game.prod_money >= 10000)
-		fifth_prod.innerHTML = '$prod';
-	else
-		fifth_prod.innerHTML = 'lock'
+		document.getElementById("5_prod").src = tab_image[50].src;
 		
 	sixth_prod = document.getElementById('6_prod');
 	if (game.prod_money >= 100000)
-		sixth_prod.innerHTML = '$prod';
-	else
-		sixth_prod.innerHTML = 'lock'
+		document.getElementById("6_prod").src = tab_image[51].src;
 		
 	seventh_prod = document.getElementById('7_prod');
 	if (game.prod_money >= 1000000)
-		seventh_prod.innerHTML = '$prod';
-	else
-		seventh_prod.innerHTML = 'lock'	
+		document.getElementById("7_prod").src = tab_image[52].src;
 	
 	eighth_prod = document.getElementById('8_prod');
 	if (game.prod_money >= 10000000)
-		eighth_prod.innerHTML = '$prod';
-	else
-		eighth_prod.innerHTML = 'lock'	
+		document.getElementById("8_prod").src = tab_image[53].src;
 }
 
 function	my_aff_timeplayed_achievements()
 {
 	first_time = document.getElementById('1_time');
 	if (game.timecounter >= 6)
-		first_time.innerHTML = '#time';
-	else
-		first_time.innerHTML = 'lock'
+		document.getElementById("1_time").src = tab_image[54].src;
 
 	second_time = document.getElementById('2_time');
 	if (game.timecounter >= 12)
-		second_time.innerHTML = '#time';
-	else
-		second_time.innerHTML = 'lock'
+		document.getElementById("2_time").src = tab_image[55].src;
 		
-	third_time = document.getElementById('1_time');
+	third_time = document.getElementById('3_time');
 	if (game.timecounter >= 288)
-		third_time.innerHTML = '#time';
-	else
-		third_time.innerHTML = 'lock'
+		document.getElementById("3_time").src = tab_image[56].src;
 		
-	fourht_time = document.getElementById('1_time');
+	fourht_time = document.getElementById('4_time');
 	if (game.timecounter >= 864)
-		fourth_time.innerHTML = '#time';
-	else
-		fourth_time.innerHTML = 'lock'
+		document.getElementById("4_time").src = tab_image[57].src;
 		
-	fifth_time = document.getElementById('1_time');
+	fifth_time = document.getElementById('5_time');
 	if (game.timecounter >= 2016)
-		fifth_time.innerHTML = '#time';
-	else
-		fifth_time.innerHTML = 'lock'
+		document.getElementById("5_time").src = tab_image[58].src;
 }
 
 function	my_aff_nb_click_achievements()
 {
 	first_click = document.getElementById('1_click');
 	if (game.clickcounter >= 1)
-		first_click.innerHTML = '#click';
-	else
-		first_click.innerHTML = 'lock'
+		document.getElementById("1_click").src = tab_image[59].src;
 	
 	second_click = document.getElementById('2_click');
 	if (game.clickcounter >= 100)
-		second_click.innerHTML = '#click';
-	else
-		second_click.innerHTML = 'lock'
+		document.getElementById("2_click").src = tab_image[60].src;
 		
 	third_click = document.getElementById('3_click');
 	if (game.clickcounter >= 1000)
-		third_click.innerHTML = '#click';
-	else
-		third_click.innerHTML = 'lock'
+		document.getElementById("3_click").src = tab_image[61].src;
 		
 	fourth_click = document.getElementById('4_click');
 	if (game.clickcounter >= 10000)
-		fourth_click.innerHTML = '#click';
-	else
-		fourth_click.innerHTML = 'lock'
+		document.getElementById("4_click").src = tab_image[62].src;
 		
 	fifth_click = document.getElementById('5_click');
 	if (game.clickcounter >= 50000)
-		fifth_click.innerHTML = '#click';
-	else
-		fifth_click.innerHTML = 'lock'
+		document.getElementById("5_click").src = tab_image[63].src;
 }
 
 function	my_aff_upgrades_bought_achievements()
@@ -1717,41 +1666,31 @@ function	my_aff_upgrades_bought_achievements()
 	}
 	first_upgrade = document.getElementById('1_upgrade');
 	if (unlocked >= 1)
-		first_upgrade.innerHTML = '#upgd';
-	else
-		first_upgrade.innerHTML = 'lock'
+		document.getElementById("1_upgrade").src = tab_image[64].src;
 	
 	second_upgrade = document.getElementById('2_upgrade');
 	if (unlocked >= 5)
-		second_upgrade.innerHTML = '#upgd';
-	else
-		second_upgrade.innerHTML = 'lock'
+		document.getElementById("2_upgrade").src = tab_image[65].src;
 		
 	third_upgrade = document.getElementById('3_upgrade');
 	if (unlocked >= 10)
-		third_upgrade.innerHTML = '#upgd';
-	else
-		third_upgrade.innerHTML = 'lock'
+		document.getElementById("3_upgrade").src = tab_image[66].src;
 		
 	fourth_upgrade = document.getElementById('4_upgrade');
 	if (unlocked >= 15)
-		fourth_upgrade.innerHTML = '#upgd';
-	else
-		fourth_upgrade.innerHTML = 'lock'
+		document.getElementById("4_upgrade").src = tab_image[67].src;
 		
 	fifth_upgrade = document.getElementById('5_upgrade');
 	if (unlocked >= 20)
-		fifth_upgrade.innerHTML = '#upgd';
-	else
-		fifth_upgrade.innerHTML = 'lock'
+		document.getElementById("5_upgrade").src = tab_image[68].src;
 		
 	sixth_upgrade = document.getElementById('6_upgrade');
 	if (unlocked >= 24)
-		sixth_upgrade.innerHTML = '#upgd';
-	else
-		sixth_upgrade.innerHTML = 'lock'
+		document.getElementById("6_upgrade").src = tab_image[69].src;
 }
 */
+
+
 function	call_achievements_functions()
 {
 	my_aff_worker_achievements();
@@ -1769,6 +1708,7 @@ function	call_achievements_functions()
 	my_aff_prod_dollar_achievements();
 	my_aff_upgrades_bought_achievements();*/
 }
+
 
 function reparation()
 {

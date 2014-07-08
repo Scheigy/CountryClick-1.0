@@ -45,30 +45,43 @@ if (empty($_SESSION['pseudo']))
 	<a href="#" data-tooltip="Acheter 30 nuages d'antimatière" data-placement="top"><img class="achImg" id ="2_antimatter" src="img/upgrade/antimatter2.png" alt="antimatter" /></a>
 	<a href="#" data-tooltip="Acheter 80 nuages d'antimatière" data-placement="top"><img class="achImg" id ="3_antimatter" src="img/upgrade/antimatter3.png" alt="antimatter" /></a>
 	<a href="#" data-tooltip="Acheter 150 nuages d'antimatière" data-placement="top"><img class="achImg" id ="4_antimatter" src="img/upgrade/antimatter4.png" alt="antimatter" /></a><br />
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a><br />
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a><br />
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a>
-	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" src="img/upgrade/locked.png" alt="Lock" /></a><br />
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="1_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="2_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="3_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="4_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="5_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="1_totalmoney" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="2_totalmoney" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="3_totalmoney" src="img/upgrade/locked.png" alt="Lock" /></a><br />
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="4_totalmoney" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="5_totalmoney" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="6_totalmoney" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="7_totalmoney" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="8_totalmoney" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="1_prod" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="2_prod" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="3_prod" src="img/upgrade/locked.png" alt="Lock" /></a><br />
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="4_prod" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="5_prod" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="6_prod" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="7_prod" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="8_prod" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="1_time" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="2_time" src="img/upgrade/locked.png" alt="Lock" /></a>
+	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="3_time" src="img/upgrade/locked.png" alt="Lock" /></a><br />
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="4_time" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="5_time" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="1_click" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="2_click" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="3_click" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="4_click" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="5_click" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="1_upgrade" src="img/upgrade/locked.png" alt="Lock" /></a><br />
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="2_upgrade" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="3_upgrade" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="4_upgrade" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="5_upgrade" src="img/upgrade/locked.png" alt="Lock" /></a>
+    <a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="6_upgrade" src="img/upgrade/locked.png" alt="Lock" /></a>
 
 </div>
 
