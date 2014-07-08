@@ -336,7 +336,6 @@ if (empty($_SESSION['pseudo']))
 		</div>
 	</div>
 </div>
-<script src="js/storage.js"> </script>
 <?php include("footer.php"); ?>
 </body>
 </html>
