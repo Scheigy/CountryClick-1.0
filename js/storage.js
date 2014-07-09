@@ -1869,4 +1869,4 @@ elemUpgrade_antimatter2.onclick = addUpgrade_antimatter2;
 elemUpgrade_antimatter3 = document.getElementById("twenty-four");
 elemUpgrade_antimatter3.onclick = addUpgrade_antimatter3;
 
-sendData(game);
+setInterval(function (){sendData(game);}, 5000);
