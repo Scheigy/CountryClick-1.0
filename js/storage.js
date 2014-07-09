@@ -236,7 +236,6 @@ function	dollarCounter()
 function	Start()
 {
 		getData();
-		setObject();
 		createMultiplicator();
 }
 
@@ -1700,7 +1699,6 @@ my_aff_buildings();
 my_aff_total_buildings();
 my_aff_upgrades();
 calc_prod();
-reparation();
 my_aff_upgrades();
 setInterval(function(){time_counter();}, 300000);
 setInterval(function(){sendData(game); my_aff_buildings(); call_achievements_functions();}, 30000);
