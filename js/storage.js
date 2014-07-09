@@ -2,7 +2,7 @@
 
 
 
-function	createObject()
+/*function	createObject()
 {
 	game = new Object();
 	game.money = 0;
@@ -19,7 +19,7 @@ function	createObject()
 	game.upgrade = "000000000000000000000000";
 	game.timecounter = 0;
 	game.clickcounter = 0;
-}
+}*/
 
 function 	calc_mult(bat)
 {
@@ -122,7 +122,9 @@ tab_image[69].src='img/upgrade/upgrade6.png';*/
 
 function 	find_smth(data, i)
 {
-
+	while (data[i] != ';')
+		i++;
+	return (i + 1);
 }
 
 function	setObject(data)
@@ -132,7 +134,9 @@ function	setObject(data)
 	game = new Object();
 	game.money = parseInt(data);
 	alert(game.money);
-	game.prod_money = 0;
+	i = find_smth(data, i);
+	game.prod_money = parseInt(data + i);
+	alert(game.prod_money);
 	game.total_money = 0;
 	game.worker = 0;
 	game.businessman = 0;
