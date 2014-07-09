@@ -131,23 +131,21 @@ function	setObject(data)
 {
 	var tab;
 	tab = data.split(';');
-	alert(tab[0]);
-	alert(tab[1]);
 	game = new Object();
-	game.money = 0;
-	game.prod_money = 0;
-	game.total_money = 0;
-	game.worker = 0;
-	game.businessman = 0;
-	game.supermarket = 0;
-	game.factory = 0;
-	game.bank = 0;
-	game.mine = 0;
-	game.president = 0;
-	game.antimatter = 0;
-	game.upgrade = '000000000000000000000000';
-	game.timecounter = 0;
-	game.clickcounter = 0;
+	game.money = parseInt(tab[0]);
+	game.prod_money = parseInt(tab[1]);
+	game.total_money = parseInt(tab[2]);
+	game.worker = parseInt(tab[3]);
+	game.businessman = parseInt(tab[4]);
+	game.supermarket = parseInt(tab[5]);
+	game.factory = parseInt(tab[6]);
+	game.bank = parseInt(tab[7]);
+	game.mine = parseInt(tab[8]);
+	game.president = parseInt(tab[9]);
+	game.antimatter = parseInt(tab[10]);
+	game.upgrade = tab[11];
+	game.timecounter = parseInt(tab[12]);
+	game.clickcounter = parseInt(tab[13]);
 }
 
 function	changeNumber(nb)
