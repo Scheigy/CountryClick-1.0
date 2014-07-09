@@ -1877,7 +1877,7 @@ function 	makeJSON()
 
 function 	parseJSON(json)
 {
-	lol = JSON.parse(json);
+	game = JSON.parse(json);
 }
 
 sendData(game);
