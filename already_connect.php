@@ -7,6 +7,15 @@
 		<p>
 			Temps de jeu: <br />
 			Dollars:
+			<?php
+			$bdd = connectBDD();
+			$req = $bdd->prepare('SELECT money FROM game WHERE pseudo = \'' . $_SESSION["pseudo"] . '\'');
+			if ($req->execute())
+			{
+				$result = $req->fetch();
+				echo $result['money'];
+			}
+			?>
 		</p>
 	</div>
 
