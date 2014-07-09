@@ -129,14 +129,13 @@ function 	find_smth(data, i)
 
 function	setObject(data)
 {
-	var i = 0;
-
+	var tab;
+	tab = data.split(';');
+	alert(tab[0]);
+	alert(tab[1]);
 	game = new Object();
-	game.money = parseInt(data);
-	alert(game.money);
-	i = find_smth(data, i);
-	game.prod_money = parseInt(data + i);
-	alert(game.prod_money);
+	game.money = 0;
+	game.prod_money = 0;
 	game.total_money = 0;
 	game.worker = 0;
 	game.businessman = 0;
