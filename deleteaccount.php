@@ -6,12 +6,15 @@ include ("fonctions.php");
 $bdd = connectBDD();
 
 $line = "DELETE FROM `user` WHERE `pseudo` = '" . $_SESSION['pseudo'] . "'";
+$line2 = "DELETE FROM `game` WHERE `pseudo` = '" . $_SESSION['pseudo'] . "'";
 
 $request = $bdd->prepare($line);
+$request2 = $bdd->prepare($line2);
 
 $result = $request->execute();
+$result2 = $request2->execute();
 
-if ($result)
+if ($result && $result2)
 {
 	echo '<script>
 	alert("Compte supprimée avec succès");

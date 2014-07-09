@@ -13,7 +13,7 @@ include("header.php");
 
 		$result = $request->execute();
 
-		if ($return = $request->fetch())
+		if ($request->fetch())
 		{			
 			if (isset($_POST['setcookie']))
 				setcookie("userSession", $_POST['pseudo'], time()+60*60*24*30);

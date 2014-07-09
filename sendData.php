@@ -8,7 +8,6 @@ $bdd = connectBDD();
 
 foreach ($_POST as $key => $value) 
 {
-	//$line = "UPDATE game (" . $key . ") VALUES (:value) WHERE pseudo = '" . $_SESSION['pseudo'] . "'";
 	$line = "UPDATE game SET " . $key . " = (:value) WHERE pseudo = '" . $_SESSION['pseudo'] . "'";
 
 	$request = $bdd->prepare($line);

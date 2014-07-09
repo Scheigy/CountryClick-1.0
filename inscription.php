@@ -24,6 +24,8 @@ include("header.php");
 						'password' => sha1($_POST['password']),
 						'mail' => htmlspecialchars($_POST['mail'])))))
 					{
+						$gameData = $bdd->prepare('INSERT INTO game (pseudo) VALUES (:pseudo)');
+						$gameData->execute(array('pseudo' => htmlspecialchars($_POST['pseudo'])));
 						$check = 1;
 						$_SESSION['pseudo'] = $_POST['pseudo'];
 						echo 'Inscription réussie, bienvenue <strong>' . $_POST['pseudo'] . '</strong> !<br />';
