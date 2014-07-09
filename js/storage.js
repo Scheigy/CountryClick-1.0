@@ -120,25 +120,31 @@ tab_image[67].src='img/upgrade/upgrade4.png';
 tab_image[68].src='img/upgrade/upgrade5.png';
 tab_image[69].src='img/upgrade/upgrade6.png';*/
 
+function 	find_smth(data, i)
+{
 
-function	setObject()
-{	
+}
+
+function	setObject(data)
+{
+	var i = 0;
+
 	game = new Object();
-	game.money = parseInt(window.localStorage.getItem('money'));
-	game.prod_money = parseInt(window.localStorage.getItem('prod_money'));
-	game.total_money = parseInt(window.localStorage.getItem('total_money'));
-	game.worker = parseInt(window.localStorage.getItem('worker'));
-	game.businessman = parseInt(window.localStorage.getItem('businessman'));
-	game.supermarket = parseInt(window.localStorage.getItem('supermarket'));
-	game.factory = parseInt(window.localStorage.getItem('factory'));
-	game.bank = parseInt(window.localStorage.getItem('bank'));
-	game.mine = parseInt(window.localStorage.getItem('mine'));
-	game.president = parseInt(window.localStorage.getItem('president'));
-	game.antimatter = parseInt(window.localStorage.getItem('antimatter'));
-	game.upgrade = window.localStorage.getItem('upgrade');
-	game.timecounter = parseInt(window.localStorage.getItem('timecounter'));
-	game.clickcounter = parseInt(window.localStorage.getItem('clickcounter'));
-	
+	game.money = parseInt(data);
+	alert(game.money);
+	game.prod_money = ;
+	game.total_money = ;
+	game.worker = ;
+	game.businessman = ;
+	game.supermarket = ;
+	game.factory = ;
+	game.bank = ;
+	game.mine = ;
+	game.president = ;
+	game.antimatter = ;
+	game.upgrade = ;
+	game.timecounter = ;
+	game.clickcounter = ;
 }
 
 function	changeNumber(nb)
