@@ -260,11 +260,18 @@ function	lcStorage()
 	{
 		createObject();
 		createMultiplicator();
-		createStorage();
 		alert('Bienvenue');
 	}
-	else
+	else if (window.localStorage.length > 0)
+	{
 		setObject();
+		//sendData();
+	}
+	else
+	{
+		//getData();
+	}
+
 }
 
 function	clickValue()
@@ -1869,19 +1876,6 @@ elemUpgrade_antimatter2.onclick = addUpgrade_antimatter2;
 elemUpgrade_antimatter3 = document.getElementById("twenty-four");
 elemUpgrade_antimatter3.onclick = addUpgrade_antimatter3;
 
-//
-function	check_localStorage()
-{	
-	if (window.localStorage.getItem('money') != NULL)
-		{	
-			sendData(game);
-			window.localStorage.clear();
-		}
-	if (window.localStorage.getItem('upworker') != NULL)
-		{
-			sendMult();
-		
-		}
 
 function 	makeJSON()
 {
