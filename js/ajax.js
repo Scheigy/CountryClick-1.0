@@ -12,6 +12,7 @@ function getData()
 {
 	$.ajax({
 		type: "POST",
+		async: false,
 		url: 'getData.php',
 		data: null,
 		success: function (data){setObject(data)}
