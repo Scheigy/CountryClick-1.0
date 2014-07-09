@@ -142,7 +142,7 @@ function	setObject(data)
 	game.mine = 0;
 	game.president = 0;
 	game.antimatter = 0;
-	game.upgrade = 0;
+	game.upgrade = '000000000000000000000000';
 	game.timecounter = 0;
 	game.clickcounter = 0;
 }
