@@ -15,7 +15,7 @@ if (($request->execute()))
 	$result = $request->fetch();
 	$i = 1;
 	while ($i < 15)
-		echo $result[$i++] . '<br />';
+		echo $result[$i++] . ';';
 }
 
 ?>

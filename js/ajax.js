@@ -10,11 +10,10 @@ function sendData(game)
 
 function getData()
 {
-	alert('salut');
 	$.ajax({
 		type: "POST",
 		url: 'getData.php',
 		data: null,
-		success: function (data){alert(data)}
+		success: function (data){setObject(data)}
 	});
 }
