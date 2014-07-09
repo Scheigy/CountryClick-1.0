@@ -1697,7 +1697,7 @@ calc_prod();
 reparation();
 my_aff_upgrades();
 setInterval(function(){time_counter();}, 300000);
-setInterval(function(){sendData(); my_aff_buildings(); call_achievements_functions();}, 30000);
+setInterval(function(){sendData(game); my_aff_buildings(); call_achievements_functions();}, 30000);
 elemDollar = document.getElementById("dollar");
 elemDollar.onclick = addDollar;
 elemSave = document.getElementById("save_button");
