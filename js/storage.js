@@ -132,19 +132,19 @@ function	setObject(data)
 	game = new Object();
 	game.money = parseInt(data);
 	alert(game.money);
-	game.prod_money = ;
-	game.total_money = ;
-	game.worker = ;
-	game.businessman = ;
-	game.supermarket = ;
-	game.factory = ;
-	game.bank = ;
-	game.mine = ;
-	game.president = ;
-	game.antimatter = ;
-	game.upgrade = ;
-	game.timecounter = ;
-	game.clickcounter = ;
+	game.prod_money = 0;
+	game.total_money = 0;
+	game.worker = 0;
+	game.businessman = 0;
+	game.supermarket = 0;
+	game.factory = 0;
+	game.bank = 0;
+	game.mine = 0;
+	game.president = 0;
+	game.antimatter = 0;
+	game.upgrade = 0;
+	game.timecounter = 0;
+	game.clickcounter = 0;
 }
 
 function	changeNumber(nb)
