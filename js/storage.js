@@ -1701,7 +1701,7 @@ setInterval(function(){sendData(game); my_aff_buildings(); call_achievements_fun
 elemDollar = document.getElementById("dollar");
 elemDollar.onclick = addDollar;
 elemSave = document.getElementById("save_button");
-elemSave.onclick = function(){createStorage; alert('Partie sauvegardée');};
+elemSave.onclick = function(){sendData(game); alert('Partie sauvegardée');};
 elemWorker = document.getElementById("worker_button");
 elemWorker.onclick = addWorker;
 elemBusinessman = document.getElementById("businessman_button");
