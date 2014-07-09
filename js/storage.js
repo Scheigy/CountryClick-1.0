@@ -1872,9 +1872,15 @@ elemUpgrade_antimatter3.onclick = addUpgrade_antimatter3;
 //
 function	check_localStorage()
 {	
-	if (window.localStorage.getItem('money') == NULL)
+	if (window.localStorage.getItem('money') != NULL)
 		{	
-			
+			sendData(game);
+			window.localStorage.clear();
+		}
+	if (window.localStorage.getItem('upworker') != NULL)
+		{
+			sendMult();
+		
 		}
 }
 //
