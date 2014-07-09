@@ -1870,7 +1870,6 @@ elemUpgrade_antimatter3 = document.getElementById("twenty-four");
 elemUpgrade_antimatter3.onclick = addUpgrade_antimatter3;
 
 
-
 function 	makeJSON()
 {
 	return(JSON.stringify(game));
