@@ -238,6 +238,8 @@ function	Start()
 {
 		getData();
 		createMultiplicator();
+		if (window.localStorage.length > 0)
+			window.localStorage.clear();
 }
 
 function	clickValue()
@@ -285,7 +287,7 @@ function	calc_prod()
 
 function	calc_price(nb, price)
 {
-	return(parseInt(price * Math.pow(1.15, nb)));
+	return(parseFloat(price * Math.pow(1.15, nb)));
 }
 
 function	addWorker()
