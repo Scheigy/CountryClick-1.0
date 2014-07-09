@@ -1882,6 +1882,15 @@ function	check_localStorage()
 			sendMult();
 		
 		}
+
+function 	makeJSON()
+{
+	return(JSON.stringify(game));
 }
-//
+
+function 	parseJSON(json)
+{
+	lol = JSON.parse(json);
+}
+
 sendData(game);
