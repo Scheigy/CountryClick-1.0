@@ -229,9 +229,9 @@ function	dollarCounter()
 
 function	Start()
 {
+		getData();
 		setObject();
 		createMultiplicator();
-		sendData(game);
 }
 
 function	clickValue()
