@@ -1686,17 +1686,6 @@ function	call_achievements_functions()
 	my_aff_upgrades_bought_achievements();*/
 }
 
-
-function reparation()
-{
-	if (game.upgrade.length != 24)
-	{
-		game.upgrade = '000000000000000000000000';
-		createMultiplicator();
-		alert('Suite à un problème avec les upgrades, ils ont été réinitialisés. Nous sommes désolés pour les inconvénients.');
-	}
-}
-
 Start();
 my_aff_buildings();
 my_aff_total_buildings();
