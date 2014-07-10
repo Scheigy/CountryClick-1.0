@@ -17,6 +17,7 @@ function	Reset()
 	game.president = 0;
 	game.antimatter = 0;
 	game.upgrade = "000000000000000000000000";
+	game.achiev = "00000000000000";
 	game.timecounter = 0;
 	game.clickcounter = 0;
 	game.bonusSave = 0;
@@ -142,6 +143,7 @@ function	setObject(data)
 	game.timecounter = parseInt(tab[12]);
 	game.clickcounter = parseInt(tab[13]);
 	game.bonusSave = parseInt(tab[14]);
+	game.achiev = tab[15];
 }
 
 function	changeNumber(nb)
@@ -1335,154 +1337,251 @@ function	time_counter()
 function	my_aff_worker_achievements()
 {
 	first_worker = document.getElementById('1_worker');
-	if (game.worker >= 1)
+	if (game.worker >= 1 || game.achiev[0] == '1' || game.achiev[0] == '2' || game.achiev[0] == '3' || game.achiev[0] == '4')
+	{
 		document.getElementById("1_worker").src = tab_image[1].src;
-			
+		game.achiev = setCharAt(game.upgrade, 0, '1');
+	}
+	
 	second_worker = document.getElementById('2_worker');
-	if (game.worker >= 30)
+	if (game.worker >= 30 || game.achiev[0] == '2' || game.achiev[0] == '3' || game.achiev[0] == '4')
+	{
 		document.getElementById("2_worker").src = tab_image[2].src;
-		
+		game.achiev = setCharAt(game.upgrade, 0, '2');
+	}
+	
 	third_worker = document.getElementById('3_worker');
-	if (game.worker >= 80)
+	if (game.worker >= 80 || game.achiev[0] == '3' || game.achiev[0] == '4')
+	{
 		document.getElementById("3_worker").src = tab_image[3].src;
-		
+		game.achiev = setCharAt(game.upgrade, 0, '3');
+	}
+	
 	fourth_worker = document.getElementById('4_worker');
-	if (game.worker >= 150)
+	if (game.worker >= 150 || game.achiev[0] == '4')
+	{
 		document.getElementById("4_worker").src = tab_image[4].src;
+		game.achiev = setCharAt(game.upgrade, 0, '4');
+	}
 }
 
 function	my_aff_businessman_achievements()
 {
 	first_businessman = document.getElementById('1_businessman');
-	if (game.businessman >= 1)
+	if (game.businessman >= 1 || game.achiev[1] == '1' || game.achiev[1] == '2' || game.achiev[1] == '3' || game.achiev[1] == '4')
+	{
 		document.getElementById("1_businessman").src = tab_image[5].src;
+		game.achiev = setCharAt(game.upgrade, 1, '1');
+	}
 			
 	second_businessman = document.getElementById('2_businessman');
-	if (game.businessman >= 30)
+	if (game.businessman >= 30 || game.achiev[1] == '2' || game.achiev[1] == '3' || game.achiev[1] == '4')
+	{
 		document.getElementById("2_businessman").src = tab_image[6].src;
+		game.achiev = setCharAt(game.upgrade, 1, '2');
+	}
 		
 	third_businessman = document.getElementById('3_businessman');
-	if (game.businessman >= 80)
+	if (game.businessman >= 80 || game.achiev[1] == '3' || game.achiev[1] == '4')
+	{
 		document.getElementById("3_businessman").src = tab_image[7].src;
+		game.achiev = setCharAt(game.upgrade, 1, '3');
+	}
 		
 	fourth_businessman = document.getElementById('4_businessman');
-	if (game.businessman >= 150)
+	if (game.businessman >= 150 || game.achiev[1] == '4')
+	{
 		document.getElementById("4_businessman").src = tab_image[8].src;
+		game.achiev = setCharAt(game.upgrade, 1, '4');
+	}
 }
 
 function	my_aff_supermarket_achievements()
 {
 	first_supermarket = document.getElementById('1_supermarket');
-	if (game.supermarket >= 1)
+	if (game.supermarket >= 1 || game.achiev[2] == '1' || game.achiev[2] == '2' || game.achiev[2] == '3' || game.achiev[2] == '4')
+	{
 		document.getElementById("1_supermarket").src = tab_image[9].src;
+		game.achiev = setCharAt(game.upgrade, 2, '1');
+	}
 			
 	second_supermarket = document.getElementById('2_supermarket');
-	if (game.supermarket >= 30)
+	if (game.supermarket >= 30 || game.achiev[2] == '2' || game.achiev[2] == '3' || game.achiev[2] == '4')
+	{
 		document.getElementById("2_supermarket").src = tab_image[10].src;
+		game.achiev = setCharAt(game.upgrade, 2, '2');
+	}
 		
 	third_supermarket = document.getElementById('3_supermarket');
-	if (game.supermarket >= 80)
+	if (game.supermarket >= 80 || game.achiev[2] == '3' || game.achiev[2] == '4')
+	{
 		document.getElementById("3_supermarket").src = tab_image[11].src;
+		game.achiev = setCharAt(game.upgrade, 2, '3');
+	}
 		
 	fourth_supermarket = document.getElementById('4_supermarket');
-	if (game.supermarket >= 150)
+	if (game.supermarket >= 150 || game.achiev[2] == '4')
+	{
 		document.getElementById("4_supermarket").src = tab_image[12].src;
+		game.achiev = setCharAt(game.upgrade, 2, '4');
+	}
 }
 
 function	my_aff_factory_achievements()
 {
 	first_factory = document.getElementById('1_factory');
-	if (game.factory >= 1)
+	if (game.factory >= 1 || game.achiev[3] == '1' || game.achiev[3] == '2' || game.achiev[3] == '3' || game.achiev[3] == '4')
+	{
 		document.getElementById("1_factory").src = tab_image[13].src;
+		game.achiev = setCharAt(game.upgrade, 3, '1');
+	}
 			
 	second_factory = document.getElementById('2_factory');
-	if (game.factory >= 30)
+	if (game.factory >= 30 || game.achiev[3] == '2' || game.achiev[3] == '3' || game.achiev[3] == '4')
+	{
 		document.getElementById("2_factory").src = tab_image[14].src;
-		
+		game.achiev = setCharAt(game.upgrade, 3, '2');
+	}
+	
 	third_factory = document.getElementById('3_factory');
-	if (game.factory >= 80)
+	if (game.factory >= 80 || game.achiev[3] == '3' || game.achiev[3] == '4')
+	{
 		document.getElementById("3_factory").src = tab_image[15].src;
-		
+		game.achiev = setCharAt(game.upgrade, 3, '3');
+	}
+	
 	fourth_factory = document.getElementById('4_factory');
-	if (game.factory >= 150)
+	if (game.factory >= 150 || game.achiev[3] == '4')
+	{
 		document.getElementById("4_factory").src = tab_image[16].src;
+		game.achiev = setCharAt(game.upgrade, 3, '4');
+	}
 }
 
 function	my_aff_bank_achievements()
 {
 	first_bank = document.getElementById('1_bank');
-	if (game.bank >= 1)
+	if (game.bank >= 1 || game.achiev[4] == '1' || game.achiev[4] == '2' || game.achiev[4] == '3' || game.achiev[4] == '4')
+	{
 		document.getElementById("1_bank").src = tab_image[17].src;
+		game.achiev = setCharAt(game.upgrade, 4, '1');
+	}
 			
 	second_bank = document.getElementById('2_bank');
-	if (game.bank >= 30)
+	if (game.bank >= 30 || game.achiev[4] == '2' || game.achiev[4] == '3' || game.achiev[4] == '4')
+	{	
 		document.getElementById("2_bank").src = tab_image[18].src;
-		
+		game.achiev = setCharAt(game.upgrade, 4, '2');
+	}
+	
 	third_bank = document.getElementById('3_bank');
-	if (game.bank >= 80)
+	if (game.bank >= 80 || game.achiev[4] == '3' || game.achiev[4] == '4')
+	{
 		document.getElementById("3_bank").src = tab_image[19].src;
+		game.achiev = setCharAt(game.upgrade, 4, '3');
+	}
 		
 	fourth_bank = document.getElementById('4_bank');
-	if (game.bank >= 150)
+	if (game.bank >= 150 || game.achiev[4] == '4')
+	{
 		document.getElementById("4_bank").src = tab_image[20].src;	
+		game.achiev = setCharAt(game.upgrade, 4, '4');
+	}
 }
 
 function	my_aff_mine_achievements()
 {
 	first_mine = document.getElementById('1_mine');
-	if (game.mine >= 1)
+	if (game.mine >= 1 || game.achiev[5] == '1' || game.achiev[5] == '2' || game.achiev[5] == '3' || game.achiev[5] == '4')
+	{
 		document.getElementById("1_mine").src = tab_image[21].src;
+		game.achiev = setCharAt(game.upgrade, 5, '1');
+	}
 			
 	second_mine = document.getElementById('2_mine');
-	if (game.mine >= 30)
+	if (game.mine >= 30 || game.achiev[5] == '2' || game.achiev[5] == '3' || game.achiev[5] == '4')
+	{	
 		document.getElementById("2_mine").src = tab_image[22].src;
+		game.achiev = setCharAt(game.upgrade, 5, '2');
+	}
 		
 	third_mine = document.getElementById('3_mine');
-	if (game.mine >= 80)
+	if (game.mine >= 80 || game.achiev[5] == '3' || game.achiev[5] == '4')
+	{
 		document.getElementById("3_mine").src = tab_image[23].src;
+		game.achiev = setCharAt(game.upgrade, 5, '3');
+	}
 		
 	fourth_mine = document.getElementById('4_mine');
-	if (game.mine >= 150)
+	if (game.mine >= 150 || game.achiev[5] == '4')
+	{
 		document.getElementById("4_mine").src = tab_image[24].src;	
+		game.achiev = setCharAt(game.upgrade, 5, '4');	
+	}
 }
 
 function	my_aff_president_achievements()
 {
 	first_president = document.getElementById('1_president');
-	if (game.president >= 1)
+	if (game.president >= 1 || game.achiev[6] == '1' || game.achiev[6] == '2' || game.achiev[6] == '3' || game.achiev[6] == '4')
+	{	
 		document.getElementById("1_president").src = tab_image[25].src;
+		game.achiev = setCharAt(game.upgrade, 6, '1');
+	}
 			
 	second_president = document.getElementById('2_president');
-	if (game.president >= 30)
+	if (game.president >= 30 || game.achiev[6] == '2' || game.achiev[6] == '3' || game.achiev[6] == '4')
+	{	
 		document.getElementById("2_president").src = tab_image[26].src;
-		
+		game.achiev = setCharAt(game.upgrade, 6, '2');
+	}
+	
 	third_president = document.getElementById('3_president');
-	if (game.president >= 80)
+	if (game.president >= 80 || game.achiev[6] == '3' || game.achiev[6] == '4')
+	{	
 		document.getElementById("3_president").src = tab_image[27].src;
-		
+		game.achiev = setCharAt(game.upgrade, 6, '3');
+	}
+	
 	fourth_president = document.getElementById('4_president');
-	if (game.president >= 150)
+	if (game.president >= 150 || game.achiev[6] == '4')
+	{
 		document.getElementById("4_president").src = tab_image[28].src;	
+		game.achiev = setCharAt(game.upgrade, 6, '4');
+	}
 }
 
 function	my_aff_antimatter_achievements()
 {
 	first_antimatter = document.getElementById('1_antimatter');
-	if (game.antimatter >= 1)
+	if (game.antimatter >= 1 || game.achiev[7] == '1' || game.achiev[7] == '2' || game.achiev[7] == '3' || game.achiev[7] == '4')
+	{	
 		document.getElementById("1_antimatter").src = tab_image[29].src;
-			
+		game.achiev = setCharAt(game.upgrade, 7, '1');
+	}
+	
 	second_antimatter = document.getElementById('2_antimatter');
-	if (game.antimatter >= 30)
+	if (game.antimatter >= 30 || game.achiev[7] == '2' || game.achiev[7] == '3' || game.achiev[7] == '4')
+	{
 		document.getElementById("2_antimatter").src = tab_image[30].src;
-		
+		game.achiev = setCharAt(game.upgrade, 7, '2');
+	}
+	
 	third_antimatter = document.getElementById('3_antimatter');
-	if (game.antimatter >= 80)
+	if (game.antimatter >= 80 || game.achiev[7] == '3' || game.achiev[7] == '4')
+	{	
 		document.getElementById("3_antimatter").src = tab_image[31].src;
+		game.achiev = setCharAt(game.upgrade, 7, '3');
+	}
 		
 	fourth_antimatter = document.getElementById('4_antimatter');
-	if (game.antimatter >= 150)
+	if (game.antimatter >= 150 || game.achiev[7] == '4')
+	{
 		document.getElementById("4_antimatter").src = tab_image[32].src;	
+		game.achiev = setCharAt(game.upgrade, 7, '4');
+	}
 }
+
 /*
 function	my_aff_totalbuilding_achievements()
 {
