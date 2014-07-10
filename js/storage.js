@@ -19,6 +19,7 @@ function	Reset()
 	game.upgrade = "000000000000000000000000";
 	game.timecounter = 0;
 	game.clickcounter = 0;
+	game.bonusSave = 0;
 	sendData(game);
 }
 
@@ -147,6 +148,7 @@ function	setObject(data)
 	game.upgrade = tab[11];
 	game.timecounter = parseInt(tab[12]);
 	game.clickcounter = parseInt(tab[13]);
+	game.bonusSave = parseInt(tab[14]);
 }
 
 function	changeNumber(nb)
@@ -1266,8 +1268,11 @@ function	bonusCalculator()
 	if (timer_bonusRandom > 0)
 		multiplicator *= bonusRandom();
 
-	if ((nb_building % 100) == 0 && timer_bonusBuilding == 0)
+	if ((nb_building % 100) == 0 && nb_building > game.bonusSave && timer_bonusBuilding == 0)
+	{
+		game.bonusSave = nb_building;
 		timer_bonusBuilding = 20;
+	}
 	if (timer_bonusBuilding > 0)
 		multiplicator *= bonusBuilding();
 	if ((nb_building % 100) != 0 && timer_bonusBuilding == -1)
