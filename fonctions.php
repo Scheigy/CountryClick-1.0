@@ -22,10 +22,10 @@ function existingUser($pseudo, $bdd)
 
 	$return = $request->fetch();
 
-if ($return)
-	return 0;
-else
-	return 1;
+	if ($return)
+		return 0;
+	else
+		return 1;
 }
 
 function existingMail($mail, $bdd)
@@ -38,9 +38,9 @@ function existingMail($mail, $bdd)
 
 	$return = $request->fetch();
 
-if ($return)
-	return 0;
-else
-	return 1;
+	if ($return)
+		return 0;
+	else
+		return 1;
 }
 ?>

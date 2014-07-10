@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if (empty($_SESSION['pseudo']) && !empty($_COOKIE['userSession']))
 {
 	if (isset($_COOKIE['userSession']))
