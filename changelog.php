@@ -8,30 +8,47 @@
 				<li class="dropdown">
 					<a data-toggle="dropdown" class="dropdown-toggle" href="#">Version <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a data-toggle="tab" href="#dropdown5">A venir</a></li>
-						<li><a data-toggle="tab" href="#dropdown4">Alpha 1.4 (04/07/14)</a></li>
-						<li><a data-toggle="tab" href="#dropdown3">Alpha 1.3 (02/07/14)</a></li>
-						<li><a data-toggle="tab" href="#dropdown2">Alpha 1.2 (31/06/14)</a></li>
-						<li><a data-toggle="tab" href="#dropdown1">Alpha 1.1 (28/06/14)</a></li>
+						<li><a data-toggle="tab" href="#dropdown3">A venir</a></li>
+						<li><a data-toggle="tab" href="#dropdown2">Bêta 1.0</a></li>
+						<li><a data-toggle="tab" href="#dropdown1">Les Alphas</a></li>
 					</ul>
 				</li>
 			</ul>
 			<div class="tab-content">
-				<div id="dropdown5" class="tab-pane fade">
+				
+				<div id="dropdown3" class="tab-pane fade active">
 					<h2>A venir</h2>
-					<p>					
-						- Récupération de votre sauvegarde sur d'autres machines/navigateurs<br />
+					<p>
+						Country Click est un jeu en perpétuelle évolution. La liste ci-dessous est bien sûr non-exhaustive car nous avons une foultitude d'idées en tête que nous préparons secrètement.<br />
 						- Boutique Premium. Cela ne changera en rien votre façon habituelle de jouer si vous ne voulez rien payer.<br />
 					</p>
 				</div>
-				<div id="dropdown4" class="tab-pane fade">
+
+				<div id="dropdown2" class="tab-pane fade">
+					<h2>Bêta 1.0</h2>
+					<h3>Nouveautés</h3>
+					<p>
+						- Liste des membres et classement<br />
+						- Les sauvegardes sont stockés sur votre compte, vous pouvez désormais jouer sur d'autres ordinateurs/navigateurs avec la même sauvegarde.<br />
+					</p>
+					<h3>Gameplay</h3>
+					<p>
+						- Des grèves d'ouvriers viendront parfois ralentir votre progression		
+					</p>
+					<h3>Correction de bugs</h3>
+					<p>
+						- Il n'est plus possible d'obtenir le bonus en vendant et en rachetant les bâtiments<br />
+						- Les succès sont conservés après la revente des bâtiments<br />
+						- Les prix s'affichent désormais correctement après une certaine somme
+					</p>
+				</div>
+
+				<div id="dropdown1" class="tab-pane fade">
 					<h2>Alpha 1.4 (04/07/14)</h2>
 					<p>					
 						<h3>Gameplay</h3>
-						- Les succès sont désormais disponible. Attendez vous à une vague de notifications si vous avez déjà bien avancé.<br />
+						- Les succès sont désormais disponible.<br />
 					</p>
-				</div>
-				<div id="dropdown3" class="tab-pane fade active">
 					<h2>Alpha 1.3 (02/07/14)</h2>
 					<p>
 						<h3>Gameplay</h3>
@@ -44,8 +61,6 @@
 						- Le menu peut être rangé pour avoir plus d'espace<br />
 						- On voit quel bâtiment on peut acheter avec notre argent plus facilement<br />
 					</p>
-				</div>
-				<div id="dropdown2" class="tab-pane fade">
 					<h2>Alpha 1.2 (31/06/14)</h2>
 					<p>
 						<h3>Divers</h3>
@@ -62,8 +77,6 @@
 						- Ajout d'un lien vers la page de jeu dans le menu<br />
 						- Le changelog est beau<br />
 					</p>
-				</div>
-				<div id="dropdown1" class="tab-pane fade">
 					<h2>Alpha 1.1 (28/06/14)</h2>
 					<p><h3>Gameplay</h3>
 						- Ajout d'un bonus temporaire à partir de 100 bâtiments d'un même type<br />
