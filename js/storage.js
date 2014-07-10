@@ -2,7 +2,7 @@
 
 
 
-/*function	createObject()
+function	Reset()
 {
 	game = new Object();
 	game.money = 0;
@@ -19,7 +19,8 @@
 	game.upgrade = "000000000000000000000000";
 	game.timecounter = 0;
 	game.clickcounter = 0;
-}*/
+	sendData(game);
+}
 
 function 	calc_mult(bat)
 {
