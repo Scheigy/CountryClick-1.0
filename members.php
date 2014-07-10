@@ -44,9 +44,11 @@ include("fonctions.php");
 						while (isset($list[$i]))
 						{
 							echo "
-							<tr><td>" . ($i + 1) . "</td>
-							<td>" . $list[$i]['pseudo'] . "</td>
-							<td>" . $list[$i]['total_money'] . "</td></tr>";
+							<tr>
+								<td>" . ($i + 1) . "</td>
+								<td>" . $list[$i]['pseudo'] . "</td>
+								<td>" . number_format($list[$i]['total_money'], 0, ' ', ' ') . "</td>
+							</tr>";
 							$i++;
 						};
 						?>

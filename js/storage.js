@@ -1336,7 +1336,7 @@ window.onload = function() {
 
 function	time_counter()
 {
-	game.timecounter = game.timecounter + 1;
+	game.timecounter = game.timecounter + 30;
 }
 
 function	my_aff_worker_achievements()
@@ -1698,7 +1698,7 @@ my_aff_total_buildings();
 my_aff_upgrades();
 calc_prod();
 my_aff_upgrades();
-setInterval(function(){time_counter();}, 300000);
+setInterval(function(){time_counter();}, 30000);
 setInterval(function(){call_achievements_functions();}, 5000);
 setInterval(function(){sendData(game); my_aff_buildings();}, 30000);
 elemDollar = document.getElementById("dollar");

@@ -5,15 +5,16 @@
 	<div style="border: 1px solid black;">
 		<a href="game_page.php"><h3>Partie 1</h3></a>
 		<p>
-			Temps de jeu: <br />
-			Dollars:
 			<?php
 			$bdd = connectBDD();
-			$req = $bdd->prepare('SELECT money FROM game WHERE pseudo = \'' . $_SESSION["pseudo"] . '\'');
+			$req = $bdd->prepare('SELECT money, timecounter FROM game WHERE pseudo = \'' . $_SESSION["pseudo"] . '\'');
 			if ($req->execute())
 			{
-				$result = $req->fetch();
-				echo $result['money'];
+				$result = $req->fetchAll();
+
+				echo "Temps de jeu: " . gmdate('H:i:s', $result[0]['timecounter']) . "<br />
+				Dollars: . " . $result[0]['money'];
+				echo "<br />" . $result[0]['timecounter'];
 			}
 			?>
 		</p>
