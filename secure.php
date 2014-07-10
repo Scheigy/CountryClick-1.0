@@ -2,7 +2,7 @@
 
 include_once('fonctions.php');
 
-function SQL_verifyUser ()
+function SQL_verifyUser()
 {
 	$bdd = connectBDD();
 

@@ -337,5 +337,8 @@ if (empty($_SESSION['pseudo']))
 	</div>
 </div>
 <?php include("footer.php"); ?>
+<script>
+setInterval(function(){window.document.title = changeNumber(game.money) + ' $';}, 1000);
+</script>
 </body>
 </html>
