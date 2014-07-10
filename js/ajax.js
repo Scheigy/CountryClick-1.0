@@ -15,6 +15,6 @@ function getData()
 		async: false,
 		url: 'getData.php',
 		data: null,
-		success: function (data){setObject(data)}
+		success: function (data){setObject(data);}
 	});
 }

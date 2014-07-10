@@ -20,7 +20,7 @@ include("fonctions.php");
         Il sera également possible d'augmenter le nombre de dollar gagné par clic avec d'autres améliorations.<br/><br/>
         Le jeu fonctionnera avec un système de sauvegarde par compte utilisateur.<br/>
       </p>
-      <div id="changelog"><a href="changelog.php">Changelog v1.3 (maj 02/07/14)</a></div>
+      <div id="changelog"><a href="changelog.php">Changelog Bêta v1.0 (maj 10/07/14)</a></div>
     </section>
     <?php 
     if (!isset($_SESSION['pseudo']))
