@@ -122,13 +122,6 @@ tab_image[67].src='img/upgrade/upgrade4.png';
 tab_image[68].src='img/upgrade/upgrade5.png';
 tab_image[69].src='img/upgrade/upgrade6.png';*/
 
-function 	find_smth(data, i)
-{
-	while (data[i] != ';')
-		i++;
-	return (i + 1);
-}
-
 function	setObject(data)
 {
 	var tab;
