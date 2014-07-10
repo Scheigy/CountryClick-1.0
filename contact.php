@@ -6,7 +6,7 @@
 		<div class="form-group">
 			<label for="selectSubject" class="col-sm-offset-2 col-sm-3 control-label">Raison de votre message</label>
 			<div class="col-sm-5">
-				<select class="form-control">
+				<select name="inputSubject" class="form-control">
 					<option>Signaler un bug</option>
 					<option>Questions diverses</option>
 					<option>Partenariat</option>
