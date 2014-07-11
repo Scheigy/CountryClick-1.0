@@ -67,3 +67,23 @@ function blockMember(which)
 		i++;
 	}
 }
+
+function animationAvatar(nb, which, page)
+{
+	if (page == 0)
+	{
+		var avatar = document.getElementsByClassName('avatar');
+		if (nb == 1)
+			$(avatar[which]).animate({borderRadius: 0}, 600);
+		else
+			$(avatar).animate({borderRadius: '150px'}, 600);
+	}
+	else
+	{
+		var avatar = document.getElementById('profileAvatar');
+		if (nb == 1)
+			$(avatar).animate({borderRadius: 0}, 600);
+		else
+			$(avatar).animate({borderRadius: '150px'}, 600);
+	}
+}

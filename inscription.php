@@ -25,8 +25,8 @@ include("header.php");
 				{
 					if ((!empty($_POST['pseudo'])) && (!empty($_POST['mail'])) && (!empty($_POST['password'])))
 					{
-						$request = $bdd->prepare('INSERT INTO user (pseudo, mail, password, prenom, nom, sexe, pays) 
-							VALUES (:pseudo, :mail, :password, :prenom, :nom, :sexe, :pays)');
+						$request = $bdd->prepare('INSERT INTO user (pseudo, mail, password, prenom, nom, sexe, pays, date_inscription) 
+							VALUES (:pseudo, :mail, :password, :prenom, :nom, :sexe, :pays, CURDATE())');
 
 						if (($request->execute(array(
 							'pseudo' => htmlspecialchars($_POST['pseudo']),

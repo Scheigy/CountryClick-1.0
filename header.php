@@ -1,8 +1,5 @@
 <?php
 session_start();
-include_once('secure.php');
-
-echo SQL_verifyUser();
 
 if (empty($_SESSION['pseudo']) && !empty($_COOKIE['userSession']))
 {

@@ -3,21 +3,28 @@
 	<section id="unique">
 		<h1>Le crou</h1>
 		<p>
-			Nous sommes trois étudiants en école d'informatique (Epitech Strasbourg) et Country Click est notre projet personnel lors de notre 1ère année.<br/>
-			Nous avons réalisé ce jeu en trois semaines en apprenant différents langages nécessaires pour le développement du jeu, à savoir le
-			HTML/CSS, le PHP/MySQL et le JavaScript
+			Country Click est un projet de fin de première année à Epitech.<br />
+			Nous avons décidés de réaliser ce jeu pour perfectionner nos connaissances en Web.
 		</p>
-		<figure>
-			<img src="img/sacha.png" alt="Sacha">
-			<figcaption>Sacha Avazashvili</figcaption>
-		</figure>
+		<p>
+			N'hésitez pas à passer la souris sur les photos pour en savoir plus sur nous !<br />
+		</p>
+
 		<figure>
 			<img src="img/mael.png" alt="Maël">
-			<figcaption>Maël Schweighardt</figcaption>
+			<figcaption>MAEL SCHWEIGHARDT<br />Développement Web</figcaption>
 		</figure>
 		<figure>
-			<img src="img/brunne.png" alt="Brunne">
-			<figcaption>Steeven Brunner</figcaption>
+		<img src="img/sacha.jpg" alt="Sacha">
+			<figcaption>SACHA AVAZASHVILI<br />Développement JS</figcaption>
+		</figure>
+		<figure>
+			<img src="img/brunne.jpg" alt="Brunne">
+			<figcaption>STEEVEN BRUNNER<br />Développement JS</figcaption>
+		</figure>
+		<figure>
+			<img src="img/ququ.png" alt="Quentin">
+			<figcaption>QUENTIN KERGUELEN<br />Graphiste</figcaption>
 		</figure><br />
 		<h2>Nous faire un don <3</h2>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

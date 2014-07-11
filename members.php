@@ -46,7 +46,7 @@ include("fonctions.php");
 							echo "
 							<tr>
 								<td>" . ($i + 1) . "</td>
-								<td>" . $list[$i]['pseudo'] . "</td>
+								<td><a href='profile.php?user=" . $list[$i]['pseudo'] . "' title='Profil de " . $list[$i]['pseudo'] . "'>" . $list[$i]['pseudo'] . "</a></td>
 								<td>" . number_format($list[$i]['total_money'], 0, ' ', ' ') . "</td>
 							</tr>";
 							$i++;
@@ -62,30 +62,88 @@ include("fonctions.php");
 
 			<?php
 
+			$imgUrl = array('dev' => "avatar_dev.png", 
+				'alpha' => "avatar_alpha.png",
+				'simple' => "avatar_simple.png");
+
+
+			$dev = array(0 => "Scheigy",
+				1 => "sacha",
+				2 => "TCB-IP");
+
 			$bdd = connectBDD();
 
-			$line = 'SELECT pseudo FROM user ORDER BY pseudo ASC';
+			$line = 'SELECT * FROM user ORDER BY pseudo ASC';
 
 			$req = $bdd->prepare($line);
 
 			if ($req->execute())
 			{
+				function getImg($list, $imgUrl, $dev)
+				{
+					$i = 0;
+					while (isset($dev[$i]))
+					{
+						if ($dev[$i++] == $list['pseudo'])
+							return $imgUrl['dev'];
+					}
+					if ($list['alpha'] == 'Oui')
+						return $imgUrl['alpha'];
+					return $imgUrl['simple'];
+				}
+
+				function transformDate($date)
+				{
+					$today = new DateTime();
+					$user = new DateTime($date);
+					if ($today->diff($user)->m == '0')
+					{
+						if($today->diff($user)->d == '0')
+							return "Aujourd'hui";
+						else
+							return $today->diff($user)->format('%d jours');
+					}
+					return $today->diff($user)->format('%m mois');
+				}
+
 				$list = $req->fetchAll();
 
 				$i = 0;
+				?>
+				<div class="container">
+					<div style="text-align: left;" class="table-responsive">
+						<table class="table">
+							<thead>
+								<th width="1%"></th>
+								<th>Pseudo</th>
+								<th>Inscrit depuis</th>
+							</thead>
+							<tbody>
+								<?php
+								$nbClass = 0;
+								while (!empty($list[$i]))
+								{
 
-				while (!empty($list[$i]))
-					echo '<a href="members/?pseudo=' . $list[$i]['pseudo'] . '" title="Page membre">' . $list[$i++]['pseudo'] . "</a><br />";
-			}
-			else {
-				echo "Database connection error.";
-			}
-
-
-
-			?>
+									echo "<tr>
+									<td><img onmouseover='animationAvatar(1, " . $nbClass . ", 0);' onmouseout='animationAvatar(0, " . $nbClass . ", 0);' style='border-radius: 150px;' id='profileAvatar' class='avatar' src='img/" . getImg($list[$i], $imgUrl, $dev) . "'/></td>
+									<td><a href='profile.php?user=" . $list[$i]['pseudo'] . "' title='Profil de " . $list[$i]['pseudo'] . "'>" . $list[$i]['pseudo'] . "</a></td>
+									<td>" . transformDate($list[$i++]['date_inscription']) . "</td>
+								</tr>";
+								$nbClass++;
+							}
+						}
+						?>
+					</tbody>
+				</table>
+			</div>
 		</div>
-	</section>
+
+		<?php
+
+
+		?>
+	</div>
+</section>
 </div>
 <?php include_once("footer.php"); ?>
 <script>

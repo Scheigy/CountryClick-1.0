@@ -89,6 +89,8 @@ header
 .social_element
 {
 	margin-left: 5px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 header a
@@ -155,13 +157,28 @@ a:hover
 	font-size: 70%;
 }
 
+#listMember .avatar
+{
+	height: 20%;
+}
+
+#tableProfile img
+{
+	height: 50%;
+}
+
+#profileAvatar
+{
+	border-radius: 150px;
+}
+
 section
 {
 	font-size: 1.4em;
 	text-shadow: 0px 2px 2px white;
 }
 
-section h1
+section h2
 {
 	text-align: center;
 }
@@ -424,6 +441,11 @@ figure
 {
 
 	background-color: #42abff;
+}
+
+.worker_img {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .text

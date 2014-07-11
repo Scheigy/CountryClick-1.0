@@ -12,9 +12,9 @@
 			{
 				$result = $req->fetchAll();
 
-				echo "Temps de jeu: " . gmdate('H:i:s', $result[0]['timecounter']) . "<br />
-				Dollars: . " . $result[0]['money'];
-				echo "<br />" . $result[0]['timecounter'];
+				echo "Temps de jeu: " . gmdate('H:i:s', $result[0]['timecounter']) . "<br />";
+				echo number_format($result[0]['money'], 0, ' ', ' ') . " $";
+				echo "<br />";
 			}
 			?>
 		</p>

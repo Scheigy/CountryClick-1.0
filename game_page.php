@@ -40,10 +40,10 @@ if (empty($_SESSION['pseudo']))
 	<a href="#" data-tooltip="Acheter 30 présidents" data-placement="top"><img class="achImg" id ="2_president" src="img/upgrade/locked.png" alt="president" /></a>
 	<a href="#" data-tooltip="Acheter 80 présidents" data-placement="top"><img class="achImg" id ="3_president" src="img/upgrade/locked.png" alt="president" /></a>
 	<a href="#" data-tooltip="Acheter 150 présidents" data-placement="top"><img class="achImg" id ="4_president" src="img/upgrade/locked.png" alt="president" /></a>
-	<a href="#" data-tooltip="Acheter 1 nuage d'antimatière" data-placement="top"><img class="achImg" id ="1_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a>
-	<a href="#" data-tooltip="Acheter 30 nuages d'antimatière" data-placement="top"><img class="achImg" id ="2_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a>
-	<a href="#" data-tooltip="Acheter 80 nuages d'antimatière" data-placement="top"><img class="achImg" id ="3_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a>
-	<a href="#" data-tooltip="Acheter 150 nuages d'antimatière" data-placement="top"><img class="achImg" id ="4_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a><br />
+	<a href="#" data-tooltip="Acheter 1 nuage de billets" data-placement="top"><img class="achImg" id ="1_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a>
+	<a href="#" data-tooltip="Acheter 30 nuages de billets" data-placement="top"><img class="achImg" id ="2_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a>
+	<a href="#" data-tooltip="Acheter 80 nuages de billets" data-placement="top"><img class="achImg" id ="3_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a>
+	<a href="#" data-tooltip="Acheter 150 nuages de billets" data-placement="top"><img class="achImg" id ="4_antimatter" src="img/upgrade/locked.png" alt="antimatter" /></a><br />
 	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="1_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
 	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="2_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
 	<a href="#" data-tooltip="Locked" data-placement="top"><img class="achImg" id ="3_totalbuild" src="img/upgrade/locked.png" alt="Lock" /></a>
@@ -178,7 +178,7 @@ if (empty($_SESSION['pseudo']))
 					<div class="spriteLine">Banque(s)</div>
 					<div class="spriteLine">Mine(s)</div>
 					<div class="spriteLine">Président(s)</div>
-					<div class="spriteLine last">Nuage(s) d'antimatière</div>
+					<div class="spriteLine last">Nuage(s) de billets</div>
 				</div>
 
 				<div class="row" id="central_menu">
@@ -193,7 +193,7 @@ if (empty($_SESSION['pseudo']))
 				
 				<div onMouseOut="disappearSell('Worker');"; onMouseOver="appearSell('Worker');">
 					<div class="row worker_div" id="worker_button">
-						<img class="col-lg-4 worker_img" src="img/Worker.png" alt="worker" />
+						<img class="col-lg-4 worker_img" src="img/worker.png" alt="worker" />
 						<div class="text col-lg-offset-1 col-lg-7">
 							<div id="nb_worker" class="nb_worker">0 worker(s)</div>
 							<div id="worker_cost" class="worker_cost">Prix : 0$</div>
@@ -210,7 +210,7 @@ if (empty($_SESSION['pseudo']))
 
 				<div onMouseOut="disappearSell('Businessman')"; onMouseOver="appearSell('Businessman');">
 					<div class="row worker_div" id="businessman_button">
-						<img class="col-lg-4 worker_img" src="img/Businessman.png" alt="businessman" />
+						<img class="col-lg-4 worker_img" src="img/businessman.png" alt="businessman" />
 						<div class="text col-lg-offset-1 col-lg-7">
 							<div id="nb_businessman" class="nb_worker">1 cadre(s)</div>
 							<div id="businessman_cost" class="worker_cost">Prix : 0$</div>
@@ -227,7 +227,7 @@ if (empty($_SESSION['pseudo']))
 
 				<div onMouseOut="disappearSell('Supermarket')"; onMouseOver="appearSell('Supermarket');">
 					<div class="row worker_div" id="supermarket_button">
-						<img class="col-lg-4 worker_img" src="img/Supermarket.png" alt="supermarket" />
+						<img class="col-lg-4 worker_img" src="img/supermarket.png" alt="supermarket" />
 						<div class="text col-lg-offset-1 col-lg-7">
 							<div id="nb_supermarket" class="nb_worker">1 supermarché(s)</div>
 							<div id="supermarket_cost" class="worker_cost">Prix : 0$</div>
@@ -244,7 +244,7 @@ if (empty($_SESSION['pseudo']))
 
 				<div onMouseOut="disappearSell('Factory')"; onMouseOver="appearSell('Factory');">
 					<div class="row worker_div" id="factory_button">
-						<img class="col-lg-4 worker_img" src="img/Factory.png" alt="factory" />
+						<img class="col-lg-4 worker_img" src="img/factory.png" alt="factory" />
 						<div class="text col-lg-offset-1 col-lg-7">
 							<div id="nb_factory" class="nb_worker">1 usine(s)</div>
 							<div id="factory_cost" class="worker_cost">Prix : 0$</div>
@@ -261,7 +261,7 @@ if (empty($_SESSION['pseudo']))
 
 				<div onMouseOut="disappearSell('Bank')"; onMouseOver="appearSell('Bank');">
 					<div class="row worker_div" id="bank_button">
-						<img class="col-lg-4 worker_img" src="img/Bank.png" alt="bank" />
+						<img class="col-lg-4 worker_img" src="img/bank.png" alt="bank" />
 						<div class="text col-lg-offset-1 col-lg-7">
 							<div id="nb_bank" class="nb_worker">1 banque(s)</div>
 							<div id="bank_cost" class="worker_cost">Prix : 0$</div>
@@ -278,7 +278,7 @@ if (empty($_SESSION['pseudo']))
 
 				<div onMouseOut="disappearSell('Mine')"; onMouseOver="appearSell('Mine');">
 					<div class="row worker_div" id="mine_button">
-						<img class="col-lg-4 worker_img" src="img/Mine.png" alt="mine" />
+						<img class="col-lg-4 worker_img" src="img/mine.png" alt="mine" />
 						<div class="text col-lg-offset-1 col-lg-7">
 							<div id="nb_mine" class="nb_worker">1 mine(s)</div>
 							<div id="mine_cost" class="worker_cost">Prix : 0$</div>
@@ -295,7 +295,7 @@ if (empty($_SESSION['pseudo']))
 
 				<div onMouseOut="disappearSell('President')"; onMouseOver="appearSell('President');">
 					<div class="row worker_div" id="president_button">
-						<img class="col-lg-4 worker_img" src="img/President.png" alt="president" />
+						<img class="col-lg-4 worker_img" src="img/president.png" alt="president" />
 						<div class="text col-lg-offset-1 col-lg-7">
 							<div id="nb_president" class="nb_worker">1 président(s)</div>
 							<div id="president_cost" class="worker_cost">Prix : 0$</div>
@@ -312,9 +312,9 @@ if (empty($_SESSION['pseudo']))
 
 				<div onMouseOut="disappearSell('Antimatter')"; onMouseOver="appearSell('Antimatter');">
 					<div class="row worker_div" id="antimatter_button">
-						<img class="col-lg-4 worker_img" src="img/Antimater.png" alt="antimater" />
+						<img class="col-lg-4 worker_img" src="img/cloud.png" alt="antimater" />
 						<div class="text col-lg-offset-1 col-lg-7">
-							<div id="nb_antimatter" class="nb_worker">1 nuage(s) d'antimatière</div>
+							<div id="nb_antimatter" class="nb_worker">1 nuage(s) de billets</div>
 							<div id="antimatter_cost" class="worker_cost">Prix : 0$</div>
 							<div id="antimatter_benefit" class="worker_benefit">Bénéfice : 50 000 $/sec</div>
 						</div>

@@ -392,7 +392,7 @@ function	addAntimatter()
 	{ 
 		game.money = game.money - calc_price(game.antimatter, 1128256512);
 		game.antimatter = game.antimatter + 1;
-		myAntimatter.innerHTML = game.antimatter + ' nuage(s) d\'antimatière';
+		myAntimatter.innerHTML = game.antimatter + ' nuage(s) de billets';
 		myAntimatterPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.antimatter, 1128256512)) + ' $';
 		my_aff_total_buildings();
 		calc_prod();
@@ -534,7 +534,7 @@ function	sellAntimatter(nb)
 		{ 
 			game.money = game.money + calc_sell_price(game.antimatter, 1128256512);
 			game.antimatter = game.antimatter - 1;
-			myAntimatter.innerHTML = game.antimatter + ' nuage(s) d\'antimatière';
+			myAntimatter.innerHTML = game.antimatter + ' nuage(s) de billets';
 			myAntimatterPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.antimatter, 1128256512)) + ' $';
 			calc_prod();
 			my_aff_total_buildings();
@@ -678,7 +678,7 @@ function	my_aff_buildings()
 	{
 		document.getElementById('antimatter_button').style.display = 'block';
 		myAntimatter = document.getElementById('nb_antimatter');
-		myAntimatter.innerHTML = game.antimatter + ' nuage(s) d\'antimatière';
+		myAntimatter.innerHTML = game.antimatter + ' nuage(s) de billets';
 		myAntimatterPrice = document.getElementById('antimatter_cost');
 		myAntimatterPrice.innerHTML = 'Prix : ' + changeNumber(calc_price(game.antimatter, 1128256512)) + ' $';
 		myAntimatterBenefit = document.getElementById('antimatter_benefit');

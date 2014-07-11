@@ -1,7 +1,7 @@
     <section class="col-lg-offset-1 col-lg-5">
       <aside>
         <form class="form-horizontal" role="form" action="connexion.php" method="post">
-          <h1>Connexion</h1><br />
+          <h2>Connexion</h2><br />
           <div class="form-group">
             <label for="inputPseudo" class="col-sm-3 control-label">Pseudo</label>
             <div class="col-sm-8">
