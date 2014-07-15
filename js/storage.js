@@ -1589,151 +1589,264 @@ function	my_aff_antimatter_achievements()
 	}
 }
 
-/*
+
 function	my_aff_totalbuilding_achievements()
 {
 	first_totalbuild = document.getElementById('1_totalbuild');
-	if (game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter >= 50)
-		document.getElementById("1_totalbuild").src = tab_image[33].src;
-			
+	if (game.worker + game.businessman + game.supermarket + game.factory +
+		game.bank + game.mine + game.president + game.antimatter >= 50 || game.achiev[8] == '1' || game.achiev[8] == '2' 
+		|| game.achiev[8] == '3' || game.achiev[8] == '4' || game.achiev[8] == '5')
+		{
+			document.getElementById("1_totalbuild").src = tab_image[33].src;
+			game.achiev = setCharAt(game.achiev, 8, '1');
+		}
+		
 	second_totalbuild = document.getElementById('2_totalbuild');
 	if (game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter >= 100)
-		document.getElementById("2_totalbuild").src = tab_image[34].src;
+		game.bank + game.mine + game.president + game.antimatter >= 100 ||  game.achiev[8] == '2' 
+		|| game.achiev[8] == '3' || game.achiev[8] == '4' || game.achiev[8] == '5')
+		{
+			document.getElementById("2_totalbuild").src = tab_image[34].src;
+			game.achiev = setCharAt(game.achiev, 8, '2');
+		}
 	
 	third_totalbuild = document.getElementById('3_totalbuild');
 	if (game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter >= 500)
-		document.getElementById("3_totalbuild").src = tab_image[35].src;
+		game.bank + game.mine + game.president + game.antimatter >= 500
+		|| game.achiev[8] == '3' || game.achiev[8] == '4' || game.achiev[8] == '5')
+		{
+			document.getElementById("3_totalbuild").src = tab_image[35].src;
+			game.achiev = setCharAt(game.achiev, 8, '3');
+		}
 		
 	fourth_totalbuild = document.getElementById('4_totalbuild');
 	if (game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter >= 1000)
-		document.getElementById("4_totalbuild").src = tab_image[36].src;
+		game.bank + game.mine + game.president + game.antimatter >= 1000
+		|| game.achiev[8] == '4' || game.achiev[8] == '5')
+		{
+			document.getElementById("4_totalbuild").src = tab_image[36].src;
+			game.achiev = setCharAt(game.achiev, 8, '4');
+		}
 		
 	fifth_totalbuild = document.getElementById('5_totalbuild');
 	if (game.worker + game.businessman + game.supermarket + game.factory + 
-		game.bank + game.mine + game.president + game.antimatter >= 2000)
-		document.getElementById("5_totalbuild").src = tab_image[37].src;	
+		game.bank + game.mine + game.president + game.antimatter >= 2000 || game.achiev[8] == '5')
+		{
+			document.getElementById("5_totalbuild").src = tab_image[37].src;	
+			game.achiev = setCharAt(game.achiev, 8, '5');
+		}
 }
-
+/*
 function	my_aff_totalmoney_achievements()
 {			
 	first_totalmoney = document.getElementById('1_totalmoney');
-	if (game.total_money >= 100)
+	if (game.total_money >= 100 || game.achiev[9] == '1' || game.achiev[9] == '2' 
+		|| game.achiev[9] == '3' || game.achiev[9] == '4' || game.achiev[9] == '5'
+		|| game.achiev[9] == '6' || game.achiev[9] == '7' || game.achiev[9] == '8')
+	{
 		document.getElementById("1_totalmoney").src = tab_image[38].src;
+		game.achiev = setCharAt(game.achiev, 9, '1');
+	}
 		
 	second_totalmoney = document.getElementById('2_totalmoney');
-	if (game.total_money >= 1000)
+	if (game.total_money >= 1000 || game.achiev[9] == '2' 
+		|| game.achiev[9] == '3' || game.achiev[9] == '4' || game.achiev[9] == '5'
+		|| game.achiev[9] == '6' || game.achiev[9] == '7' || game.achiev[9] == '8')
+	{
 		document.getElementById("2_totalmoney").src = tab_image[39].src;
+		game.achiev = setCharAt(game.achiev, 9, '2');
+	}
 		
 	third_totalmoney = document.getElementById('3_totalmoney');
-	if (game.total_money >= 100000)
+	if (game.total_money >= 100000 || game.achiev[9] == '3' || game.achiev[9] == '4' || game.achiev[9] == '5'
+		|| game.achiev[9] == '6' || game.achiev[9] == '7' || game.achiev[9] == '8')
+	{
 		document.getElementById("3_totalmoney").src = tab_image[40].src;
+		game.achiev = setCharAt(game.achiev, 9, '3');
+	}
 		
 	fourth_totalmoney = document.getElementById('4_totalmoney');
-	if (game.total_money >= 1000000)
+	if (game.total_money >= 1000000 || game.achiev[9] == '4' || game.achiev[9] == '5'
+		|| game.achiev[9] == '6' || game.achiev[9] == '7' || game.achiev[9] == '8')
+	{
 		document.getElementById("4_totalmoney").src = tab_image[41].src;
+		game.achiev = setCharAt(game.achiev, 9, '4');
+	}
 		
 	fifth_totalmoney = document.getElementById('5_totalmoney');
-	if (game.total_money >= 100000000)
+	if (game.total_money >= 100000000 || game.achiev[9] == '5'
+		|| game.achiev[9] == '6' || game.achiev[9] == '7' || game.achiev[9] == '8')
+	{
 		document.getElementById("5_totalmoney").src = tab_image[42].src;
+		game.achiev = setCharAt(game.achiev, 9, '5');
+	}
 		
 	sixth_totalmoney = document.getElementById('6_totalmoney');
-	if (game.total_money >= 1000000000)
+	if (game.total_money >= 1000000000 || game.achiev[9] == '6' || game.achiev[9] == '7' || game.achiev[9] == '8')
+	{
 		document.getElementById("6_totalmoney").src = tab_image[43].src;
+		game.achiev = setCharAt(game.achiev, 9, '6');
+	}
 		
 	seventh_totalmoney = document.getElementById('7_totalmoney');
-	if (game.total_money >= 100000000000)
+	if (game.total_money >= 100000000000 || game.achiev[9] == '7' || game.achiev[9] == '8')
+	{
 		document.getElementById("7_totalmoney").src = tab_image[44].src;
+		game.achiev = setCharAt(game.achiev, 9, '7');
+	}
 	
 	eighth_totalmoney = document.getElementById('8_totalmoney');
-	if (game.total_money >= 100000000000000)
-
+	if (game.total_money >= 100000000000000 || game.achiev[9] == '8')
+	{
 		document.getElementById("8_totalmoney").src = tab_image[45].src;
+		game.achiev = setCharAt(game.achiev, 9, '8');
+	}
 }
 
 function	my_aff_prod_achievements()
 {
 	first_prod = document.getElementById('1_prod');
-	if (game.prod_money >= 1)
+	if (game.prod_money >= 1 || game.achiev[10] == '1' || game.achiev[10] == '2' 
+		|| game.achiev[10] == '3' || game.achiev[10] == '4' || game.achiev[10] == '5'
+		|| game.achiev[10] == '6' || game.achiev[10] == '7' || game.achiev[10] == '8')
+	{
 		document.getElementById("1_prod").src = tab_image[46].src;
+		game.achiev = setCharAt(game.achiev, 10, '1');
+	}
 		
 	second_prod = document.getElementById('2_prod');
-	if (game.prod_money >= 10)
+	if (game.prod_money >= 10 || game.achiev[10] == '2' 
+		|| game.achiev[10] == '3' || game.achiev[10] == '4' || game.achiev[10] == '5'
+		|| game.achiev[10] == '6' || game.achiev[10] == '7' || game.achiev[10] == '8')
+	{
 		document.getElementById("2_prod").src = tab_image[47].src;
-
+		game.achiev = setCharAt(game.achiev, 10, '2');
+	}
 
 	third_prod = document.getElementById('3_prod');
-	if (game.prod_money >= 100)
+	if (game.prod_money >= 100 || game.achiev[10] == '3' || game.achiev[10] == '4' || game.achiev[10] == '5'
+		|| game.achiev[10] == '6' || game.achiev[10] == '7' || game.achiev[10] == '8')
+	{
 		document.getElementById("3_prod").src = tab_image[48].src;
+		game.achiev = setCharAt(game.achiev, 10, '3');
+	}
 		
 	fourth_prod = document.getElementById('4_prod');
-	if (game.prod_money >= 1000)
+	if (game.prod_money >= 1000 || game.achiev[10] == '4' || game.achiev[10] == '5'
+		|| game.achiev[10] == '6' || game.achiev[10] == '7' || game.achiev[10] == '8')
+	{
 		document.getElementById("4_prod").src = tab_image[49].src;
+		game.achiev = setCharAt(game.achiev, 10, '4');	
+	}
 		
 	fifth_prod = document.getElementById('5_prod');
-	if (game.prod_money >= 10000)
+	if (game.prod_money >= 10000 || game.achiev[10] == '5'
+		|| game.achiev[10] == '6' || game.achiev[10] == '7' || game.achiev[10] == '8')
+	{
 		document.getElementById("5_prod").src = tab_image[50].src;
+		game.achiev = setCharAt(game.achiev, 10, '5');
+	}
 		
 	sixth_prod = document.getElementById('6_prod');
-	if (game.prod_money >= 100000)
+	if (game.prod_money >= 100000 || game.achiev[10] == '6' || game.achiev[10] == '7' || game.achiev[10] == '8')
+	{
 		document.getElementById("6_prod").src = tab_image[51].src;
+		game.achiev = setCharAt(game.achiev, 10, '6');
+	}
 		
 	seventh_prod = document.getElementById('7_prod');
-	if (game.prod_money >= 1000000)
+	if (game.prod_money >= 1000000 || game.achiev[10] == '7' || game.achiev[10] == '8')
+	{
 		document.getElementById("7_prod").src = tab_image[52].src;
+		game.achiev = setCharAt(game.achiev, 10, '7');
+	}
 	
 	eighth_prod = document.getElementById('8_prod');
-	if (game.prod_money >= 10000000)
+	if (game.prod_money >= 10000000 || game.achiev[10] == '8')
+	{
 		document.getElementById("8_prod").src = tab_image[53].src;
+		game.achiev = setCharAt(game.achiev, 10, '8');
+	}
 }
 
 function	my_aff_timeplayed_achievements()
 {
 	first_time = document.getElementById('1_time');
-	if (game.timecounter >= 6)
+	if (game.timecounter >= 6 || game.achiev[11] == '1' || game.achiev[11] == '2' 
+		|| game.achiev[11] == '3' || game.achiev[11] == '4' || game.achiev[11] == '5')
+	{
 		document.getElementById("1_time").src = tab_image[54].src;
+		game.achiev = setCharAt(game.achiev, 11, '1');
+	}
 
 	second_time = document.getElementById('2_time');
-	if (game.timecounter >= 12)
+	if (game.timecounter >= 12 || game.achiev[11] == '2' 
+		|| game.achiev[11] == '3' || game.achiev[11] == '4' || game.achiev[11] == '5')
+	{
 		document.getElementById("2_time").src = tab_image[55].src;
+		game.achiev = setCharAt(game.achiev, 11, '2');
+	}
 		
 	third_time = document.getElementById('3_time');
-	if (game.timecounter >= 288)
+	if (game.timecounter >= 288 || game.achiev[11] == '3' || game.achiev[11] == '4' || game.achiev[11] == '5')
+	{
 		document.getElementById("3_time").src = tab_image[56].src;
+		game.achiev = setCharAt(game.achiev, 11, '3');
+	}
 		
 	fourht_time = document.getElementById('4_time');
-	if (game.timecounter >= 864)
+	if (game.timecounter >= 864 || game.achiev[11] == '4' || game.achiev[11] == '5')
+	{
 		document.getElementById("4_time").src = tab_image[57].src;
+		game.achiev = setCharAt(game.achiev, 11, '4');
+	}
 		
 	fifth_time = document.getElementById('5_time');
-	if (game.timecounter >= 2016)
+	if (game.timecounter >= 2016 || game.achiev[11] == '5')
+	{
 		document.getElementById("5_time").src = tab_image[58].src;
+		game.achiev = setCharAt(game.achiev, 11, '5');
+	}
 }
 
 function	my_aff_nb_click_achievements()
 {
 	first_click = document.getElementById('1_click');
-	if (game.clickcounter >= 1)
+	if (game.clickcounter >= 1 || game.achiev[12] == '1' || game.achiev[12] == '2' 
+		|| game.achiev[12] == '3' || game.achiev[12] == '4' || game.achiev[12] == '5')
+	{
 		document.getElementById("1_click").src = tab_image[59].src;
+		game.achiev = setCharAt(game.achiev, 12, '1');
+	}
 	
 	second_click = document.getElementById('2_click');
-	if (game.clickcounter >= 100)
+	if (game.clickcounter >= 100 || game.achiev[12] == '2' 
+		|| game.achiev[12] == '3' || game.achiev[12] == '4' || game.achiev[12] == '5')
+	{
 		document.getElementById("2_click").src = tab_image[60].src;
+		game.achiev = setCharAt(game.achiev, 12, '2');
+	}
 		
 	third_click = document.getElementById('3_click');
-	if (game.clickcounter >= 1000)
+	if (game.clickcounter >= 1000 || game.achiev[12] == '3' || game.achiev[12] == '4' || game.achiev[12] == '5')
+	{
 		document.getElementById("3_click").src = tab_image[61].src;
+		game.achiev = setCharAt(game.achiev, 12, '3');
+	}
 		
 	fourth_click = document.getElementById('4_click');
-	if (game.clickcounter >= 10000)
+	if (game.clickcounter >= 10000 || game.achiev[12] == '4' || game.achiev[12] == '5')
+	{
 		document.getElementById("4_click").src = tab_image[62].src;
+		game.achiev = setCharAt(game.achiev, 12, '4');
+	}
 		
 	fifth_click = document.getElementById('5_click');
-	if (game.clickcounter >= 50000)
+	if (game.clickcounter >= 50000 || game.achiev[12] == '5')
+	{
 		document.getElementById("5_click").src = tab_image[63].src;
+		game.achiev = setCharAt(game.achiev, 12, '5');
+	}
 }
 
 function	my_aff_upgrades_bought_achievements()
@@ -1747,28 +1860,48 @@ function	my_aff_upgrades_bought_achievements()
 		i = i + 1;	
 	}
 	first_upgrade = document.getElementById('1_upgrade');
-	if (unlocked >= 1)
+	if (unlocked >= 1 || game.achiev[13] == '1' || game.achiev[13] == '2' 
+		|| game.achiev[13] == '3' || game.achiev[13] == '4' || game.achiev[13] == '5' || game.achiev[13] == '6')
+	{
 		document.getElementById("1_upgrade").src = tab_image[64].src;
+		game.achiev = setCharAt(game.achiev, 13, '1');
+	}
 	
 	second_upgrade = document.getElementById('2_upgrade');
-	if (unlocked >= 5)
+	if (unlocked >= 5 || game.achiev[13] == '2' 
+		|| game.achiev[13] == '3' || game.achiev[13] == '4' || game.achiev[13] == '5' || game.achiev[13] == '6')
+	{
 		document.getElementById("2_upgrade").src = tab_image[65].src;
+		game.achiev = setCharAt(game.achiev, 13, '2');
+	}
 		
 	third_upgrade = document.getElementById('3_upgrade');
-	if (unlocked >= 10)
+	if (unlocked >= 10 || game.achiev[13] == '3' || game.achiev[13] == '4' || game.achiev[13] == '5' || game.achiev[13] == '6')
+	{
 		document.getElementById("3_upgrade").src = tab_image[66].src;
+		game.achiev = setCharAt(game.achiev, 13, '3');
+	}
 		
 	fourth_upgrade = document.getElementById('4_upgrade');
-	if (unlocked >= 15)
+	if (unlocked >= 15 || game.achiev[13] == '4' || game.achiev[13] == '5' || game.achiev[13] == '6')
+	{
 		document.getElementById("4_upgrade").src = tab_image[67].src;
+		game.achiev = setCharAt(game.achiev, 13, '4');
+	}
 		
 	fifth_upgrade = document.getElementById('5_upgrade');
-	if (unlocked >= 20)
+	if (unlocked >= 20 || game.achiev[13] == '5' || game.achiev[13] == '6')
+	{
 		document.getElementById("5_upgrade").src = tab_image[68].src;
+		game.achiev = setCharAt(game.achiev, 13, '5');
+	}
 		
 	sixth_upgrade = document.getElementById('6_upgrade');
-	if (unlocked >= 24)
+	if (unlocked >= 24 || game.achiev[13] == '6')
+	{
 		document.getElementById("6_upgrade").src = tab_image[69].src;
+		game.achiev = setCharAt(game.achiev, 13, '6');
+	}
 }
 */
 
